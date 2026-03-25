@@ -1,0 +1,26 @@
+[
+  {
+    "id": 1,
+    "name": "Projektarbeit",
+    "customer": "Kunde 1",
+    "sortNr": 10,
+    "inactive": false,
+    "hourlyRate": 0
+  },
+  {
+    "id": 2,
+    "name": "Support",
+    "customer": "Kunde 1",
+    "sortNr": 20,
+    "inactive": false,
+    "hourlyRate": 0
+  },
+  {
+    "id": 3,
+    "name": "Ausbildung",
+    "customer": "",
+    "sortNr": 30,
+    "inactive": false,
+    "hourlyRate": 0
+  }
+]

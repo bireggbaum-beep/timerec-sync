@@ -1,0 +1,6550 @@
+[
+  {
+    "date": "2010-01-01",
+    "stamps": [
+      {
+        "seqNr": 30,
+        "date": "2010-01-01",
+        "time": "08:00",
+        "action": "in",
+        "taskId": 0,
+        "taskName": "(Standard)",
+        "comment": ""
+      },
+      {
+        "seqNr": 31,
+        "date": "2010-01-01",
+        "time": "12:00",
+        "action": "out",
+        "taskId": 0,
+        "taskName": "(Standard)",
+        "comment": ""
+      },
+      {
+        "seqNr": 32,
+        "date": "2010-01-01",
+        "time": "13:00",
+        "action": "in",
+        "taskId": 0,
+        "taskName": "(Standard)",
+        "comment": ""
+      },
+      {
+        "seqNr": 33,
+        "date": "2010-01-01",
+        "time": "17:30",
+        "action": "out",
+        "taskId": 0,
+        "taskName": "(Standard)",
+        "comment": ""
+      }
+    ],
+    "note": "",
+    "totalMinutes": 510,
+    "totalFormatted": "8h 30m",
+    "tasks": [
+      "(Standard)"
+    ]
+  },
+  {
+    "date": "2010-01-02",
+    "stamps": [
+      {
+        "seqNr": 35,
+        "date": "2010-01-02",
+        "time": "11:00",
+        "action": "in",
+        "taskId": 0,
+        "taskName": "(Standard)",
+        "comment": ""
+      },
+      {
+        "seqNr": 34,
+        "date": "2010-01-02",
+        "time": "11:00",
+        "action": "out",
+        "taskId": 0,
+        "taskName": "(Standard)",
+        "comment": ""
+      },
+      {
+        "seqNr": 37,
+        "date": "2010-01-02",
+        "time": "11:30",
+        "action": "in",
+        "taskId": 0,
+        "taskName": "(Standard)",
+        "comment": ""
+      },
+      {
+        "seqNr": 36,
+        "date": "2010-01-02",
+        "time": "11:30",
+        "action": "out",
+        "taskId": 0,
+        "taskName": "(Standard)",
+        "comment": ""
+      }
+    ],
+    "note": "",
+    "totalMinutes": 0,
+    "totalFormatted": "0h 00m",
+    "tasks": [
+      "(Standard)"
+    ]
+  },
+  {
+    "date": "2025-05-25",
+    "stamps": [
+      {
+        "seqNr": 11,
+        "date": "2025-05-25",
+        "time": "14:00",
+        "action": "in",
+        "taskId": 0,
+        "taskName": "(Standard)",
+        "comment": "Anfahrt und Check-in Flughafen"
+      },
+      {
+        "seqNr": 13,
+        "date": "2025-05-25",
+        "time": "16:55",
+        "action": "in",
+        "taskId": 0,
+        "taskName": "(Standard)",
+        "comment": "Flug nach Schottland"
+      },
+      {
+        "seqNr": 12,
+        "date": "2025-05-25",
+        "time": "16:55",
+        "action": "out",
+        "taskId": 0,
+        "taskName": "(Standard)",
+        "comment": ""
+      },
+      {
+        "seqNr": 15,
+        "date": "2025-05-25",
+        "time": "19:00",
+        "action": "in",
+        "taskId": 0,
+        "taskName": "(Standard)",
+        "comment": "Aussteigen, Gepäck"
+      },
+      {
+        "seqNr": 14,
+        "date": "2025-05-25",
+        "time": "19:00",
+        "action": "out",
+        "taskId": 0,
+        "taskName": "(Standard)",
+        "comment": ""
+      },
+      {
+        "seqNr": 17,
+        "date": "2025-05-25",
+        "time": "19:30",
+        "action": "in",
+        "taskId": 0,
+        "taskName": "(Standard)",
+        "comment": "Transfer zum Hotel Dakota inkl Auto defekt und Abholung durch Ersatz"
+      },
+      {
+        "seqNr": 16,
+        "date": "2025-05-25",
+        "time": "19:30",
+        "action": "out",
+        "taskId": 0,
+        "taskName": "(Standard)",
+        "comment": ""
+      },
+      {
+        "seqNr": 85,
+        "date": "2025-05-25",
+        "time": "20:30",
+        "action": "out",
+        "taskId": 0,
+        "taskName": "(Standard)",
+        "comment": ""
+      }
+    ],
+    "note": "",
+    "totalMinutes": 0,
+    "totalFormatted": "0h 00m",
+    "tasks": [
+      "(Standard)"
+    ]
+  },
+  {
+    "date": "2025-05-26",
+    "stamps": [
+      {
+        "seqNr": 18,
+        "date": "2025-05-26",
+        "time": "08:00",
+        "action": "in",
+        "taskId": 0,
+        "taskName": "(Standard)",
+        "comment": "Hotel zu Lumira (inkl. Verlaufen)"
+      },
+      {
+        "seqNr": 21,
+        "date": "2025-05-26",
+        "time": "08:30",
+        "action": "in",
+        "taskId": 0,
+        "taskName": "(Standard)",
+        "comment": "Lumira Schedule"
+      },
+      {
+        "seqNr": 20,
+        "date": "2025-05-26",
+        "time": "08:30",
+        "action": "out",
+        "taskId": 0,
+        "taskName": "(Standard)",
+        "comment": ""
+      },
+      {
+        "seqNr": 38,
+        "date": "2025-05-26",
+        "time": "12:00",
+        "action": "out",
+        "taskId": 0,
+        "taskName": "(Standard)",
+        "comment": ""
+      },
+      {
+        "seqNr": 39,
+        "date": "2025-05-26",
+        "time": "12:30",
+        "action": "in",
+        "taskId": 0,
+        "taskName": "(Standard)",
+        "comment": "Lumira Schedule"
+      },
+      {
+        "seqNr": 81,
+        "date": "2025-05-26",
+        "time": "17:30",
+        "action": "in",
+        "taskId": 0,
+        "taskName": "(Standard)",
+        "comment": "Aufwandsplanung Hexagon"
+      },
+      {
+        "seqNr": 23,
+        "date": "2025-05-26",
+        "time": "17:30",
+        "action": "out",
+        "taskId": 0,
+        "taskName": "(Standard)",
+        "comment": ""
+      },
+      {
+        "seqNr": 83,
+        "date": "2025-05-26",
+        "time": "18:00",
+        "action": "out",
+        "taskId": 0,
+        "taskName": "(Standard)",
+        "comment": ""
+      }
+    ],
+    "note": "",
+    "totalMinutes": 0,
+    "totalFormatted": "0h 00m",
+    "tasks": [
+      "(Standard)"
+    ]
+  },
+  {
+    "date": "2025-05-27",
+    "stamps": [
+      {
+        "seqNr": 56,
+        "date": "2025-05-27",
+        "time": "08:00",
+        "action": "in",
+        "taskId": 0,
+        "taskName": "(Standard)",
+        "comment": "Hotel nach Lumira"
+      },
+      {
+        "seqNr": 51,
+        "date": "2025-05-27",
+        "time": "08:25",
+        "action": "in",
+        "taskId": 0,
+        "taskName": "(Standard)",
+        "comment": "Lumira"
+      },
+      {
+        "seqNr": 54,
+        "date": "2025-05-27",
+        "time": "12:00",
+        "action": "out",
+        "taskId": 0,
+        "taskName": "(Standard)",
+        "comment": ""
+      },
+      {
+        "seqNr": 55,
+        "date": "2025-05-27",
+        "time": "12:30",
+        "action": "in",
+        "taskId": 0,
+        "taskName": "(Standard)",
+        "comment": "Lumira"
+      },
+      {
+        "seqNr": 78,
+        "date": "2025-05-27",
+        "time": "17:30",
+        "action": "in",
+        "taskId": 0,
+        "taskName": "(Standard)",
+        "comment": "Mails checken"
+      },
+      {
+        "seqNr": 53,
+        "date": "2025-05-27",
+        "time": "17:30",
+        "action": "out",
+        "taskId": 0,
+        "taskName": "(Standard)",
+        "comment": ""
+      },
+      {
+        "seqNr": 80,
+        "date": "2025-05-27",
+        "time": "18:00",
+        "action": "out",
+        "taskId": 0,
+        "taskName": "(Standard)",
+        "comment": ""
+      }
+    ],
+    "note": "",
+    "totalMinutes": 215,
+    "totalFormatted": "3h 35m",
+    "tasks": [
+      "(Standard)"
+    ]
+  },
+  {
+    "date": "2025-05-28",
+    "stamps": [
+      {
+        "seqNr": 57,
+        "date": "2025-05-28",
+        "time": "05:50",
+        "action": "in",
+        "taskId": 0,
+        "taskName": "(Standard)",
+        "comment": "Transfer zum Flughafen"
+      },
+      {
+        "seqNr": 61,
+        "date": "2025-05-28",
+        "time": "06:45",
+        "action": "in",
+        "taskId": 0,
+        "taskName": "(Standard)",
+        "comment": "Gepäck und Checkin und Verspätung "
+      },
+      {
+        "seqNr": 60,
+        "date": "2025-05-28",
+        "time": "06:45",
+        "action": "out",
+        "taskId": 0,
+        "taskName": "(Standard)",
+        "comment": ""
+      },
+      {
+        "seqNr": 64,
+        "date": "2025-05-28",
+        "time": "09:00",
+        "action": "in",
+        "taskId": 0,
+        "taskName": "(Standard)",
+        "comment": "Flug"
+      },
+      {
+        "seqNr": 63,
+        "date": "2025-05-28",
+        "time": "09:00",
+        "action": "out",
+        "taskId": 0,
+        "taskName": "(Standard)",
+        "comment": ""
+      },
+      {
+        "seqNr": 69,
+        "date": "2025-05-28",
+        "time": "12:00",
+        "action": "in",
+        "taskId": 0,
+        "taskName": "(Standard)",
+        "comment": "Transfer von Gate E und Warten aufs Gepäck"
+      },
+      {
+        "seqNr": 66,
+        "date": "2025-05-28",
+        "time": "12:00",
+        "action": "out",
+        "taskId": 0,
+        "taskName": "(Standard)",
+        "comment": ""
+      },
+      {
+        "seqNr": 72,
+        "date": "2025-05-28",
+        "time": "13:00",
+        "action": "in",
+        "taskId": 0,
+        "taskName": "(Standard)",
+        "comment": "Transfer nach Hause"
+      },
+      {
+        "seqNr": 71,
+        "date": "2025-05-28",
+        "time": "13:00",
+        "action": "out",
+        "taskId": 0,
+        "taskName": "(Standard)",
+        "comment": ""
+      },
+      {
+        "seqNr": 75,
+        "date": "2025-05-28",
+        "time": "13:40",
+        "action": "in",
+        "taskId": 0,
+        "taskName": "(Standard)",
+        "comment": "1 Work Session inkl Mails checken, SAP checken"
+      },
+      {
+        "seqNr": 74,
+        "date": "2025-05-28",
+        "time": "13:40",
+        "action": "out",
+        "taskId": 0,
+        "taskName": "(Standard)",
+        "comment": ""
+      },
+      {
+        "seqNr": 77,
+        "date": "2025-05-28",
+        "time": "15:00",
+        "action": "out",
+        "taskId": 0,
+        "taskName": "(Standard)",
+        "comment": ""
+      }
+    ],
+    "note": "",
+    "totalMinutes": 0,
+    "totalFormatted": "0h 00m",
+    "tasks": [
+      "(Standard)"
+    ]
+  },
+  {
+    "date": "2025-06-02",
+    "stamps": [
+      {
+        "seqNr": 86,
+        "date": "2025-06-02",
+        "time": "08:25",
+        "action": "in",
+        "taskId": 0,
+        "taskName": "(Standard)",
+        "comment": ""
+      },
+      {
+        "seqNr": 87,
+        "date": "2025-06-02",
+        "time": "12:10",
+        "action": "out",
+        "taskId": 0,
+        "taskName": "(Standard)",
+        "comment": ""
+      },
+      {
+        "seqNr": 88,
+        "date": "2025-06-02",
+        "time": "12:45",
+        "action": "in",
+        "taskId": 0,
+        "taskName": "(Standard)",
+        "comment": ""
+      },
+      {
+        "seqNr": 89,
+        "date": "2025-06-02",
+        "time": "17:35",
+        "action": "out",
+        "taskId": 0,
+        "taskName": "(Standard)",
+        "comment": ""
+      }
+    ],
+    "note": "",
+    "totalMinutes": 515,
+    "totalFormatted": "8h 35m",
+    "tasks": [
+      "(Standard)"
+    ]
+  },
+  {
+    "date": "2025-06-03",
+    "stamps": [
+      {
+        "seqNr": 90,
+        "date": "2025-06-03",
+        "time": "09:30",
+        "action": "in",
+        "taskId": 0,
+        "taskName": "(Standard)",
+        "comment": ""
+      },
+      {
+        "seqNr": 91,
+        "date": "2025-06-03",
+        "time": "12:00",
+        "action": "out",
+        "taskId": 0,
+        "taskName": "(Standard)",
+        "comment": ""
+      },
+      {
+        "seqNr": 92,
+        "date": "2025-06-03",
+        "time": "12:30",
+        "action": "in",
+        "taskId": 0,
+        "taskName": "(Standard)",
+        "comment": ""
+      },
+      {
+        "seqNr": 94,
+        "date": "2025-06-03",
+        "time": "18:10",
+        "action": "out",
+        "taskId": 0,
+        "taskName": "(Standard)",
+        "comment": ""
+      }
+    ],
+    "note": "",
+    "totalMinutes": 490,
+    "totalFormatted": "8h 10m",
+    "tasks": [
+      "(Standard)"
+    ]
+  },
+  {
+    "date": "2025-06-04",
+    "stamps": [
+      {
+        "seqNr": 95,
+        "date": "2025-06-04",
+        "time": "08:21",
+        "action": "in",
+        "taskId": 0,
+        "taskName": "(Standard)",
+        "comment": ""
+      },
+      {
+        "seqNr": 96,
+        "date": "2025-06-04",
+        "time": "19:14",
+        "action": "out",
+        "taskId": 0,
+        "taskName": "(Standard)",
+        "comment": ""
+      }
+    ],
+    "note": "",
+    "totalMinutes": 653,
+    "totalFormatted": "10h 53m",
+    "tasks": [
+      "(Standard)"
+    ]
+  },
+  {
+    "date": "2025-06-05",
+    "stamps": [
+      {
+        "seqNr": 97,
+        "date": "2025-06-05",
+        "time": "08:30",
+        "action": "in",
+        "taskId": 0,
+        "taskName": "(Standard)",
+        "comment": ""
+      },
+      {
+        "seqNr": 103,
+        "date": "2025-06-05",
+        "time": "12:00",
+        "action": "out",
+        "taskId": 0,
+        "taskName": "(Standard)",
+        "comment": ""
+      },
+      {
+        "seqNr": 104,
+        "date": "2025-06-05",
+        "time": "12:30",
+        "action": "in",
+        "taskId": 0,
+        "taskName": "(Standard)",
+        "comment": ""
+      },
+      {
+        "seqNr": 98,
+        "date": "2025-06-05",
+        "time": "17:20",
+        "action": "out",
+        "taskId": 0,
+        "taskName": "(Standard)",
+        "comment": ""
+      }
+    ],
+    "note": "",
+    "totalMinutes": 500,
+    "totalFormatted": "8h 20m",
+    "tasks": [
+      "(Standard)"
+    ]
+  },
+  {
+    "date": "2025-06-06",
+    "stamps": [
+      {
+        "seqNr": 99,
+        "date": "2025-06-06",
+        "time": "08:15",
+        "action": "in",
+        "taskId": 0,
+        "taskName": "(Standard)",
+        "comment": ""
+      },
+      {
+        "seqNr": 101,
+        "date": "2025-06-06",
+        "time": "12:00",
+        "action": "out",
+        "taskId": 0,
+        "taskName": "(Standard)",
+        "comment": ""
+      },
+      {
+        "seqNr": 102,
+        "date": "2025-06-06",
+        "time": "12:30",
+        "action": "in",
+        "taskId": 0,
+        "taskName": "(Standard)",
+        "comment": ""
+      },
+      {
+        "seqNr": 100,
+        "date": "2025-06-06",
+        "time": "17:00",
+        "action": "out",
+        "taskId": 0,
+        "taskName": "(Standard)",
+        "comment": ""
+      }
+    ],
+    "note": "",
+    "totalMinutes": 495,
+    "totalFormatted": "8h 15m",
+    "tasks": [
+      "(Standard)"
+    ]
+  },
+  {
+    "date": "2025-06-10",
+    "stamps": [
+      {
+        "seqNr": 105,
+        "date": "2025-06-10",
+        "time": "08:37",
+        "action": "in",
+        "taskId": 0,
+        "taskName": "(Standard)",
+        "comment": ""
+      }
+    ],
+    "note": "",
+    "totalMinutes": 0,
+    "totalFormatted": "0h 00m",
+    "tasks": [
+      "(Standard)"
+    ]
+  },
+  {
+    "date": "2025-06-11",
+    "stamps": [
+      {
+        "seqNr": 118,
+        "date": "2025-06-11",
+        "time": "08:29",
+        "action": "in",
+        "taskId": 0,
+        "taskName": "(Standard)",
+        "comment": ""
+      },
+      {
+        "seqNr": 120,
+        "date": "2025-06-11",
+        "time": "12:15",
+        "action": "in",
+        "taskId": 0,
+        "taskName": "(Standard)",
+        "comment": ""
+      },
+      {
+        "seqNr": 119,
+        "date": "2025-06-11",
+        "time": "12:15",
+        "action": "out",
+        "taskId": 0,
+        "taskName": "(Standard)",
+        "comment": ""
+      },
+      {
+        "seqNr": 122,
+        "date": "2025-06-11",
+        "time": "17:43",
+        "action": "out",
+        "taskId": 0,
+        "taskName": "(Standard)",
+        "comment": ""
+      }
+    ],
+    "note": "",
+    "totalMinutes": 0,
+    "totalFormatted": "0h 00m",
+    "tasks": [
+      "(Standard)"
+    ]
+  },
+  {
+    "date": "2025-06-12",
+    "stamps": [
+      {
+        "seqNr": 113,
+        "date": "2025-06-12",
+        "time": "07:25",
+        "action": "in",
+        "taskId": 0,
+        "taskName": "(Standard)",
+        "comment": ""
+      },
+      {
+        "seqNr": 114,
+        "date": "2025-06-12",
+        "time": "12:00",
+        "action": "out",
+        "taskId": 0,
+        "taskName": "(Standard)",
+        "comment": ""
+      },
+      {
+        "seqNr": 115,
+        "date": "2025-06-12",
+        "time": "12:30",
+        "action": "in",
+        "taskId": 0,
+        "taskName": "(Standard)",
+        "comment": ""
+      },
+      {
+        "seqNr": 117,
+        "date": "2025-06-12",
+        "time": "17:05",
+        "action": "out",
+        "taskId": 0,
+        "taskName": "(Standard)",
+        "comment": ""
+      }
+    ],
+    "note": "",
+    "totalMinutes": 550,
+    "totalFormatted": "9h 10m",
+    "tasks": [
+      "(Standard)"
+    ]
+  },
+  {
+    "date": "2025-06-13",
+    "stamps": [
+      {
+        "seqNr": 109,
+        "date": "2025-06-13",
+        "time": "08:28",
+        "action": "in",
+        "taskId": 0,
+        "taskName": "(Standard)",
+        "comment": ""
+      },
+      {
+        "seqNr": 110,
+        "date": "2025-06-13",
+        "time": "12:00",
+        "action": "out",
+        "taskId": 0,
+        "taskName": "(Standard)",
+        "comment": ""
+      },
+      {
+        "seqNr": 111,
+        "date": "2025-06-13",
+        "time": "12:30",
+        "action": "in",
+        "taskId": 0,
+        "taskName": "(Standard)",
+        "comment": ""
+      },
+      {
+        "seqNr": 112,
+        "date": "2025-06-13",
+        "time": "16:55",
+        "action": "out",
+        "taskId": 0,
+        "taskName": "(Standard)",
+        "comment": ""
+      }
+    ],
+    "note": "",
+    "totalMinutes": 477,
+    "totalFormatted": "7h 57m",
+    "tasks": [
+      "(Standard)"
+    ]
+  },
+  {
+    "date": "2025-06-16",
+    "stamps": [
+      {
+        "seqNr": 106,
+        "date": "2025-06-16",
+        "time": "08:17",
+        "action": "in",
+        "taskId": 0,
+        "taskName": "(Standard)",
+        "comment": ""
+      },
+      {
+        "seqNr": 107,
+        "date": "2025-06-16",
+        "time": "12:00",
+        "action": "out",
+        "taskId": 0,
+        "taskName": "(Standard)",
+        "comment": ""
+      },
+      {
+        "seqNr": 108,
+        "date": "2025-06-16",
+        "time": "12:30",
+        "action": "in",
+        "taskId": 0,
+        "taskName": "(Standard)",
+        "comment": ""
+      },
+      {
+        "seqNr": 123,
+        "date": "2025-06-16",
+        "time": "17:39",
+        "action": "out",
+        "taskId": 0,
+        "taskName": "(Standard)",
+        "comment": ""
+      }
+    ],
+    "note": "",
+    "totalMinutes": 532,
+    "totalFormatted": "8h 52m",
+    "tasks": [
+      "(Standard)"
+    ]
+  },
+  {
+    "date": "2025-06-17",
+    "stamps": [
+      {
+        "seqNr": 124,
+        "date": "2025-06-17",
+        "time": "09:25",
+        "action": "in",
+        "taskId": 0,
+        "taskName": "(Standard)",
+        "comment": ""
+      },
+      {
+        "seqNr": 127,
+        "date": "2025-06-17",
+        "time": "12:00",
+        "action": "out",
+        "taskId": 0,
+        "taskName": "(Standard)",
+        "comment": ""
+      },
+      {
+        "seqNr": 128,
+        "date": "2025-06-17",
+        "time": "12:30",
+        "action": "in",
+        "taskId": 0,
+        "taskName": "(Standard)",
+        "comment": ""
+      },
+      {
+        "seqNr": 126,
+        "date": "2025-06-17",
+        "time": "17:51",
+        "action": "out",
+        "taskId": 0,
+        "taskName": "(Standard)",
+        "comment": ""
+      }
+    ],
+    "note": "",
+    "totalMinutes": 476,
+    "totalFormatted": "7h 56m",
+    "tasks": [
+      "(Standard)"
+    ]
+  },
+  {
+    "date": "2025-06-18",
+    "stamps": [
+      {
+        "seqNr": 129,
+        "date": "2025-06-18",
+        "time": "09:30",
+        "action": "in",
+        "taskId": 0,
+        "taskName": "(Standard)",
+        "comment": ""
+      }
+    ],
+    "note": "",
+    "totalMinutes": 0,
+    "totalFormatted": "0h 00m",
+    "tasks": [
+      "(Standard)"
+    ]
+  },
+  {
+    "date": "2025-06-23",
+    "stamps": [
+      {
+        "seqNr": 151,
+        "date": "2025-06-23",
+        "time": "08:30",
+        "action": "in",
+        "taskId": 0,
+        "taskName": "(Standard)",
+        "comment": ""
+      },
+      {
+        "seqNr": 153,
+        "date": "2025-06-23",
+        "time": "17:15",
+        "action": "out",
+        "taskId": 0,
+        "taskName": "(Standard)",
+        "comment": ""
+      }
+    ],
+    "note": "",
+    "totalMinutes": 525,
+    "totalFormatted": "8h 45m",
+    "tasks": [
+      "(Standard)"
+    ]
+  },
+  {
+    "date": "2025-06-24",
+    "stamps": [
+      {
+        "seqNr": 148,
+        "date": "2025-06-24",
+        "time": "08:34",
+        "action": "in",
+        "taskId": 0,
+        "taskName": "(Standard)",
+        "comment": ""
+      },
+      {
+        "seqNr": 150,
+        "date": "2025-06-24",
+        "time": "17:15",
+        "action": "out",
+        "taskId": 0,
+        "taskName": "(Standard)",
+        "comment": ""
+      }
+    ],
+    "note": "",
+    "totalMinutes": 521,
+    "totalFormatted": "8h 41m",
+    "tasks": [
+      "(Standard)"
+    ]
+  },
+  {
+    "date": "2025-06-25",
+    "stamps": [
+      {
+        "seqNr": 145,
+        "date": "2025-06-25",
+        "time": "09:38",
+        "action": "in",
+        "taskId": 0,
+        "taskName": "(Standard)",
+        "comment": ""
+      },
+      {
+        "seqNr": 147,
+        "date": "2025-06-25",
+        "time": "20:04",
+        "action": "out",
+        "taskId": 0,
+        "taskName": "(Standard)",
+        "comment": ""
+      }
+    ],
+    "note": "",
+    "totalMinutes": 626,
+    "totalFormatted": "10h 26m",
+    "tasks": [
+      "(Standard)"
+    ]
+  },
+  {
+    "date": "2025-06-26",
+    "stamps": [
+      {
+        "seqNr": 135,
+        "date": "2025-06-26",
+        "time": "08:40",
+        "action": "in",
+        "taskId": 0,
+        "taskName": "(Standard)",
+        "comment": ""
+      },
+      {
+        "seqNr": 138,
+        "date": "2025-06-26",
+        "time": "12:00",
+        "action": "out",
+        "taskId": 0,
+        "taskName": "(Standard)",
+        "comment": ""
+      },
+      {
+        "seqNr": 139,
+        "date": "2025-06-26",
+        "time": "12:30",
+        "action": "in",
+        "taskId": 0,
+        "taskName": "(Standard)",
+        "comment": ""
+      },
+      {
+        "seqNr": 137,
+        "date": "2025-06-26",
+        "time": "17:27",
+        "action": "out",
+        "taskId": 0,
+        "taskName": "(Standard)",
+        "comment": ""
+      }
+    ],
+    "note": "",
+    "totalMinutes": 497,
+    "totalFormatted": "8h 17m",
+    "tasks": [
+      "(Standard)"
+    ]
+  },
+  {
+    "date": "2025-06-27",
+    "stamps": [
+      {
+        "seqNr": 140,
+        "date": "2025-06-27",
+        "time": "08:28",
+        "action": "in",
+        "taskId": 0,
+        "taskName": "(Standard)",
+        "comment": ""
+      },
+      {
+        "seqNr": 143,
+        "date": "2025-06-27",
+        "time": "12:00",
+        "action": "out",
+        "taskId": 0,
+        "taskName": "(Standard)",
+        "comment": ""
+      },
+      {
+        "seqNr": 144,
+        "date": "2025-06-27",
+        "time": "12:30",
+        "action": "in",
+        "taskId": 0,
+        "taskName": "(Standard)",
+        "comment": ""
+      },
+      {
+        "seqNr": 142,
+        "date": "2025-06-27",
+        "time": "16:51",
+        "action": "out",
+        "taskId": 0,
+        "taskName": "(Standard)",
+        "comment": ""
+      }
+    ],
+    "note": "",
+    "totalMinutes": 473,
+    "totalFormatted": "7h 53m",
+    "tasks": [
+      "(Standard)"
+    ]
+  },
+  {
+    "date": "2025-06-30",
+    "stamps": [
+      {
+        "seqNr": 131,
+        "date": "2025-06-30",
+        "time": "08:28",
+        "action": "in",
+        "taskId": 0,
+        "taskName": "(Standard)",
+        "comment": ""
+      },
+      {
+        "seqNr": 133,
+        "date": "2025-06-30",
+        "time": "12:00",
+        "action": "out",
+        "taskId": 0,
+        "taskName": "(Standard)",
+        "comment": ""
+      },
+      {
+        "seqNr": 134,
+        "date": "2025-06-30",
+        "time": "12:30",
+        "action": "in",
+        "taskId": 0,
+        "taskName": "(Standard)",
+        "comment": ""
+      },
+      {
+        "seqNr": 132,
+        "date": "2025-06-30",
+        "time": "17:38",
+        "action": "out",
+        "taskId": 0,
+        "taskName": "(Standard)",
+        "comment": ""
+      }
+    ],
+    "note": "",
+    "totalMinutes": 520,
+    "totalFormatted": "8h 40m",
+    "tasks": [
+      "(Standard)"
+    ]
+  },
+  {
+    "date": "2025-07-01",
+    "stamps": [
+      {
+        "seqNr": 154,
+        "date": "2025-07-01",
+        "time": "09:03",
+        "action": "in",
+        "taskId": 0,
+        "taskName": "(Standard)",
+        "comment": ""
+      },
+      {
+        "seqNr": 156,
+        "date": "2025-07-01",
+        "time": "11:02",
+        "action": "out",
+        "taskId": 0,
+        "taskName": "(Standard)",
+        "comment": ""
+      },
+      {
+        "seqNr": 157,
+        "date": "2025-07-01",
+        "time": "12:19",
+        "action": "in",
+        "taskId": 0,
+        "taskName": "(Standard)",
+        "comment": ""
+      },
+      {
+        "seqNr": 159,
+        "date": "2025-07-01",
+        "time": "17:09",
+        "action": "out",
+        "taskId": 0,
+        "taskName": "(Standard)",
+        "comment": ""
+      }
+    ],
+    "note": "",
+    "totalMinutes": 409,
+    "totalFormatted": "6h 49m",
+    "tasks": [
+      "(Standard)"
+    ]
+  },
+  {
+    "date": "2025-07-02",
+    "stamps": [
+      {
+        "seqNr": 130,
+        "date": "2025-07-02",
+        "time": "08:43",
+        "action": "in",
+        "taskId": 0,
+        "taskName": "(Standard)",
+        "comment": ""
+      },
+      {
+        "seqNr": 161,
+        "date": "2025-07-02",
+        "time": "18:15",
+        "action": "out",
+        "taskId": 0,
+        "taskName": "(Standard)",
+        "comment": ""
+      }
+    ],
+    "note": "",
+    "totalMinutes": 572,
+    "totalFormatted": "9h 32m",
+    "tasks": [
+      "(Standard)"
+    ]
+  },
+  {
+    "date": "2025-07-03",
+    "stamps": [
+      {
+        "seqNr": 162,
+        "date": "2025-07-03",
+        "time": "08:33",
+        "action": "in",
+        "taskId": 0,
+        "taskName": "(Standard)",
+        "comment": ""
+      },
+      {
+        "seqNr": 163,
+        "date": "2025-07-03",
+        "time": "11:35",
+        "action": "out",
+        "taskId": 0,
+        "taskName": "(Standard)",
+        "comment": ""
+      },
+      {
+        "seqNr": 164,
+        "date": "2025-07-03",
+        "time": "12:45",
+        "action": "in",
+        "taskId": 0,
+        "taskName": "(Standard)",
+        "comment": ""
+      },
+      {
+        "seqNr": 165,
+        "date": "2025-07-03",
+        "time": "19:40",
+        "action": "out",
+        "taskId": 0,
+        "taskName": "(Standard)",
+        "comment": ""
+      }
+    ],
+    "note": "",
+    "totalMinutes": 597,
+    "totalFormatted": "9h 57m",
+    "tasks": [
+      "(Standard)"
+    ]
+  },
+  {
+    "date": "2025-07-07",
+    "stamps": [
+      {
+        "seqNr": 186,
+        "date": "2025-07-07",
+        "time": "08:45",
+        "action": "in",
+        "taskId": 0,
+        "taskName": "(Standard)",
+        "comment": ""
+      },
+      {
+        "seqNr": 189,
+        "date": "2025-07-07",
+        "time": "12:00",
+        "action": "out",
+        "taskId": 0,
+        "taskName": "(Standard)",
+        "comment": ""
+      },
+      {
+        "seqNr": 190,
+        "date": "2025-07-07",
+        "time": "12:30",
+        "action": "in",
+        "taskId": 0,
+        "taskName": "(Standard)",
+        "comment": ""
+      },
+      {
+        "seqNr": 188,
+        "date": "2025-07-07",
+        "time": "17:09",
+        "action": "out",
+        "taskId": 0,
+        "taskName": "(Standard)",
+        "comment": ""
+      }
+    ],
+    "note": "",
+    "totalMinutes": 474,
+    "totalFormatted": "7h 54m",
+    "tasks": [
+      "(Standard)"
+    ]
+  },
+  {
+    "date": "2025-07-08",
+    "stamps": [
+      {
+        "seqNr": 172,
+        "date": "2025-07-08",
+        "time": "08:46",
+        "action": "in",
+        "taskId": 0,
+        "taskName": "(Standard)",
+        "comment": ""
+      },
+      {
+        "seqNr": 174,
+        "date": "2025-07-08",
+        "time": "13:18",
+        "action": "out",
+        "taskId": 0,
+        "taskName": "(Standard)",
+        "comment": ""
+      },
+      {
+        "seqNr": 175,
+        "date": "2025-07-08",
+        "time": "14:06",
+        "action": "in",
+        "taskId": 0,
+        "taskName": "(Standard)",
+        "comment": ""
+      },
+      {
+        "seqNr": 177,
+        "date": "2025-07-08",
+        "time": "18:10",
+        "action": "out",
+        "taskId": 0,
+        "taskName": "(Standard)",
+        "comment": ""
+      }
+    ],
+    "note": "",
+    "totalMinutes": 516,
+    "totalFormatted": "8h 36m",
+    "tasks": [
+      "(Standard)"
+    ]
+  },
+  {
+    "date": "2025-07-09",
+    "stamps": [
+      {
+        "seqNr": 166,
+        "date": "2025-07-09",
+        "time": "08:00",
+        "action": "in",
+        "taskId": 0,
+        "taskName": "(Standard)",
+        "comment": ""
+      },
+      {
+        "seqNr": 178,
+        "date": "2025-07-09",
+        "time": "12:00",
+        "action": "out",
+        "taskId": 0,
+        "taskName": "(Standard)",
+        "comment": ""
+      },
+      {
+        "seqNr": 179,
+        "date": "2025-07-09",
+        "time": "12:30",
+        "action": "in",
+        "taskId": 0,
+        "taskName": "(Standard)",
+        "comment": ""
+      },
+      {
+        "seqNr": 180,
+        "date": "2025-07-09",
+        "time": "19:52",
+        "action": "out",
+        "taskId": 0,
+        "taskName": "(Standard)",
+        "comment": ""
+      }
+    ],
+    "note": "",
+    "totalMinutes": 682,
+    "totalFormatted": "11h 22m",
+    "tasks": [
+      "(Standard)"
+    ]
+  },
+  {
+    "date": "2025-07-10",
+    "stamps": [
+      {
+        "seqNr": 181,
+        "date": "2025-07-10",
+        "time": "07:58",
+        "action": "in",
+        "taskId": 0,
+        "taskName": "(Standard)",
+        "comment": ""
+      },
+      {
+        "seqNr": 204,
+        "date": "2025-07-10",
+        "time": "12:51",
+        "action": "out",
+        "taskId": 0,
+        "taskName": "(Standard)",
+        "comment": ""
+      },
+      {
+        "seqNr": 205,
+        "date": "2025-07-10",
+        "time": "13:30",
+        "action": "in",
+        "taskId": 0,
+        "taskName": "(Standard)",
+        "comment": ""
+      },
+      {
+        "seqNr": 207,
+        "date": "2025-07-10",
+        "time": "17:25",
+        "action": "out",
+        "taskId": 0,
+        "taskName": "(Standard)",
+        "comment": ""
+      }
+    ],
+    "note": "",
+    "totalMinutes": 528,
+    "totalFormatted": "8h 48m",
+    "tasks": [
+      "(Standard)"
+    ]
+  },
+  {
+    "date": "2025-07-11",
+    "stamps": [
+      {
+        "seqNr": 183,
+        "date": "2025-07-11",
+        "time": "07:57",
+        "action": "in",
+        "taskId": 0,
+        "taskName": "(Standard)",
+        "comment": ""
+      },
+      {
+        "seqNr": 200,
+        "date": "2025-07-11",
+        "time": "11:58",
+        "action": "out",
+        "taskId": 0,
+        "taskName": "(Standard)",
+        "comment": ""
+      },
+      {
+        "seqNr": 208,
+        "date": "2025-07-11",
+        "time": "12:32",
+        "action": "in",
+        "taskId": 0,
+        "taskName": "(Standard)",
+        "comment": ""
+      },
+      {
+        "seqNr": 210,
+        "date": "2025-07-11",
+        "time": "16:50",
+        "action": "out",
+        "taskId": 0,
+        "taskName": "(Standard)",
+        "comment": ""
+      }
+    ],
+    "note": "",
+    "totalMinutes": 499,
+    "totalFormatted": "8h 19m",
+    "tasks": [
+      "(Standard)"
+    ]
+  },
+  {
+    "date": "2025-07-14",
+    "stamps": [
+      {
+        "seqNr": 194,
+        "date": "2025-07-14",
+        "time": "08:35",
+        "action": "in",
+        "taskId": 0,
+        "taskName": "(Standard)",
+        "comment": ""
+      },
+      {
+        "seqNr": 197,
+        "date": "2025-07-14",
+        "time": "12:00",
+        "action": "out",
+        "taskId": 0,
+        "taskName": "(Standard)",
+        "comment": ""
+      },
+      {
+        "seqNr": 198,
+        "date": "2025-07-14",
+        "time": "12:30",
+        "action": "in",
+        "taskId": 0,
+        "taskName": "(Standard)",
+        "comment": ""
+      },
+      {
+        "seqNr": 196,
+        "date": "2025-07-14",
+        "time": "17:20",
+        "action": "out",
+        "taskId": 0,
+        "taskName": "(Standard)",
+        "comment": ""
+      }
+    ],
+    "note": "",
+    "totalMinutes": 495,
+    "totalFormatted": "8h 15m",
+    "tasks": [
+      "(Standard)"
+    ]
+  },
+  {
+    "date": "2025-07-15",
+    "stamps": [
+      {
+        "seqNr": 191,
+        "date": "2025-07-15",
+        "time": "08:47",
+        "action": "in",
+        "taskId": 0,
+        "taskName": "(Standard)",
+        "comment": ""
+      },
+      {
+        "seqNr": 192,
+        "date": "2025-07-15",
+        "time": "12:00",
+        "action": "out",
+        "taskId": 0,
+        "taskName": "(Standard)",
+        "comment": ""
+      },
+      {
+        "seqNr": 193,
+        "date": "2025-07-15",
+        "time": "12:30",
+        "action": "in",
+        "taskId": 0,
+        "taskName": "(Standard)",
+        "comment": ""
+      },
+      {
+        "seqNr": 211,
+        "date": "2025-07-15",
+        "time": "18:00",
+        "action": "out",
+        "taskId": 0,
+        "taskName": "(Standard)",
+        "comment": ""
+      }
+    ],
+    "note": "",
+    "totalMinutes": 523,
+    "totalFormatted": "8h 43m",
+    "tasks": [
+      "(Standard)"
+    ]
+  },
+  {
+    "date": "2025-07-16",
+    "stamps": [
+      {
+        "seqNr": 212,
+        "date": "2025-07-16",
+        "time": "08:57",
+        "action": "in",
+        "taskId": 0,
+        "taskName": "(Standard)",
+        "comment": ""
+      },
+      {
+        "seqNr": 218,
+        "date": "2025-07-16",
+        "time": "15:24",
+        "action": "out",
+        "taskId": 0,
+        "taskName": "(Standard)",
+        "comment": ""
+      },
+      {
+        "seqNr": 219,
+        "date": "2025-07-16",
+        "time": "16:00",
+        "action": "in",
+        "taskId": 0,
+        "taskName": "(Standard)",
+        "comment": ""
+      },
+      {
+        "seqNr": 223,
+        "date": "2025-07-16",
+        "time": "18:00",
+        "action": "out",
+        "taskId": 0,
+        "taskName": "(Standard)",
+        "comment": ""
+      }
+    ],
+    "note": "",
+    "totalMinutes": 507,
+    "totalFormatted": "8h 27m",
+    "tasks": [
+      "(Standard)"
+    ]
+  },
+  {
+    "date": "2025-07-17",
+    "stamps": [
+      {
+        "seqNr": 221,
+        "date": "2025-07-17",
+        "time": "08:22",
+        "action": "in",
+        "taskId": 0,
+        "taskName": "(Standard)",
+        "comment": ""
+      },
+      {
+        "seqNr": 228,
+        "date": "2025-07-17",
+        "time": "12:01",
+        "action": "out",
+        "taskId": 0,
+        "taskName": "(Standard)",
+        "comment": ""
+      },
+      {
+        "seqNr": 229,
+        "date": "2025-07-17",
+        "time": "13:00",
+        "action": "in",
+        "taskId": 0,
+        "taskName": "(Standard)",
+        "comment": ""
+      },
+      {
+        "seqNr": 231,
+        "date": "2025-07-17",
+        "time": "17:35",
+        "action": "out",
+        "taskId": 0,
+        "taskName": "(Standard)",
+        "comment": ""
+      }
+    ],
+    "note": "",
+    "totalMinutes": 494,
+    "totalFormatted": "8h 14m",
+    "tasks": [
+      "(Standard)"
+    ]
+  },
+  {
+    "date": "2025-07-18",
+    "stamps": [
+      {
+        "seqNr": 224,
+        "date": "2025-07-18",
+        "time": "08:30",
+        "action": "in",
+        "taskId": 0,
+        "taskName": "(Standard)",
+        "comment": ""
+      },
+      {
+        "seqNr": 225,
+        "date": "2025-07-18",
+        "time": "11:40",
+        "action": "out",
+        "taskId": 0,
+        "taskName": "(Standard)",
+        "comment": ""
+      },
+      {
+        "seqNr": 226,
+        "date": "2025-07-18",
+        "time": "12:23",
+        "action": "in",
+        "taskId": 0,
+        "taskName": "(Standard)",
+        "comment": ""
+      },
+      {
+        "seqNr": 233,
+        "date": "2025-07-18",
+        "time": "16:52",
+        "action": "out",
+        "taskId": 0,
+        "taskName": "(Standard)",
+        "comment": ""
+      }
+    ],
+    "note": "",
+    "totalMinutes": 459,
+    "totalFormatted": "7h 39m",
+    "tasks": [
+      "(Standard)"
+    ]
+  },
+  {
+    "date": "2025-07-21",
+    "stamps": [
+      {
+        "seqNr": 237,
+        "date": "2025-07-21",
+        "time": "08:40",
+        "action": "in",
+        "taskId": 0,
+        "taskName": "(Standard)",
+        "comment": ""
+      },
+      {
+        "seqNr": 239,
+        "date": "2025-07-21",
+        "time": "12:41",
+        "action": "out",
+        "taskId": 0,
+        "taskName": "(Standard)",
+        "comment": ""
+      },
+      {
+        "seqNr": 240,
+        "date": "2025-07-21",
+        "time": "13:31",
+        "action": "in",
+        "taskId": 0,
+        "taskName": "(Standard)",
+        "comment": ""
+      },
+      {
+        "seqNr": 242,
+        "date": "2025-07-21",
+        "time": "17:35",
+        "action": "out",
+        "taskId": 0,
+        "taskName": "(Standard)",
+        "comment": ""
+      }
+    ],
+    "note": "",
+    "totalMinutes": 485,
+    "totalFormatted": "8h 05m",
+    "tasks": [
+      "(Standard)"
+    ]
+  },
+  {
+    "date": "2025-07-22",
+    "stamps": [
+      {
+        "seqNr": 234,
+        "date": "2025-07-22",
+        "time": "08:53",
+        "action": "in",
+        "taskId": 0,
+        "taskName": "(Standard)",
+        "comment": ""
+      },
+      {
+        "seqNr": 235,
+        "date": "2025-07-22",
+        "time": "12:00",
+        "action": "out",
+        "taskId": 0,
+        "taskName": "(Standard)",
+        "comment": ""
+      },
+      {
+        "seqNr": 236,
+        "date": "2025-07-22",
+        "time": "12:30",
+        "action": "in",
+        "taskId": 0,
+        "taskName": "(Standard)",
+        "comment": ""
+      },
+      {
+        "seqNr": 243,
+        "date": "2025-07-22",
+        "time": "19:45",
+        "action": "out",
+        "taskId": 0,
+        "taskName": "(Standard)",
+        "comment": ""
+      }
+    ],
+    "note": "",
+    "totalMinutes": 622,
+    "totalFormatted": "10h 22m",
+    "tasks": [
+      "(Standard)"
+    ]
+  },
+  {
+    "date": "2025-07-23",
+    "stamps": [
+      {
+        "seqNr": 247,
+        "date": "2025-07-23",
+        "time": "07:54",
+        "action": "in",
+        "taskId": 0,
+        "taskName": "(Standard)",
+        "comment": ""
+      },
+      {
+        "seqNr": 249,
+        "date": "2025-07-23",
+        "time": "12:12",
+        "action": "out",
+        "taskId": 0,
+        "taskName": "(Standard)",
+        "comment": ""
+      },
+      {
+        "seqNr": 250,
+        "date": "2025-07-23",
+        "time": "12:58",
+        "action": "in",
+        "taskId": 0,
+        "taskName": "(Standard)",
+        "comment": ""
+      },
+      {
+        "seqNr": 252,
+        "date": "2025-07-23",
+        "time": "18:09",
+        "action": "out",
+        "taskId": 0,
+        "taskName": "(Standard)",
+        "comment": ""
+      }
+    ],
+    "note": "",
+    "totalMinutes": 569,
+    "totalFormatted": "9h 29m",
+    "tasks": [
+      "(Standard)"
+    ]
+  },
+  {
+    "date": "2025-07-24",
+    "stamps": [
+      {
+        "seqNr": 253,
+        "date": "2025-07-24",
+        "time": "09:05",
+        "action": "in",
+        "taskId": 0,
+        "taskName": "(Standard)",
+        "comment": ""
+      },
+      {
+        "seqNr": 255,
+        "date": "2025-07-24",
+        "time": "12:04",
+        "action": "out",
+        "taskId": 0,
+        "taskName": "(Standard)",
+        "comment": ""
+      },
+      {
+        "seqNr": 256,
+        "date": "2025-07-24",
+        "time": "12:50",
+        "action": "in",
+        "taskId": 0,
+        "taskName": "(Standard)",
+        "comment": ""
+      },
+      {
+        "seqNr": 257,
+        "date": "2025-07-24",
+        "time": "17:59",
+        "action": "out",
+        "taskId": 0,
+        "taskName": "(Standard)",
+        "comment": ""
+      }
+    ],
+    "note": "",
+    "totalMinutes": 488,
+    "totalFormatted": "8h 08m",
+    "tasks": [
+      "(Standard)"
+    ]
+  },
+  {
+    "date": "2025-07-25",
+    "stamps": [
+      {
+        "seqNr": 264,
+        "date": "2025-07-25",
+        "time": "08:02",
+        "action": "in",
+        "taskId": 0,
+        "taskName": "(Standard)",
+        "comment": "Eintrag noch ausstehend"
+      },
+      {
+        "seqNr": 267,
+        "date": "2025-07-25",
+        "time": "12:00",
+        "action": "out",
+        "taskId": 0,
+        "taskName": "(Standard)",
+        "comment": ""
+      },
+      {
+        "seqNr": 268,
+        "date": "2025-07-25",
+        "time": "12:30",
+        "action": "in",
+        "taskId": 0,
+        "taskName": "(Standard)",
+        "comment": "Zeitstempelung über altes Tool eingetragen am 24.08."
+      },
+      {
+        "seqNr": 266,
+        "date": "2025-07-25",
+        "time": "16:30",
+        "action": "out",
+        "taskId": 0,
+        "taskName": "(Standard)",
+        "comment": ""
+      }
+    ],
+    "note": "",
+    "totalMinutes": 478,
+    "totalFormatted": "7h 58m",
+    "tasks": [
+      "(Standard)"
+    ]
+  },
+  {
+    "date": "2025-07-28",
+    "stamps": [
+      {
+        "seqNr": 258,
+        "date": "2025-07-28",
+        "time": "08:50",
+        "action": "in",
+        "taskId": 0,
+        "taskName": "(Standard)",
+        "comment": ""
+      },
+      {
+        "seqNr": 259,
+        "date": "2025-07-28",
+        "time": "12:00",
+        "action": "out",
+        "taskId": 0,
+        "taskName": "(Standard)",
+        "comment": ""
+      },
+      {
+        "seqNr": 260,
+        "date": "2025-07-28",
+        "time": "12:30",
+        "action": "in",
+        "taskId": 0,
+        "taskName": "(Standard)",
+        "comment": ""
+      },
+      {
+        "seqNr": 262,
+        "date": "2025-07-28",
+        "time": "18:20",
+        "action": "out",
+        "taskId": 0,
+        "taskName": "(Standard)",
+        "comment": ""
+      }
+    ],
+    "note": "",
+    "totalMinutes": 540,
+    "totalFormatted": "9h 00m",
+    "tasks": [
+      "(Standard)"
+    ]
+  },
+  {
+    "date": "2025-07-29",
+    "stamps": [
+      {
+        "seqNr": 263,
+        "date": "2025-07-29",
+        "time": "08:36",
+        "action": "in",
+        "taskId": 0,
+        "taskName": "(Standard)",
+        "comment": ""
+      },
+      {
+        "seqNr": 269,
+        "date": "2025-07-29",
+        "time": "12:00",
+        "action": "out",
+        "taskId": 0,
+        "taskName": "(Standard)",
+        "comment": ""
+      },
+      {
+        "seqNr": 270,
+        "date": "2025-07-29",
+        "time": "12:30",
+        "action": "in",
+        "taskId": 0,
+        "taskName": "(Standard)",
+        "comment": ""
+      },
+      {
+        "seqNr": 271,
+        "date": "2025-07-29",
+        "time": "17:45",
+        "action": "out",
+        "taskId": 0,
+        "taskName": "(Standard)",
+        "comment": ""
+      }
+    ],
+    "note": "",
+    "totalMinutes": 519,
+    "totalFormatted": "8h 39m",
+    "tasks": [
+      "(Standard)"
+    ]
+  },
+  {
+    "date": "2025-07-30",
+    "stamps": [
+      {
+        "seqNr": 272,
+        "date": "2025-07-30",
+        "time": "07:39",
+        "action": "in",
+        "taskId": 0,
+        "taskName": "(Standard)",
+        "comment": ""
+      },
+      {
+        "seqNr": 273,
+        "date": "2025-07-30",
+        "time": "12:00",
+        "action": "out",
+        "taskId": 0,
+        "taskName": "(Standard)",
+        "comment": ""
+      },
+      {
+        "seqNr": 274,
+        "date": "2025-07-30",
+        "time": "12:30",
+        "action": "in",
+        "taskId": 0,
+        "taskName": "(Standard)",
+        "comment": ""
+      },
+      {
+        "seqNr": 275,
+        "date": "2025-07-30",
+        "time": "17:31",
+        "action": "out",
+        "taskId": 0,
+        "taskName": "(Standard)",
+        "comment": ""
+      }
+    ],
+    "note": "",
+    "totalMinutes": 562,
+    "totalFormatted": "9h 22m",
+    "tasks": [
+      "(Standard)"
+    ]
+  },
+  {
+    "date": "2025-08-04",
+    "stamps": [
+      {
+        "seqNr": 284,
+        "date": "2025-08-04",
+        "time": "08:09",
+        "action": "in",
+        "taskId": 0,
+        "taskName": "(Standard)",
+        "comment": ""
+      },
+      {
+        "seqNr": 287,
+        "date": "2025-08-04",
+        "time": "12:00",
+        "action": "out",
+        "taskId": 0,
+        "taskName": "(Standard)",
+        "comment": ""
+      },
+      {
+        "seqNr": 288,
+        "date": "2025-08-04",
+        "time": "12:30",
+        "action": "in",
+        "taskId": 0,
+        "taskName": "(Standard)",
+        "comment": ""
+      },
+      {
+        "seqNr": 286,
+        "date": "2025-08-04",
+        "time": "17:16",
+        "action": "out",
+        "taskId": 0,
+        "taskName": "(Standard)",
+        "comment": ""
+      }
+    ],
+    "note": "",
+    "totalMinutes": 517,
+    "totalFormatted": "8h 37m",
+    "tasks": [
+      "(Standard)"
+    ]
+  },
+  {
+    "date": "2025-08-05",
+    "stamps": [
+      {
+        "seqNr": 276,
+        "date": "2025-08-05",
+        "time": "08:51",
+        "action": "in",
+        "taskId": 0,
+        "taskName": "(Standard)",
+        "comment": ""
+      },
+      {
+        "seqNr": 280,
+        "date": "2025-08-05",
+        "time": "13:20",
+        "action": "out",
+        "taskId": 0,
+        "taskName": "(Standard)",
+        "comment": ""
+      },
+      {
+        "seqNr": 281,
+        "date": "2025-08-05",
+        "time": "14:00",
+        "action": "in",
+        "taskId": 0,
+        "taskName": "(Standard)",
+        "comment": ""
+      },
+      {
+        "seqNr": 282,
+        "date": "2025-08-05",
+        "time": "18:19",
+        "action": "out",
+        "taskId": 0,
+        "taskName": "(Standard)",
+        "comment": ""
+      }
+    ],
+    "note": "",
+    "totalMinutes": 528,
+    "totalFormatted": "8h 48m",
+    "tasks": [
+      "(Standard)"
+    ]
+  },
+  {
+    "date": "2025-08-06",
+    "stamps": [
+      {
+        "seqNr": 292,
+        "date": "2025-08-06",
+        "time": "08:45",
+        "action": "in",
+        "taskId": 0,
+        "taskName": "(Standard)",
+        "comment": ""
+      },
+      {
+        "seqNr": 294,
+        "date": "2025-08-06",
+        "time": "12:00",
+        "action": "out",
+        "taskId": 0,
+        "taskName": "(Standard)",
+        "comment": ""
+      },
+      {
+        "seqNr": 289,
+        "date": "2025-08-06",
+        "time": "12:45",
+        "action": "in",
+        "taskId": 0,
+        "taskName": "(Standard)",
+        "comment": ""
+      },
+      {
+        "seqNr": 291,
+        "date": "2025-08-06",
+        "time": "18:11",
+        "action": "out",
+        "taskId": 0,
+        "taskName": "(Standard)",
+        "comment": ""
+      }
+    ],
+    "note": "",
+    "totalMinutes": 521,
+    "totalFormatted": "8h 41m",
+    "tasks": [
+      "(Standard)"
+    ]
+  },
+  {
+    "date": "2025-08-07",
+    "stamps": [
+      {
+        "seqNr": 283,
+        "date": "2025-08-07",
+        "time": "08:00",
+        "action": "in",
+        "taskId": 0,
+        "taskName": "(Standard)",
+        "comment": ""
+      },
+      {
+        "seqNr": 297,
+        "date": "2025-08-07",
+        "time": "16:52",
+        "action": "out",
+        "taskId": 0,
+        "taskName": "(Standard)",
+        "comment": ""
+      }
+    ],
+    "note": "",
+    "totalMinutes": 532,
+    "totalFormatted": "8h 52m",
+    "tasks": [
+      "(Standard)"
+    ]
+  },
+  {
+    "date": "2025-08-08",
+    "stamps": [
+      {
+        "seqNr": 298,
+        "date": "2025-08-08",
+        "time": "08:15",
+        "action": "in",
+        "taskId": 0,
+        "taskName": "(Standard)",
+        "comment": ""
+      },
+      {
+        "seqNr": 300,
+        "date": "2025-08-08",
+        "time": "16:45",
+        "action": "out",
+        "taskId": 0,
+        "taskName": "(Standard)",
+        "comment": ""
+      }
+    ],
+    "note": "",
+    "totalMinutes": 510,
+    "totalFormatted": "8h 30m",
+    "tasks": [
+      "(Standard)"
+    ]
+  },
+  {
+    "date": "2025-08-18",
+    "stamps": [
+      {
+        "seqNr": 295,
+        "date": "2025-08-18",
+        "time": "08:15",
+        "action": "in",
+        "taskId": 0,
+        "taskName": "(Standard)",
+        "comment": ""
+      },
+      {
+        "seqNr": 302,
+        "date": "2025-08-18",
+        "time": "17:30",
+        "action": "out",
+        "taskId": 0,
+        "taskName": "(Standard)",
+        "comment": ""
+      }
+    ],
+    "note": "",
+    "totalMinutes": 555,
+    "totalFormatted": "9h 15m",
+    "tasks": [
+      "(Standard)"
+    ]
+  },
+  {
+    "date": "2025-08-19",
+    "stamps": [
+      {
+        "seqNr": 303,
+        "date": "2025-08-19",
+        "time": "09:15",
+        "action": "in",
+        "taskId": 0,
+        "taskName": "(Standard)",
+        "comment": ""
+      }
+    ],
+    "note": "",
+    "totalMinutes": 0,
+    "totalFormatted": "0h 00m",
+    "tasks": [
+      "(Standard)"
+    ]
+  },
+  {
+    "date": "2025-08-20",
+    "stamps": [
+      {
+        "seqNr": 304,
+        "date": "2025-08-20",
+        "time": "08:23",
+        "action": "in",
+        "taskId": 0,
+        "taskName": "(Standard)",
+        "comment": "Eingetragen"
+      },
+      {
+        "seqNr": 307,
+        "date": "2025-08-20",
+        "time": "12:00",
+        "action": "out",
+        "taskId": 0,
+        "taskName": "(Standard)",
+        "comment": ""
+      },
+      {
+        "seqNr": 308,
+        "date": "2025-08-20",
+        "time": "12:30",
+        "action": "in",
+        "taskId": 0,
+        "taskName": "(Standard)",
+        "comment": "Eingetragen"
+      },
+      {
+        "seqNr": 306,
+        "date": "2025-08-20",
+        "time": "18:05",
+        "action": "out",
+        "taskId": 0,
+        "taskName": "(Standard)",
+        "comment": ""
+      }
+    ],
+    "note": "",
+    "totalMinutes": 552,
+    "totalFormatted": "9h 12m",
+    "tasks": [
+      "(Standard)"
+    ]
+  },
+  {
+    "date": "2025-08-21",
+    "stamps": [
+      {
+        "seqNr": 309,
+        "date": "2025-08-21",
+        "time": "08:55",
+        "action": "in",
+        "taskId": 0,
+        "taskName": "(Standard)",
+        "comment": "Eingetragen"
+      },
+      {
+        "seqNr": 312,
+        "date": "2025-08-21",
+        "time": "12:00",
+        "action": "out",
+        "taskId": 0,
+        "taskName": "(Standard)",
+        "comment": ""
+      },
+      {
+        "seqNr": 313,
+        "date": "2025-08-21",
+        "time": "12:30",
+        "action": "in",
+        "taskId": 0,
+        "taskName": "(Standard)",
+        "comment": "Eingetragen"
+      },
+      {
+        "seqNr": 311,
+        "date": "2025-08-21",
+        "time": "17:39",
+        "action": "out",
+        "taskId": 0,
+        "taskName": "(Standard)",
+        "comment": ""
+      }
+    ],
+    "note": "",
+    "totalMinutes": 494,
+    "totalFormatted": "8h 14m",
+    "tasks": [
+      "(Standard)"
+    ]
+  },
+  {
+    "date": "2025-08-22",
+    "stamps": [
+      {
+        "seqNr": 314,
+        "date": "2025-08-22",
+        "time": "08:20",
+        "action": "in",
+        "taskId": 0,
+        "taskName": "(Standard)",
+        "comment": "Noch nicht eingetragen "
+      },
+      {
+        "seqNr": 317,
+        "date": "2025-08-22",
+        "time": "12:00",
+        "action": "out",
+        "taskId": 0,
+        "taskName": "(Standard)",
+        "comment": ""
+      },
+      {
+        "seqNr": 318,
+        "date": "2025-08-22",
+        "time": "12:30",
+        "action": "in",
+        "taskId": 0,
+        "taskName": "(Standard)",
+        "comment": "Noch nicht eingetragen "
+      },
+      {
+        "seqNr": 316,
+        "date": "2025-08-22",
+        "time": "16:37",
+        "action": "out",
+        "taskId": 0,
+        "taskName": "(Standard)",
+        "comment": ""
+      }
+    ],
+    "note": "",
+    "totalMinutes": 467,
+    "totalFormatted": "7h 47m",
+    "tasks": [
+      "(Standard)"
+    ]
+  },
+  {
+    "date": "2025-08-26",
+    "stamps": [
+      {
+        "seqNr": 321,
+        "date": "2025-08-26",
+        "time": "09:00",
+        "action": "in",
+        "taskId": 0,
+        "taskName": "(Standard)",
+        "comment": ""
+      },
+      {
+        "seqNr": 323,
+        "date": "2025-08-26",
+        "time": "12:00",
+        "action": "out",
+        "taskId": 0,
+        "taskName": "(Standard)",
+        "comment": ""
+      },
+      {
+        "seqNr": 324,
+        "date": "2025-08-26",
+        "time": "12:30",
+        "action": "in",
+        "taskId": 0,
+        "taskName": "(Standard)",
+        "comment": ""
+      },
+      {
+        "seqNr": 322,
+        "date": "2025-08-26",
+        "time": "20:00",
+        "action": "out",
+        "taskId": 0,
+        "taskName": "(Standard)",
+        "comment": ""
+      }
+    ],
+    "note": "",
+    "totalMinutes": 630,
+    "totalFormatted": "10h 30m",
+    "tasks": [
+      "(Standard)"
+    ]
+  },
+  {
+    "date": "2025-08-27",
+    "stamps": [
+      {
+        "seqNr": 325,
+        "date": "2025-08-27",
+        "time": "09:23",
+        "action": "in",
+        "taskId": 0,
+        "taskName": "(Standard)",
+        "comment": ""
+      },
+      {
+        "seqNr": 334,
+        "date": "2025-08-27",
+        "time": "13:09",
+        "action": "out",
+        "taskId": 0,
+        "taskName": "(Standard)",
+        "comment": ""
+      },
+      {
+        "seqNr": 335,
+        "date": "2025-08-27",
+        "time": "13:54",
+        "action": "in",
+        "taskId": 0,
+        "taskName": "(Standard)",
+        "comment": ""
+      },
+      {
+        "seqNr": 337,
+        "date": "2025-08-27",
+        "time": "19:06",
+        "action": "out",
+        "taskId": 0,
+        "taskName": "(Standard)",
+        "comment": ""
+      }
+    ],
+    "note": "",
+    "totalMinutes": 538,
+    "totalFormatted": "8h 58m",
+    "tasks": [
+      "(Standard)"
+    ]
+  },
+  {
+    "date": "2025-08-28",
+    "stamps": [
+      {
+        "seqNr": 343,
+        "date": "2025-08-28",
+        "time": "09:23",
+        "action": "in",
+        "taskId": 0,
+        "taskName": "(Standard)",
+        "comment": "Büro "
+      },
+      {
+        "seqNr": 345,
+        "date": "2025-08-28",
+        "time": "11:37",
+        "action": "out",
+        "taskId": 0,
+        "taskName": "(Standard)",
+        "comment": ""
+      },
+      {
+        "seqNr": 346,
+        "date": "2025-08-28",
+        "time": "12:20",
+        "action": "in",
+        "taskId": 0,
+        "taskName": "(Standard)",
+        "comment": "Homeoffice, eingetragen "
+      },
+      {
+        "seqNr": 347,
+        "date": "2025-08-28",
+        "time": "17:46",
+        "action": "out",
+        "taskId": 0,
+        "taskName": "(Standard)",
+        "comment": ""
+      }
+    ],
+    "note": "",
+    "totalMinutes": 460,
+    "totalFormatted": "7h 40m",
+    "tasks": [
+      "(Standard)"
+    ]
+  },
+  {
+    "date": "2025-08-29",
+    "stamps": [
+      {
+        "seqNr": 348,
+        "date": "2025-08-29",
+        "time": "08:30",
+        "action": "in",
+        "taskId": 0,
+        "taskName": "(Standard)",
+        "comment": "Eingetragen "
+      },
+      {
+        "seqNr": 349,
+        "date": "2025-08-29",
+        "time": "11:55",
+        "action": "out",
+        "taskId": 0,
+        "taskName": "(Standard)",
+        "comment": ""
+      },
+      {
+        "seqNr": 350,
+        "date": "2025-08-29",
+        "time": "12:30",
+        "action": "in",
+        "taskId": 0,
+        "taskName": "(Standard)",
+        "comment": "Eingetragen"
+      },
+      {
+        "seqNr": 351,
+        "date": "2025-08-29",
+        "time": "17:24",
+        "action": "out",
+        "taskId": 0,
+        "taskName": "(Standard)",
+        "comment": ""
+      }
+    ],
+    "note": "",
+    "totalMinutes": 499,
+    "totalFormatted": "8h 19m",
+    "tasks": [
+      "(Standard)"
+    ]
+  },
+  {
+    "date": "2025-09-01",
+    "stamps": [
+      {
+        "seqNr": 332,
+        "date": "2025-09-01",
+        "time": "09:45",
+        "action": "in",
+        "taskId": 0,
+        "taskName": "(Standard)",
+        "comment": "Büro"
+      },
+      {
+        "seqNr": 352,
+        "date": "2025-09-01",
+        "time": "12:00",
+        "action": "out",
+        "taskId": 0,
+        "taskName": "(Standard)",
+        "comment": ""
+      },
+      {
+        "seqNr": 353,
+        "date": "2025-09-01",
+        "time": "12:30",
+        "action": "in",
+        "taskId": 0,
+        "taskName": "(Standard)",
+        "comment": "Büro"
+      },
+      {
+        "seqNr": 354,
+        "date": "2025-09-01",
+        "time": "18:54",
+        "action": "out",
+        "taskId": 0,
+        "taskName": "(Standard)",
+        "comment": ""
+      }
+    ],
+    "note": "",
+    "totalMinutes": 519,
+    "totalFormatted": "8h 39m",
+    "tasks": [
+      "(Standard)"
+    ]
+  },
+  {
+    "date": "2025-09-02",
+    "stamps": [
+      {
+        "seqNr": 338,
+        "date": "2025-09-02",
+        "time": "08:30",
+        "action": "in",
+        "taskId": 0,
+        "taskName": "(Standard)",
+        "comment": "Homeoffice, eingetragen "
+      },
+      {
+        "seqNr": 340,
+        "date": "2025-09-02",
+        "time": "11:35",
+        "action": "out",
+        "taskId": 0,
+        "taskName": "(Standard)",
+        "comment": ""
+      },
+      {
+        "seqNr": 341,
+        "date": "2025-09-02",
+        "time": "12:20",
+        "action": "in",
+        "taskId": 0,
+        "taskName": "(Standard)",
+        "comment": "Homeoffice, eingetragen "
+      },
+      {
+        "seqNr": 342,
+        "date": "2025-09-02",
+        "time": "19:15",
+        "action": "out",
+        "taskId": 0,
+        "taskName": "(Standard)",
+        "comment": ""
+      }
+    ],
+    "note": "",
+    "totalMinutes": 600,
+    "totalFormatted": "10h 00m",
+    "tasks": [
+      "(Standard)"
+    ]
+  },
+  {
+    "date": "2025-09-03",
+    "stamps": [
+      {
+        "seqNr": 355,
+        "date": "2025-09-03",
+        "time": "09:44",
+        "action": "in",
+        "taskId": 0,
+        "taskName": "(Standard)",
+        "comment": ""
+      },
+      {
+        "seqNr": 358,
+        "date": "2025-09-03",
+        "time": "12:00",
+        "action": "out",
+        "taskId": 0,
+        "taskName": "(Standard)",
+        "comment": ""
+      },
+      {
+        "seqNr": 359,
+        "date": "2025-09-03",
+        "time": "12:30",
+        "action": "in",
+        "taskId": 0,
+        "taskName": "(Standard)",
+        "comment": ""
+      },
+      {
+        "seqNr": 357,
+        "date": "2025-09-03",
+        "time": "17:19",
+        "action": "out",
+        "taskId": 0,
+        "taskName": "(Standard)",
+        "comment": ""
+      }
+    ],
+    "note": "",
+    "totalMinutes": 425,
+    "totalFormatted": "7h 05m",
+    "tasks": [
+      "(Standard)"
+    ]
+  },
+  {
+    "date": "2025-09-04",
+    "stamps": [
+      {
+        "seqNr": 360,
+        "date": "2025-09-04",
+        "time": "08:19",
+        "action": "in",
+        "taskId": 0,
+        "taskName": "(Standard)",
+        "comment": ""
+      },
+      {
+        "seqNr": 362,
+        "date": "2025-09-04",
+        "time": "11:47",
+        "action": "out",
+        "taskId": 0,
+        "taskName": "(Standard)",
+        "comment": ""
+      },
+      {
+        "seqNr": 365,
+        "date": "2025-09-04",
+        "time": "12:25",
+        "action": "in",
+        "taskId": 0,
+        "taskName": "(Standard)",
+        "comment": ""
+      },
+      {
+        "seqNr": 367,
+        "date": "2025-09-04",
+        "time": "17:55",
+        "action": "out",
+        "taskId": 0,
+        "taskName": "(Standard)",
+        "comment": ""
+      }
+    ],
+    "note": "Eingetragen",
+    "totalMinutes": 538,
+    "totalFormatted": "8h 58m",
+    "tasks": [
+      "(Standard)"
+    ]
+  },
+  {
+    "date": "2025-09-05",
+    "stamps": [
+      {
+        "seqNr": 368,
+        "date": "2025-09-05",
+        "time": "08:15",
+        "action": "in",
+        "taskId": 0,
+        "taskName": "(Standard)",
+        "comment": ""
+      },
+      {
+        "seqNr": 370,
+        "date": "2025-09-05",
+        "time": "15:55",
+        "action": "out",
+        "taskId": 0,
+        "taskName": "(Standard)",
+        "comment": ""
+      }
+    ],
+    "note": "Eingetragen",
+    "totalMinutes": 460,
+    "totalFormatted": "7h 40m",
+    "tasks": [
+      "(Standard)"
+    ]
+  },
+  {
+    "date": "2025-09-08",
+    "stamps": [
+      {
+        "seqNr": 371,
+        "date": "2025-09-08",
+        "time": "08:46",
+        "action": "in",
+        "taskId": 0,
+        "taskName": "(Standard)",
+        "comment": ""
+      },
+      {
+        "seqNr": 382,
+        "date": "2025-09-08",
+        "time": "12:00",
+        "action": "out",
+        "taskId": 0,
+        "taskName": "(Standard)",
+        "comment": ""
+      },
+      {
+        "seqNr": 383,
+        "date": "2025-09-08",
+        "time": "12:30",
+        "action": "in",
+        "taskId": 0,
+        "taskName": "(Standard)",
+        "comment": ""
+      },
+      {
+        "seqNr": 380,
+        "date": "2025-09-08",
+        "time": "17:45",
+        "action": "out",
+        "taskId": 0,
+        "taskName": "(Standard)",
+        "comment": ""
+      }
+    ],
+    "note": "Eingetra5",
+    "totalMinutes": 509,
+    "totalFormatted": "8h 29m",
+    "tasks": [
+      "(Standard)"
+    ]
+  },
+  {
+    "date": "2025-09-09",
+    "stamps": [
+      {
+        "seqNr": 384,
+        "date": "2025-09-09",
+        "time": "09:11",
+        "action": "in",
+        "taskId": 0,
+        "taskName": "(Standard)",
+        "comment": ""
+      },
+      {
+        "seqNr": 387,
+        "date": "2025-09-09",
+        "time": "12:40",
+        "action": "out",
+        "taskId": 0,
+        "taskName": "(Standard)",
+        "comment": ""
+      },
+      {
+        "seqNr": 397,
+        "date": "2025-09-09",
+        "time": "12:56",
+        "action": "in",
+        "taskId": 0,
+        "taskName": "(Standard)",
+        "comment": ""
+      },
+      {
+        "seqNr": 399,
+        "date": "2025-09-09",
+        "time": "15:55",
+        "action": "out",
+        "taskId": 0,
+        "taskName": "(Standard)",
+        "comment": ""
+      }
+    ],
+    "note": "",
+    "totalMinutes": 388,
+    "totalFormatted": "6h 28m",
+    "tasks": [
+      "(Standard)"
+    ]
+  },
+  {
+    "date": "2025-09-10",
+    "stamps": [
+      {
+        "seqNr": 373,
+        "date": "2025-09-10",
+        "time": "08:40",
+        "action": "in",
+        "taskId": 0,
+        "taskName": "(Standard)",
+        "comment": ""
+      },
+      {
+        "seqNr": 376,
+        "date": "2025-09-10",
+        "time": "11:32",
+        "action": "out",
+        "taskId": 0,
+        "taskName": "(Standard)",
+        "comment": ""
+      },
+      {
+        "seqNr": 385,
+        "date": "2025-09-10",
+        "time": "12:19",
+        "action": "in",
+        "taskId": 0,
+        "taskName": "(Standard)",
+        "comment": ""
+      },
+      {
+        "seqNr": 392,
+        "date": "2025-09-10",
+        "time": "18:34",
+        "action": "out",
+        "taskId": 0,
+        "taskName": "(Standard)",
+        "comment": ""
+      }
+    ],
+    "note": "",
+    "totalMinutes": 547,
+    "totalFormatted": "9h 07m",
+    "tasks": [
+      "(Standard)"
+    ]
+  },
+  {
+    "date": "2025-09-11",
+    "stamps": [
+      {
+        "seqNr": 400,
+        "date": "2025-09-11",
+        "time": "08:28",
+        "action": "in",
+        "taskId": 0,
+        "taskName": "(Standard)",
+        "comment": ""
+      },
+      {
+        "seqNr": 402,
+        "date": "2025-09-11",
+        "time": "11:31",
+        "action": "out",
+        "taskId": 0,
+        "taskName": "(Standard)",
+        "comment": ""
+      },
+      {
+        "seqNr": 403,
+        "date": "2025-09-11",
+        "time": "12:10",
+        "action": "in",
+        "taskId": 0,
+        "taskName": "(Standard)",
+        "comment": ""
+      },
+      {
+        "seqNr": 405,
+        "date": "2025-09-11",
+        "time": "17:31",
+        "action": "out",
+        "taskId": 0,
+        "taskName": "(Standard)",
+        "comment": ""
+      }
+    ],
+    "note": "Eingetragen",
+    "totalMinutes": 504,
+    "totalFormatted": "8h 24m",
+    "tasks": [
+      "(Standard)"
+    ]
+  },
+  {
+    "date": "2025-09-12",
+    "stamps": [
+      {
+        "seqNr": 419,
+        "date": "2025-09-12",
+        "time": "08:18",
+        "action": "in",
+        "taskId": 0,
+        "taskName": "(Standard)",
+        "comment": ""
+      },
+      {
+        "seqNr": 422,
+        "date": "2025-09-12",
+        "time": "12:00",
+        "action": "out",
+        "taskId": 0,
+        "taskName": "(Standard)",
+        "comment": ""
+      },
+      {
+        "seqNr": 423,
+        "date": "2025-09-12",
+        "time": "12:30",
+        "action": "in",
+        "taskId": 0,
+        "taskName": "(Standard)",
+        "comment": ""
+      },
+      {
+        "seqNr": 421,
+        "date": "2025-09-12",
+        "time": "17:14",
+        "action": "out",
+        "taskId": 0,
+        "taskName": "(Standard)",
+        "comment": ""
+      }
+    ],
+    "note": "Noch nicht eingetragen",
+    "totalMinutes": 506,
+    "totalFormatted": "8h 26m",
+    "tasks": [
+      "(Standard)"
+    ]
+  },
+  {
+    "date": "2025-09-15",
+    "stamps": [
+      {
+        "seqNr": 388,
+        "date": "2025-09-15",
+        "time": "08:40",
+        "action": "in",
+        "taskId": 0,
+        "taskName": "(Standard)",
+        "comment": ""
+      },
+      {
+        "seqNr": 389,
+        "date": "2025-09-15",
+        "time": "12:00",
+        "action": "out",
+        "taskId": 0,
+        "taskName": "(Standard)",
+        "comment": ""
+      },
+      {
+        "seqNr": 390,
+        "date": "2025-09-15",
+        "time": "12:30",
+        "action": "in",
+        "taskId": 0,
+        "taskName": "(Standard)",
+        "comment": ""
+      },
+      {
+        "seqNr": 425,
+        "date": "2025-09-15",
+        "time": "18:18",
+        "action": "out",
+        "taskId": 0,
+        "taskName": "(Standard)",
+        "comment": ""
+      }
+    ],
+    "note": "",
+    "totalMinutes": 548,
+    "totalFormatted": "9h 08m",
+    "tasks": [
+      "(Standard)"
+    ]
+  },
+  {
+    "date": "2025-09-16",
+    "stamps": [
+      {
+        "seqNr": 413,
+        "date": "2025-09-16",
+        "time": "08:53",
+        "action": "in",
+        "taskId": 0,
+        "taskName": "(Standard)",
+        "comment": ""
+      },
+      {
+        "seqNr": 415,
+        "date": "2025-09-16",
+        "time": "12:26",
+        "action": "out",
+        "taskId": 0,
+        "taskName": "(Standard)",
+        "comment": ""
+      },
+      {
+        "seqNr": 416,
+        "date": "2025-09-16",
+        "time": "13:23",
+        "action": "in",
+        "taskId": 0,
+        "taskName": "(Standard)",
+        "comment": ""
+      },
+      {
+        "seqNr": 418,
+        "date": "2025-09-16",
+        "time": "18:17",
+        "action": "out",
+        "taskId": 0,
+        "taskName": "(Standard)",
+        "comment": ""
+      }
+    ],
+    "note": "",
+    "totalMinutes": 507,
+    "totalFormatted": "8h 27m",
+    "tasks": [
+      "(Standard)"
+    ]
+  },
+  {
+    "date": "2025-09-17",
+    "stamps": [
+      {
+        "seqNr": 408,
+        "date": "2025-09-17",
+        "time": "08:52",
+        "action": "in",
+        "taskId": 0,
+        "taskName": "(Standard)",
+        "comment": ""
+      },
+      {
+        "seqNr": 411,
+        "date": "2025-09-17",
+        "time": "12:00",
+        "action": "out",
+        "taskId": 0,
+        "taskName": "(Standard)",
+        "comment": ""
+      },
+      {
+        "seqNr": 412,
+        "date": "2025-09-17",
+        "time": "12:30",
+        "action": "in",
+        "taskId": 0,
+        "taskName": "(Standard)",
+        "comment": ""
+      },
+      {
+        "seqNr": 410,
+        "date": "2025-09-17",
+        "time": "19:06",
+        "action": "out",
+        "taskId": 0,
+        "taskName": "(Standard)",
+        "comment": ""
+      }
+    ],
+    "note": "",
+    "totalMinutes": 584,
+    "totalFormatted": "9h 44m",
+    "tasks": [
+      "(Standard)"
+    ]
+  },
+  {
+    "date": "2025-09-18",
+    "stamps": [
+      {
+        "seqNr": 452,
+        "date": "2025-09-18",
+        "time": "08:54",
+        "action": "in",
+        "taskId": 0,
+        "taskName": "(Standard)",
+        "comment": ""
+      },
+      {
+        "seqNr": 454,
+        "date": "2025-09-18",
+        "time": "11:35",
+        "action": "out",
+        "taskId": 0,
+        "taskName": "(Standard)",
+        "comment": ""
+      },
+      {
+        "seqNr": 455,
+        "date": "2025-09-18",
+        "time": "12:40",
+        "action": "in",
+        "taskId": 0,
+        "taskName": "(Standard)",
+        "comment": ""
+      },
+      {
+        "seqNr": 457,
+        "date": "2025-09-18",
+        "time": "18:00",
+        "action": "out",
+        "taskId": 0,
+        "taskName": "(Standard)",
+        "comment": ""
+      }
+    ],
+    "note": "",
+    "totalMinutes": 481,
+    "totalFormatted": "8h 01m",
+    "tasks": [
+      "(Standard)"
+    ]
+  },
+  {
+    "date": "2025-09-19",
+    "stamps": [
+      {
+        "seqNr": 426,
+        "date": "2025-09-19",
+        "time": "08:18",
+        "action": "in",
+        "taskId": 0,
+        "taskName": "(Standard)",
+        "comment": ""
+      },
+      {
+        "seqNr": 429,
+        "date": "2025-09-19",
+        "time": "12:00",
+        "action": "out",
+        "taskId": 0,
+        "taskName": "(Standard)",
+        "comment": ""
+      },
+      {
+        "seqNr": 430,
+        "date": "2025-09-19",
+        "time": "12:30",
+        "action": "in",
+        "taskId": 0,
+        "taskName": "(Standard)",
+        "comment": ""
+      },
+      {
+        "seqNr": 428,
+        "date": "2025-09-19",
+        "time": "16:49",
+        "action": "out",
+        "taskId": 0,
+        "taskName": "(Standard)",
+        "comment": ""
+      }
+    ],
+    "note": "Noch nicht eingetragen",
+    "totalMinutes": 481,
+    "totalFormatted": "8h 01m",
+    "tasks": [
+      "(Standard)"
+    ]
+  },
+  {
+    "date": "2025-09-22",
+    "stamps": [
+      {
+        "seqNr": 431,
+        "date": "2025-09-22",
+        "time": "08:20",
+        "action": "in",
+        "taskId": 0,
+        "taskName": "(Standard)",
+        "comment": ""
+      },
+      {
+        "seqNr": 434,
+        "date": "2025-09-22",
+        "time": "12:00",
+        "action": "out",
+        "taskId": 0,
+        "taskName": "(Standard)",
+        "comment": ""
+      },
+      {
+        "seqNr": 435,
+        "date": "2025-09-22",
+        "time": "12:30",
+        "action": "in",
+        "taskId": 0,
+        "taskName": "(Standard)",
+        "comment": ""
+      },
+      {
+        "seqNr": 433,
+        "date": "2025-09-22",
+        "time": "17:25",
+        "action": "out",
+        "taskId": 0,
+        "taskName": "(Standard)",
+        "comment": ""
+      }
+    ],
+    "note": "",
+    "totalMinutes": 515,
+    "totalFormatted": "8h 35m",
+    "tasks": [
+      "(Standard)"
+    ]
+  },
+  {
+    "date": "2025-09-23",
+    "stamps": [
+      {
+        "seqNr": 436,
+        "date": "2025-09-23",
+        "time": "08:05",
+        "action": "in",
+        "taskId": 0,
+        "taskName": "(Standard)",
+        "comment": ""
+      },
+      {
+        "seqNr": 438,
+        "date": "2025-09-23",
+        "time": "11:30",
+        "action": "out",
+        "taskId": 0,
+        "taskName": "(Standard)",
+        "comment": ""
+      },
+      {
+        "seqNr": 439,
+        "date": "2025-09-23",
+        "time": "11:55",
+        "action": "in",
+        "taskId": 0,
+        "taskName": "(Standard)",
+        "comment": ""
+      },
+      {
+        "seqNr": 441,
+        "date": "2025-09-23",
+        "time": "17:28",
+        "action": "out",
+        "taskId": 0,
+        "taskName": "(Standard)",
+        "comment": ""
+      }
+    ],
+    "note": "",
+    "totalMinutes": 538,
+    "totalFormatted": "8h 58m",
+    "tasks": [
+      "(Standard)"
+    ]
+  },
+  {
+    "date": "2025-09-25",
+    "stamps": [
+      {
+        "seqNr": 442,
+        "date": "2025-09-25",
+        "time": "08:28",
+        "action": "in",
+        "taskId": 0,
+        "taskName": "(Standard)",
+        "comment": ""
+      },
+      {
+        "seqNr": 445,
+        "date": "2025-09-25",
+        "time": "12:00",
+        "action": "out",
+        "taskId": 0,
+        "taskName": "(Standard)",
+        "comment": ""
+      },
+      {
+        "seqNr": 446,
+        "date": "2025-09-25",
+        "time": "12:30",
+        "action": "in",
+        "taskId": 0,
+        "taskName": "(Standard)",
+        "comment": ""
+      },
+      {
+        "seqNr": 444,
+        "date": "2025-09-25",
+        "time": "17:54",
+        "action": "out",
+        "taskId": 0,
+        "taskName": "(Standard)",
+        "comment": ""
+      }
+    ],
+    "note": "",
+    "totalMinutes": 536,
+    "totalFormatted": "8h 56m",
+    "tasks": [
+      "(Standard)"
+    ]
+  },
+  {
+    "date": "2025-09-26",
+    "stamps": [
+      {
+        "seqNr": 447,
+        "date": "2025-09-26",
+        "time": "08:30",
+        "action": "in",
+        "taskId": 0,
+        "taskName": "(Standard)",
+        "comment": ""
+      },
+      {
+        "seqNr": 450,
+        "date": "2025-09-26",
+        "time": "12:00",
+        "action": "out",
+        "taskId": 0,
+        "taskName": "(Standard)",
+        "comment": ""
+      },
+      {
+        "seqNr": 451,
+        "date": "2025-09-26",
+        "time": "12:30",
+        "action": "in",
+        "taskId": 0,
+        "taskName": "(Standard)",
+        "comment": ""
+      },
+      {
+        "seqNr": 449,
+        "date": "2025-09-26",
+        "time": "17:00",
+        "action": "out",
+        "taskId": 0,
+        "taskName": "(Standard)",
+        "comment": ""
+      }
+    ],
+    "note": "",
+    "totalMinutes": 480,
+    "totalFormatted": "8h 00m",
+    "tasks": [
+      "(Standard)"
+    ]
+  },
+  {
+    "date": "2025-09-29",
+    "stamps": [
+      {
+        "seqNr": 458,
+        "date": "2025-09-29",
+        "time": "08:50",
+        "action": "in",
+        "taskId": 0,
+        "taskName": "(Standard)",
+        "comment": ""
+      },
+      {
+        "seqNr": 461,
+        "date": "2025-09-29",
+        "time": "12:00",
+        "action": "out",
+        "taskId": 0,
+        "taskName": "(Standard)",
+        "comment": ""
+      },
+      {
+        "seqNr": 462,
+        "date": "2025-09-29",
+        "time": "12:30",
+        "action": "in",
+        "taskId": 0,
+        "taskName": "(Standard)",
+        "comment": ""
+      },
+      {
+        "seqNr": 460,
+        "date": "2025-09-29",
+        "time": "17:40",
+        "action": "out",
+        "taskId": 0,
+        "taskName": "(Standard)",
+        "comment": ""
+      }
+    ],
+    "note": "",
+    "totalMinutes": 500,
+    "totalFormatted": "8h 20m",
+    "tasks": [
+      "(Standard)"
+    ]
+  },
+  {
+    "date": "2025-10-02",
+    "stamps": [
+      {
+        "seqNr": 463,
+        "date": "2025-10-02",
+        "time": "08:59",
+        "action": "in",
+        "taskId": 0,
+        "taskName": "(Standard)",
+        "comment": ""
+      }
+    ],
+    "note": "",
+    "totalMinutes": 0,
+    "totalFormatted": "0h 00m",
+    "tasks": [
+      "(Standard)"
+    ]
+  },
+  {
+    "date": "2025-10-13",
+    "stamps": [
+      {
+        "seqNr": 464,
+        "date": "2025-10-13",
+        "time": "07:45",
+        "action": "in",
+        "taskId": 0,
+        "taskName": "(Standard)",
+        "comment": ""
+      },
+      {
+        "seqNr": 467,
+        "date": "2025-10-13",
+        "time": "12:00",
+        "action": "out",
+        "taskId": 0,
+        "taskName": "(Standard)",
+        "comment": ""
+      },
+      {
+        "seqNr": 468,
+        "date": "2025-10-13",
+        "time": "12:30",
+        "action": "in",
+        "taskId": 0,
+        "taskName": "(Standard)",
+        "comment": ""
+      },
+      {
+        "seqNr": 466,
+        "date": "2025-10-13",
+        "time": "18:10",
+        "action": "out",
+        "taskId": 0,
+        "taskName": "(Standard)",
+        "comment": ""
+      }
+    ],
+    "note": "",
+    "totalMinutes": 595,
+    "totalFormatted": "9h 55m",
+    "tasks": [
+      "(Standard)"
+    ]
+  },
+  {
+    "date": "2025-10-14",
+    "stamps": [
+      {
+        "seqNr": 486,
+        "date": "2025-10-14",
+        "time": "08:20",
+        "action": "in",
+        "taskId": 0,
+        "taskName": "(Standard)",
+        "comment": ""
+      },
+      {
+        "seqNr": 489,
+        "date": "2025-10-14",
+        "time": "12:00",
+        "action": "out",
+        "taskId": 0,
+        "taskName": "(Standard)",
+        "comment": ""
+      },
+      {
+        "seqNr": 490,
+        "date": "2025-10-14",
+        "time": "12:30",
+        "action": "in",
+        "taskId": 0,
+        "taskName": "(Standard)",
+        "comment": ""
+      },
+      {
+        "seqNr": 488,
+        "date": "2025-10-14",
+        "time": "17:35",
+        "action": "out",
+        "taskId": 0,
+        "taskName": "(Standard)",
+        "comment": ""
+      }
+    ],
+    "note": "",
+    "totalMinutes": 525,
+    "totalFormatted": "8h 45m",
+    "tasks": [
+      "(Standard)"
+    ]
+  },
+  {
+    "date": "2025-10-15",
+    "stamps": [
+      {
+        "seqNr": 472,
+        "date": "2025-10-15",
+        "time": "08:30",
+        "action": "in",
+        "taskId": 0,
+        "taskName": "(Standard)",
+        "comment": ""
+      },
+      {
+        "seqNr": 474,
+        "date": "2025-10-15",
+        "time": "12:00",
+        "action": "out",
+        "taskId": 0,
+        "taskName": "(Standard)",
+        "comment": ""
+      },
+      {
+        "seqNr": 469,
+        "date": "2025-10-15",
+        "time": "12:56",
+        "action": "in",
+        "taskId": 0,
+        "taskName": "(Standard)",
+        "comment": ""
+      },
+      {
+        "seqNr": 471,
+        "date": "2025-10-15",
+        "time": "19:08",
+        "action": "out",
+        "taskId": 0,
+        "taskName": "(Standard)",
+        "comment": ""
+      }
+    ],
+    "note": "",
+    "totalMinutes": 582,
+    "totalFormatted": "9h 42m",
+    "tasks": [
+      "(Standard)"
+    ]
+  },
+  {
+    "date": "2025-10-16",
+    "stamps": [
+      {
+        "seqNr": 478,
+        "date": "2025-10-16",
+        "time": "08:40",
+        "action": "in",
+        "taskId": 0,
+        "taskName": "(Standard)",
+        "comment": ""
+      },
+      {
+        "seqNr": 480,
+        "date": "2025-10-16",
+        "time": "12:51",
+        "action": "out",
+        "taskId": 0,
+        "taskName": "(Standard)",
+        "comment": ""
+      },
+      {
+        "seqNr": 475,
+        "date": "2025-10-16",
+        "time": "13:24",
+        "action": "in",
+        "taskId": 0,
+        "taskName": "(Standard)",
+        "comment": ""
+      },
+      {
+        "seqNr": 477,
+        "date": "2025-10-16",
+        "time": "17:14",
+        "action": "out",
+        "taskId": 0,
+        "taskName": "(Standard)",
+        "comment": ""
+      }
+    ],
+    "note": "",
+    "totalMinutes": 481,
+    "totalFormatted": "8h 01m",
+    "tasks": [
+      "(Standard)"
+    ]
+  },
+  {
+    "date": "2025-10-17",
+    "stamps": [
+      {
+        "seqNr": 481,
+        "date": "2025-10-17",
+        "time": "08:30",
+        "action": "in",
+        "taskId": 0,
+        "taskName": "(Standard)",
+        "comment": ""
+      },
+      {
+        "seqNr": 484,
+        "date": "2025-10-17",
+        "time": "12:00",
+        "action": "out",
+        "taskId": 0,
+        "taskName": "(Standard)",
+        "comment": ""
+      },
+      {
+        "seqNr": 485,
+        "date": "2025-10-17",
+        "time": "12:40",
+        "action": "in",
+        "taskId": 0,
+        "taskName": "(Standard)",
+        "comment": ""
+      },
+      {
+        "seqNr": 483,
+        "date": "2025-10-17",
+        "time": "17:00",
+        "action": "out",
+        "taskId": 0,
+        "taskName": "(Standard)",
+        "comment": ""
+      }
+    ],
+    "note": "",
+    "totalMinutes": 470,
+    "totalFormatted": "7h 50m",
+    "tasks": [
+      "(Standard)"
+    ]
+  },
+  {
+    "date": "2025-10-28",
+    "stamps": [
+      {
+        "seqNr": 507,
+        "date": "2025-10-28",
+        "time": "08:15",
+        "action": "in",
+        "taskId": 0,
+        "taskName": "(Standard)",
+        "comment": ""
+      },
+      {
+        "seqNr": 510,
+        "date": "2025-10-28",
+        "time": "12:00",
+        "action": "out",
+        "taskId": 0,
+        "taskName": "(Standard)",
+        "comment": ""
+      },
+      {
+        "seqNr": 511,
+        "date": "2025-10-28",
+        "time": "12:30",
+        "action": "in",
+        "taskId": 0,
+        "taskName": "(Standard)",
+        "comment": ""
+      },
+      {
+        "seqNr": 509,
+        "date": "2025-10-28",
+        "time": "17:25",
+        "action": "out",
+        "taskId": 0,
+        "taskName": "(Standard)",
+        "comment": ""
+      }
+    ],
+    "note": "",
+    "totalMinutes": 520,
+    "totalFormatted": "8h 40m",
+    "tasks": [
+      "(Standard)"
+    ]
+  },
+  {
+    "date": "2025-11-03",
+    "stamps": [
+      {
+        "seqNr": 504,
+        "date": "2025-11-03",
+        "time": "08:35",
+        "action": "in",
+        "taskId": 0,
+        "taskName": "(Standard)",
+        "comment": ""
+      },
+      {
+        "seqNr": 505,
+        "date": "2025-11-03",
+        "time": "12:00",
+        "action": "out",
+        "taskId": 0,
+        "taskName": "(Standard)",
+        "comment": ""
+      },
+      {
+        "seqNr": 506,
+        "date": "2025-11-03",
+        "time": "12:30",
+        "action": "in",
+        "taskId": 0,
+        "taskName": "(Standard)",
+        "comment": ""
+      },
+      {
+        "seqNr": 502,
+        "date": "2025-11-03",
+        "time": "17:50",
+        "action": "out",
+        "taskId": 0,
+        "taskName": "(Standard)",
+        "comment": ""
+      }
+    ],
+    "note": "",
+    "totalMinutes": 525,
+    "totalFormatted": "8h 45m",
+    "tasks": [
+      "(Standard)"
+    ]
+  },
+  {
+    "date": "2025-11-04",
+    "stamps": [
+      {
+        "seqNr": 493,
+        "date": "2025-11-04",
+        "time": "09:03",
+        "action": "in",
+        "taskId": 0,
+        "taskName": "(Standard)",
+        "comment": ""
+      },
+      {
+        "seqNr": 494,
+        "date": "2025-11-04",
+        "time": "12:00",
+        "action": "out",
+        "taskId": 0,
+        "taskName": "(Standard)",
+        "comment": ""
+      },
+      {
+        "seqNr": 495,
+        "date": "2025-11-04",
+        "time": "12:30",
+        "action": "in",
+        "taskId": 0,
+        "taskName": "(Standard)",
+        "comment": ""
+      }
+    ],
+    "note": "",
+    "totalMinutes": 177,
+    "totalFormatted": "2h 57m",
+    "tasks": [
+      "(Standard)"
+    ]
+  },
+  {
+    "date": "2025-11-05",
+    "stamps": [
+      {
+        "seqNr": 497,
+        "date": "2025-11-05",
+        "time": "08:23",
+        "action": "in",
+        "taskId": 0,
+        "taskName": "(Standard)",
+        "comment": ""
+      },
+      {
+        "seqNr": 499,
+        "date": "2025-11-05",
+        "time": "12:00",
+        "action": "out",
+        "taskId": 0,
+        "taskName": "(Standard)",
+        "comment": ""
+      },
+      {
+        "seqNr": 500,
+        "date": "2025-11-05",
+        "time": "12:30",
+        "action": "in",
+        "taskId": 0,
+        "taskName": "(Standard)",
+        "comment": ""
+      },
+      {
+        "seqNr": 498,
+        "date": "2025-11-05",
+        "time": "17:30",
+        "action": "out",
+        "taskId": 0,
+        "taskName": "(Standard)",
+        "comment": ""
+      }
+    ],
+    "note": "",
+    "totalMinutes": 517,
+    "totalFormatted": "8h 37m",
+    "tasks": [
+      "(Standard)"
+    ]
+  },
+  {
+    "date": "2025-11-06",
+    "stamps": [
+      {
+        "seqNr": 496,
+        "date": "2025-11-06",
+        "time": "07:33",
+        "action": "in",
+        "taskId": 0,
+        "taskName": "(Standard)",
+        "comment": ""
+      }
+    ],
+    "note": "",
+    "totalMinutes": 0,
+    "totalFormatted": "0h 00m",
+    "tasks": [
+      "(Standard)"
+    ]
+  },
+  {
+    "date": "2025-11-12",
+    "stamps": [
+      {
+        "seqNr": 512,
+        "date": "2025-11-12",
+        "time": "08:00",
+        "action": "in",
+        "taskId": 0,
+        "taskName": "(Standard)",
+        "comment": ""
+      },
+      {
+        "seqNr": 515,
+        "date": "2025-11-12",
+        "time": "12:00",
+        "action": "out",
+        "taskId": 0,
+        "taskName": "(Standard)",
+        "comment": ""
+      },
+      {
+        "seqNr": 516,
+        "date": "2025-11-12",
+        "time": "12:30",
+        "action": "in",
+        "taskId": 0,
+        "taskName": "(Standard)",
+        "comment": ""
+      },
+      {
+        "seqNr": 514,
+        "date": "2025-11-12",
+        "time": "16:53",
+        "action": "out",
+        "taskId": 0,
+        "taskName": "(Standard)",
+        "comment": ""
+      }
+    ],
+    "note": "",
+    "totalMinutes": 503,
+    "totalFormatted": "8h 23m",
+    "tasks": [
+      "(Standard)"
+    ]
+  },
+  {
+    "date": "2025-11-26",
+    "stamps": [
+      {
+        "seqNr": 517,
+        "date": "2025-11-26",
+        "time": "08:50",
+        "action": "in",
+        "taskId": 0,
+        "taskName": "(Standard)",
+        "comment": ""
+      },
+      {
+        "seqNr": 518,
+        "date": "2025-11-26",
+        "time": "12:00",
+        "action": "out",
+        "taskId": 0,
+        "taskName": "(Standard)",
+        "comment": ""
+      },
+      {
+        "seqNr": 519,
+        "date": "2025-11-26",
+        "time": "12:30",
+        "action": "in",
+        "taskId": 0,
+        "taskName": "(Standard)",
+        "comment": ""
+      },
+      {
+        "seqNr": 520,
+        "date": "2025-11-26",
+        "time": "18:16",
+        "action": "out",
+        "taskId": 0,
+        "taskName": "(Standard)",
+        "comment": ""
+      }
+    ],
+    "note": "",
+    "totalMinutes": 536,
+    "totalFormatted": "8h 56m",
+    "tasks": [
+      "(Standard)"
+    ]
+  },
+  {
+    "date": "2025-11-27",
+    "stamps": [
+      {
+        "seqNr": 521,
+        "date": "2025-11-27",
+        "time": "08:56",
+        "action": "in",
+        "taskId": 0,
+        "taskName": "(Standard)",
+        "comment": ""
+      },
+      {
+        "seqNr": 523,
+        "date": "2025-11-27",
+        "time": "11:40",
+        "action": "out",
+        "taskId": 0,
+        "taskName": "(Standard)",
+        "comment": ""
+      },
+      {
+        "seqNr": 524,
+        "date": "2025-11-27",
+        "time": "12:26",
+        "action": "in",
+        "taskId": 0,
+        "taskName": "(Standard)",
+        "comment": ""
+      },
+      {
+        "seqNr": 526,
+        "date": "2025-11-27",
+        "time": "17:51",
+        "action": "out",
+        "taskId": 0,
+        "taskName": "(Standard)",
+        "comment": ""
+      }
+    ],
+    "note": "",
+    "totalMinutes": 489,
+    "totalFormatted": "8h 09m",
+    "tasks": [
+      "(Standard)"
+    ]
+  },
+  {
+    "date": "2025-11-28",
+    "stamps": [
+      {
+        "seqNr": 527,
+        "date": "2025-11-28",
+        "time": "08:10",
+        "action": "in",
+        "taskId": 0,
+        "taskName": "(Standard)",
+        "comment": ""
+      },
+      {
+        "seqNr": 529,
+        "date": "2025-11-28",
+        "time": "12:00",
+        "action": "out",
+        "taskId": 0,
+        "taskName": "(Standard)",
+        "comment": ""
+      },
+      {
+        "seqNr": 530,
+        "date": "2025-11-28",
+        "time": "12:30",
+        "action": "in",
+        "taskId": 0,
+        "taskName": "(Standard)",
+        "comment": ""
+      },
+      {
+        "seqNr": 528,
+        "date": "2025-11-28",
+        "time": "17:03",
+        "action": "out",
+        "taskId": 0,
+        "taskName": "(Standard)",
+        "comment": ""
+      }
+    ],
+    "note": "",
+    "totalMinutes": 503,
+    "totalFormatted": "8h 23m",
+    "tasks": [
+      "(Standard)"
+    ]
+  },
+  {
+    "date": "2025-12-01",
+    "stamps": [
+      {
+        "seqNr": 531,
+        "date": "2025-12-01",
+        "time": "08:42",
+        "action": "in",
+        "taskId": 0,
+        "taskName": "(Standard)",
+        "comment": ""
+      },
+      {
+        "seqNr": 534,
+        "date": "2025-12-01",
+        "time": "12:00",
+        "action": "out",
+        "taskId": 0,
+        "taskName": "(Standard)",
+        "comment": ""
+      },
+      {
+        "seqNr": 535,
+        "date": "2025-12-01",
+        "time": "12:30",
+        "action": "in",
+        "taskId": 0,
+        "taskName": "(Standard)",
+        "comment": ""
+      },
+      {
+        "seqNr": 533,
+        "date": "2025-12-01",
+        "time": "18:15",
+        "action": "out",
+        "taskId": 0,
+        "taskName": "(Standard)",
+        "comment": ""
+      }
+    ],
+    "note": "",
+    "totalMinutes": 543,
+    "totalFormatted": "9h 03m",
+    "tasks": [
+      "(Standard)"
+    ]
+  },
+  {
+    "date": "2025-12-02",
+    "stamps": [
+      {
+        "seqNr": 536,
+        "date": "2025-12-02",
+        "time": "07:45",
+        "action": "in",
+        "taskId": 0,
+        "taskName": "(Standard)",
+        "comment": ""
+      },
+      {
+        "seqNr": 537,
+        "date": "2025-12-02",
+        "time": "12:00",
+        "action": "out",
+        "taskId": 0,
+        "taskName": "(Standard)",
+        "comment": ""
+      },
+      {
+        "seqNr": 538,
+        "date": "2025-12-02",
+        "time": "12:30",
+        "action": "in",
+        "taskId": 0,
+        "taskName": "(Standard)",
+        "comment": ""
+      },
+      {
+        "seqNr": 540,
+        "date": "2025-12-02",
+        "time": "17:26",
+        "action": "out",
+        "taskId": 0,
+        "taskName": "(Standard)",
+        "comment": ""
+      }
+    ],
+    "note": "",
+    "totalMinutes": 551,
+    "totalFormatted": "9h 11m",
+    "tasks": [
+      "(Standard)"
+    ]
+  },
+  {
+    "date": "2025-12-03",
+    "stamps": [
+      {
+        "seqNr": 541,
+        "date": "2025-12-03",
+        "time": "09:11",
+        "action": "in",
+        "taskId": 0,
+        "taskName": "(Standard)",
+        "comment": ""
+      },
+      {
+        "seqNr": 542,
+        "date": "2025-12-03",
+        "time": "12:15",
+        "action": "out",
+        "taskId": 0,
+        "taskName": "(Standard)",
+        "comment": ""
+      },
+      {
+        "seqNr": 543,
+        "date": "2025-12-03",
+        "time": "13:16",
+        "action": "in",
+        "taskId": 0,
+        "taskName": "(Standard)",
+        "comment": ""
+      }
+    ],
+    "note": "",
+    "totalMinutes": 184,
+    "totalFormatted": "3h 04m",
+    "tasks": [
+      "(Standard)"
+    ]
+  },
+  {
+    "date": "2025-12-04",
+    "stamps": [
+      {
+        "seqNr": 544,
+        "date": "2025-12-04",
+        "time": "07:43",
+        "action": "in",
+        "taskId": 0,
+        "taskName": "(Standard)",
+        "comment": ""
+      },
+      {
+        "seqNr": 547,
+        "date": "2025-12-04",
+        "time": "12:00",
+        "action": "out",
+        "taskId": 0,
+        "taskName": "(Standard)",
+        "comment": ""
+      },
+      {
+        "seqNr": 548,
+        "date": "2025-12-04",
+        "time": "12:30",
+        "action": "in",
+        "taskId": 0,
+        "taskName": "(Standard)",
+        "comment": ""
+      },
+      {
+        "seqNr": 546,
+        "date": "2025-12-04",
+        "time": "17:00",
+        "action": "out",
+        "taskId": 0,
+        "taskName": "(Standard)",
+        "comment": ""
+      }
+    ],
+    "note": "",
+    "totalMinutes": 527,
+    "totalFormatted": "8h 47m",
+    "tasks": [
+      "(Standard)"
+    ]
+  },
+  {
+    "date": "2025-12-15",
+    "stamps": [
+      {
+        "seqNr": 598,
+        "date": "2025-12-15",
+        "time": "08:06",
+        "action": "in",
+        "taskId": 0,
+        "taskName": "(Standard)",
+        "comment": ""
+      },
+      {
+        "seqNr": 599,
+        "date": "2025-12-15",
+        "time": "12:00",
+        "action": "out",
+        "taskId": 0,
+        "taskName": "(Standard)",
+        "comment": ""
+      },
+      {
+        "seqNr": 600,
+        "date": "2025-12-15",
+        "time": "12:30",
+        "action": "in",
+        "taskId": 0,
+        "taskName": "(Standard)",
+        "comment": ""
+      },
+      {
+        "seqNr": 604,
+        "date": "2025-12-15",
+        "time": "17:36",
+        "action": "out",
+        "taskId": 0,
+        "taskName": "(Standard)",
+        "comment": ""
+      }
+    ],
+    "note": "",
+    "totalMinutes": 540,
+    "totalFormatted": "9h 00m",
+    "tasks": [
+      "(Standard)"
+    ]
+  },
+  {
+    "date": "2025-12-16",
+    "stamps": [
+      {
+        "seqNr": 549,
+        "date": "2025-12-16",
+        "time": "09:25",
+        "action": "in",
+        "taskId": 0,
+        "taskName": "(Standard)",
+        "comment": ""
+      },
+      {
+        "seqNr": 550,
+        "date": "2025-12-16",
+        "time": "12:38",
+        "action": "out",
+        "taskId": 0,
+        "taskName": "(Standard)",
+        "comment": ""
+      },
+      {
+        "seqNr": 551,
+        "date": "2025-12-16",
+        "time": "13:42",
+        "action": "in",
+        "taskId": 0,
+        "taskName": "(Standard)",
+        "comment": ""
+      },
+      {
+        "seqNr": 594,
+        "date": "2025-12-16",
+        "time": "19:10",
+        "action": "out",
+        "taskId": 0,
+        "taskName": "(Standard)",
+        "comment": ""
+      }
+    ],
+    "note": "",
+    "totalMinutes": 521,
+    "totalFormatted": "8h 41m",
+    "tasks": [
+      "(Standard)"
+    ]
+  },
+  {
+    "date": "2025-12-17",
+    "stamps": [
+      {
+        "seqNr": 552,
+        "date": "2025-12-17",
+        "time": "08:15",
+        "action": "in",
+        "taskId": 0,
+        "taskName": "(Standard)",
+        "comment": ""
+      },
+      {
+        "seqNr": 555,
+        "date": "2025-12-17",
+        "time": "12:00",
+        "action": "out",
+        "taskId": 0,
+        "taskName": "(Standard)",
+        "comment": ""
+      },
+      {
+        "seqNr": 556,
+        "date": "2025-12-17",
+        "time": "12:30",
+        "action": "in",
+        "taskId": 0,
+        "taskName": "(Standard)",
+        "comment": ""
+      },
+      {
+        "seqNr": 554,
+        "date": "2025-12-17",
+        "time": "17:08",
+        "action": "out",
+        "taskId": 0,
+        "taskName": "(Standard)",
+        "comment": ""
+      }
+    ],
+    "note": "",
+    "totalMinutes": 503,
+    "totalFormatted": "8h 23m",
+    "tasks": [
+      "(Standard)"
+    ]
+  },
+  {
+    "date": "2025-12-18",
+    "stamps": [
+      {
+        "seqNr": 557,
+        "date": "2025-12-18",
+        "time": "09:32",
+        "action": "in",
+        "taskId": 0,
+        "taskName": "(Standard)",
+        "comment": ""
+      },
+      {
+        "seqNr": 560,
+        "date": "2025-12-18",
+        "time": "12:00",
+        "action": "out",
+        "taskId": 0,
+        "taskName": "(Standard)",
+        "comment": ""
+      },
+      {
+        "seqNr": 561,
+        "date": "2025-12-18",
+        "time": "12:36",
+        "action": "in",
+        "taskId": 0,
+        "taskName": "(Standard)",
+        "comment": ""
+      },
+      {
+        "seqNr": 559,
+        "date": "2025-12-18",
+        "time": "18:05",
+        "action": "out",
+        "taskId": 0,
+        "taskName": "(Standard)",
+        "comment": ""
+      }
+    ],
+    "note": "",
+    "totalMinutes": 477,
+    "totalFormatted": "7h 57m",
+    "tasks": [
+      "(Standard)"
+    ]
+  },
+  {
+    "date": "2026-01-05",
+    "stamps": [
+      {
+        "seqNr": 581,
+        "date": "2026-01-05",
+        "time": "08:30",
+        "action": "in",
+        "taskId": 0,
+        "taskName": "(Standard)",
+        "comment": ""
+      },
+      {
+        "seqNr": 583,
+        "date": "2026-01-05",
+        "time": "17:15",
+        "action": "out",
+        "taskId": 0,
+        "taskName": "(Standard)",
+        "comment": ""
+      }
+    ],
+    "note": "",
+    "totalMinutes": 525,
+    "totalFormatted": "8h 45m",
+    "tasks": [
+      "(Standard)"
+    ]
+  },
+  {
+    "date": "2026-01-06",
+    "stamps": [
+      {
+        "seqNr": 584,
+        "date": "2026-01-06",
+        "time": "09:26",
+        "action": "in",
+        "taskId": 0,
+        "taskName": "(Standard)",
+        "comment": ""
+      },
+      {
+        "seqNr": 586,
+        "date": "2026-01-06",
+        "time": "12:14",
+        "action": "out",
+        "taskId": 0,
+        "taskName": "(Standard)",
+        "comment": ""
+      },
+      {
+        "seqNr": 587,
+        "date": "2026-01-06",
+        "time": "13:25",
+        "action": "in",
+        "taskId": 0,
+        "taskName": "(Standard)",
+        "comment": ""
+      },
+      {
+        "seqNr": 589,
+        "date": "2026-01-06",
+        "time": "18:15",
+        "action": "out",
+        "taskId": 0,
+        "taskName": "(Standard)",
+        "comment": ""
+      }
+    ],
+    "note": "",
+    "totalMinutes": 458,
+    "totalFormatted": "7h 38m",
+    "tasks": [
+      "(Standard)"
+    ]
+  },
+  {
+    "date": "2026-01-07",
+    "stamps": [
+      {
+        "seqNr": 590,
+        "date": "2026-01-07",
+        "time": "11:54",
+        "action": "in",
+        "taskId": 0,
+        "taskName": "(Standard)",
+        "comment": ""
+      },
+      {
+        "seqNr": 592,
+        "date": "2026-01-07",
+        "time": "18:38",
+        "action": "out",
+        "taskId": 0,
+        "taskName": "(Standard)",
+        "comment": ""
+      }
+    ],
+    "note": "",
+    "totalMinutes": 404,
+    "totalFormatted": "6h 44m",
+    "tasks": [
+      "(Standard)"
+    ]
+  },
+  {
+    "date": "2026-01-08",
+    "stamps": [
+      {
+        "seqNr": 562,
+        "date": "2026-01-08",
+        "time": "08:43",
+        "action": "in",
+        "taskId": 0,
+        "taskName": "(Standard)",
+        "comment": ""
+      },
+      {
+        "seqNr": 565,
+        "date": "2026-01-08",
+        "time": "12:00",
+        "action": "out",
+        "taskId": 0,
+        "taskName": "(Standard)",
+        "comment": ""
+      },
+      {
+        "seqNr": 566,
+        "date": "2026-01-08",
+        "time": "12:30",
+        "action": "in",
+        "taskId": 0,
+        "taskName": "(Standard)",
+        "comment": ""
+      },
+      {
+        "seqNr": 564,
+        "date": "2026-01-08",
+        "time": "17:55",
+        "action": "out",
+        "taskId": 0,
+        "taskName": "(Standard)",
+        "comment": ""
+      }
+    ],
+    "note": "",
+    "totalMinutes": 522,
+    "totalFormatted": "8h 42m",
+    "tasks": [
+      "(Standard)"
+    ]
+  },
+  {
+    "date": "2026-01-09",
+    "stamps": [
+      {
+        "seqNr": 567,
+        "date": "2026-01-09",
+        "time": "08:27",
+        "action": "in",
+        "taskId": 0,
+        "taskName": "(Standard)",
+        "comment": ""
+      },
+      {
+        "seqNr": 570,
+        "date": "2026-01-09",
+        "time": "12:00",
+        "action": "out",
+        "taskId": 0,
+        "taskName": "(Standard)",
+        "comment": ""
+      },
+      {
+        "seqNr": 571,
+        "date": "2026-01-09",
+        "time": "12:30",
+        "action": "in",
+        "taskId": 0,
+        "taskName": "(Standard)",
+        "comment": ""
+      },
+      {
+        "seqNr": 569,
+        "date": "2026-01-09",
+        "time": "17:00",
+        "action": "out",
+        "taskId": 0,
+        "taskName": "(Standard)",
+        "comment": ""
+      }
+    ],
+    "note": "",
+    "totalMinutes": 483,
+    "totalFormatted": "8h 03m",
+    "tasks": [
+      "(Standard)"
+    ]
+  },
+  {
+    "date": "2026-01-13",
+    "stamps": [
+      {
+        "seqNr": 572,
+        "date": "2026-01-13",
+        "time": "10:42",
+        "action": "in",
+        "taskId": 0,
+        "taskName": "(Standard)",
+        "comment": ""
+      },
+      {
+        "seqNr": 575,
+        "date": "2026-01-13",
+        "time": "13:21",
+        "action": "out",
+        "taskId": 0,
+        "taskName": "(Standard)",
+        "comment": ""
+      },
+      {
+        "seqNr": 577,
+        "date": "2026-01-13",
+        "time": "14:37",
+        "action": "in",
+        "taskId": 0,
+        "taskName": "(Standard)",
+        "comment": ""
+      },
+      {
+        "seqNr": 574,
+        "date": "2026-01-13",
+        "time": "19:08",
+        "action": "out",
+        "taskId": 0,
+        "taskName": "(Standard)",
+        "comment": ""
+      }
+    ],
+    "note": "",
+    "totalMinutes": 430,
+    "totalFormatted": "7h 10m",
+    "tasks": [
+      "(Standard)"
+    ]
+  },
+  {
+    "date": "2026-01-14",
+    "stamps": [
+      {
+        "seqNr": 578,
+        "date": "2026-01-14",
+        "time": "09:45",
+        "action": "in",
+        "taskId": 0,
+        "taskName": "(Standard)",
+        "comment": ""
+      }
+    ],
+    "note": "",
+    "totalMinutes": 0,
+    "totalFormatted": "0h 00m",
+    "tasks": [
+      "(Standard)"
+    ]
+  },
+  {
+    "date": "2026-01-19",
+    "stamps": [
+      {
+        "seqNr": 605,
+        "date": "2026-01-19",
+        "time": "08:45",
+        "action": "in",
+        "taskId": 0,
+        "taskName": "(Standard)",
+        "comment": ""
+      },
+      {
+        "seqNr": 606,
+        "date": "2026-01-19",
+        "time": "11:27",
+        "action": "out",
+        "taskId": 0,
+        "taskName": "(Standard)",
+        "comment": ""
+      },
+      {
+        "seqNr": 607,
+        "date": "2026-01-19",
+        "time": "12:15",
+        "action": "in",
+        "taskId": 0,
+        "taskName": "(Standard)",
+        "comment": ""
+      }
+    ],
+    "note": "",
+    "totalMinutes": 162,
+    "totalFormatted": "2h 42m",
+    "tasks": [
+      "(Standard)"
+    ]
+  },
+  {
+    "date": "2026-01-21",
+    "stamps": [
+      {
+        "seqNr": 608,
+        "date": "2026-01-21",
+        "time": "09:21",
+        "action": "in",
+        "taskId": 0,
+        "taskName": "(Standard)",
+        "comment": ""
+      },
+      {
+        "seqNr": 609,
+        "date": "2026-01-21",
+        "time": "12:00",
+        "action": "out",
+        "taskId": 0,
+        "taskName": "(Standard)",
+        "comment": ""
+      },
+      {
+        "seqNr": 610,
+        "date": "2026-01-21",
+        "time": "13:15",
+        "action": "in",
+        "taskId": 0,
+        "taskName": "(Standard)",
+        "comment": ""
+      },
+      {
+        "seqNr": 612,
+        "date": "2026-01-21",
+        "time": "19:01",
+        "action": "out",
+        "taskId": 0,
+        "taskName": "(Standard)",
+        "comment": ""
+      }
+    ],
+    "note": "",
+    "totalMinutes": 505,
+    "totalFormatted": "8h 25m",
+    "tasks": [
+      "(Standard)"
+    ]
+  },
+  {
+    "date": "2026-01-22",
+    "stamps": [
+      {
+        "seqNr": 613,
+        "date": "2026-01-22",
+        "time": "08:50",
+        "action": "in",
+        "taskId": 0,
+        "taskName": "(Standard)",
+        "comment": ""
+      },
+      {
+        "seqNr": 615,
+        "date": "2026-01-22",
+        "time": "11:04",
+        "action": "out",
+        "taskId": 0,
+        "taskName": "(Standard)",
+        "comment": ""
+      },
+      {
+        "seqNr": 616,
+        "date": "2026-01-22",
+        "time": "12:10",
+        "action": "in",
+        "taskId": 0,
+        "taskName": "(Standard)",
+        "comment": ""
+      },
+      {
+        "seqNr": 618,
+        "date": "2026-01-22",
+        "time": "18:07",
+        "action": "out",
+        "taskId": 0,
+        "taskName": "(Standard)",
+        "comment": ""
+      }
+    ],
+    "note": "",
+    "totalMinutes": 491,
+    "totalFormatted": "8h 11m",
+    "tasks": [
+      "(Standard)"
+    ]
+  },
+  {
+    "date": "2026-01-23",
+    "stamps": [
+      {
+        "seqNr": 619,
+        "date": "2026-01-23",
+        "time": "08:13",
+        "action": "in",
+        "taskId": 0,
+        "taskName": "(Standard)",
+        "comment": ""
+      },
+      {
+        "seqNr": 621,
+        "date": "2026-01-23",
+        "time": "12:00",
+        "action": "out",
+        "taskId": 0,
+        "taskName": "(Standard)",
+        "comment": ""
+      },
+      {
+        "seqNr": 622,
+        "date": "2026-01-23",
+        "time": "12:30",
+        "action": "in",
+        "taskId": 0,
+        "taskName": "(Standard)",
+        "comment": ""
+      },
+      {
+        "seqNr": 620,
+        "date": "2026-01-23",
+        "time": "16:47",
+        "action": "out",
+        "taskId": 0,
+        "taskName": "(Standard)",
+        "comment": ""
+      }
+    ],
+    "note": "",
+    "totalMinutes": 484,
+    "totalFormatted": "8h 04m",
+    "tasks": [
+      "(Standard)"
+    ]
+  },
+  {
+    "date": "2026-01-26",
+    "stamps": [
+      {
+        "seqNr": 623,
+        "date": "2026-01-26",
+        "time": "08:56",
+        "action": "in",
+        "taskId": 0,
+        "taskName": "(Standard)",
+        "comment": ""
+      },
+      {
+        "seqNr": 626,
+        "date": "2026-01-26",
+        "time": "12:00",
+        "action": "out",
+        "taskId": 0,
+        "taskName": "(Standard)",
+        "comment": ""
+      },
+      {
+        "seqNr": 627,
+        "date": "2026-01-26",
+        "time": "12:30",
+        "action": "in",
+        "taskId": 0,
+        "taskName": "(Standard)",
+        "comment": ""
+      },
+      {
+        "seqNr": 629,
+        "date": "2026-01-26",
+        "time": "18:57",
+        "action": "out",
+        "taskId": 0,
+        "taskName": "(Standard)",
+        "comment": ""
+      }
+    ],
+    "note": "",
+    "totalMinutes": 571,
+    "totalFormatted": "9h 31m",
+    "tasks": [
+      "(Standard)"
+    ]
+  },
+  {
+    "date": "2026-01-27",
+    "stamps": [
+      {
+        "seqNr": 631,
+        "date": "2026-01-27",
+        "time": "08:02",
+        "action": "in",
+        "taskId": 0,
+        "taskName": "(Standard)",
+        "comment": ""
+      },
+      {
+        "seqNr": 632,
+        "date": "2026-01-27",
+        "time": "10:36",
+        "action": "out",
+        "taskId": 0,
+        "taskName": "(Standard)",
+        "comment": ""
+      },
+      {
+        "seqNr": 633,
+        "date": "2026-01-27",
+        "time": "10:45",
+        "action": "in",
+        "taskId": 0,
+        "taskName": "(Standard)",
+        "comment": ""
+      },
+      {
+        "seqNr": 634,
+        "date": "2026-01-27",
+        "time": "12:45",
+        "action": "out",
+        "taskId": 0,
+        "taskName": "(Standard)",
+        "comment": ""
+      },
+      {
+        "seqNr": 635,
+        "date": "2026-01-27",
+        "time": "13:10",
+        "action": "in",
+        "taskId": 0,
+        "taskName": "(Standard)",
+        "comment": ""
+      },
+      {
+        "seqNr": 637,
+        "date": "2026-01-27",
+        "time": "17:20",
+        "action": "out",
+        "taskId": 0,
+        "taskName": "(Standard)",
+        "comment": ""
+      }
+    ],
+    "note": "",
+    "totalMinutes": 524,
+    "totalFormatted": "8h 44m",
+    "tasks": [
+      "(Standard)"
+    ]
+  },
+  {
+    "date": "2026-01-28",
+    "stamps": [
+      {
+        "seqNr": 630,
+        "date": "2026-01-28",
+        "time": "09:36",
+        "action": "in",
+        "taskId": 0,
+        "taskName": "(Standard)",
+        "comment": ""
+      },
+      {
+        "seqNr": 640,
+        "date": "2026-01-28",
+        "time": "12:00",
+        "action": "out",
+        "taskId": 0,
+        "taskName": "(Standard)",
+        "comment": ""
+      },
+      {
+        "seqNr": 641,
+        "date": "2026-01-28",
+        "time": "12:30",
+        "action": "in",
+        "taskId": 0,
+        "taskName": "(Standard)",
+        "comment": ""
+      },
+      {
+        "seqNr": 639,
+        "date": "2026-01-28",
+        "time": "18:21",
+        "action": "out",
+        "taskId": 0,
+        "taskName": "(Standard)",
+        "comment": ""
+      }
+    ],
+    "note": "",
+    "totalMinutes": 495,
+    "totalFormatted": "8h 15m",
+    "tasks": [
+      "(Standard)"
+    ]
+  },
+  {
+    "date": "2026-01-29",
+    "stamps": [
+      {
+        "seqNr": 643,
+        "date": "2026-01-29",
+        "time": "08:20",
+        "action": "in",
+        "taskId": 0,
+        "taskName": "(Standard)",
+        "comment": ""
+      },
+      {
+        "seqNr": 645,
+        "date": "2026-01-29",
+        "time": "09:39",
+        "action": "out",
+        "taskId": 0,
+        "taskName": "(Standard)",
+        "comment": ""
+      },
+      {
+        "seqNr": 642,
+        "date": "2026-01-29",
+        "time": "09:59",
+        "action": "in",
+        "taskId": 0,
+        "taskName": "(Standard)",
+        "comment": ""
+      },
+      {
+        "seqNr": 647,
+        "date": "2026-01-29",
+        "time": "11:56",
+        "action": "out",
+        "taskId": 0,
+        "taskName": "(Standard)",
+        "comment": ""
+      },
+      {
+        "seqNr": 648,
+        "date": "2026-01-29",
+        "time": "12:35",
+        "action": "in",
+        "taskId": 0,
+        "taskName": "(Standard)",
+        "comment": ""
+      },
+      {
+        "seqNr": 650,
+        "date": "2026-01-29",
+        "time": "17:37",
+        "action": "out",
+        "taskId": 0,
+        "taskName": "(Standard)",
+        "comment": ""
+      }
+    ],
+    "note": "",
+    "totalMinutes": 498,
+    "totalFormatted": "8h 18m",
+    "tasks": [
+      "(Standard)"
+    ]
+  },
+  {
+    "date": "2026-01-30",
+    "stamps": [
+      {
+        "seqNr": 651,
+        "date": "2026-01-30",
+        "time": "08:15",
+        "action": "in",
+        "taskId": 0,
+        "taskName": "(Standard)",
+        "comment": ""
+      },
+      {
+        "seqNr": 654,
+        "date": "2026-01-30",
+        "time": "12:00",
+        "action": "out",
+        "taskId": 0,
+        "taskName": "(Standard)",
+        "comment": ""
+      },
+      {
+        "seqNr": 655,
+        "date": "2026-01-30",
+        "time": "12:30",
+        "action": "in",
+        "taskId": 0,
+        "taskName": "(Standard)",
+        "comment": ""
+      }
+    ],
+    "note": "",
+    "totalMinutes": 225,
+    "totalFormatted": "3h 45m",
+    "tasks": [
+      "(Standard)"
+    ]
+  },
+  {
+    "date": "2026-02-09",
+    "stamps": [
+      {
+        "seqNr": 656,
+        "date": "2026-02-09",
+        "time": "08:55",
+        "action": "in",
+        "taskId": 0,
+        "taskName": "(Standard)",
+        "comment": ""
+      },
+      {
+        "seqNr": 658,
+        "date": "2026-02-09",
+        "time": "15:17",
+        "action": "out",
+        "taskId": 0,
+        "taskName": "(Standard)",
+        "comment": ""
+      },
+      {
+        "seqNr": 659,
+        "date": "2026-02-09",
+        "time": "15:41",
+        "action": "in",
+        "taskId": 0,
+        "taskName": "(Standard)",
+        "comment": ""
+      },
+      {
+        "seqNr": 661,
+        "date": "2026-02-09",
+        "time": "19:00",
+        "action": "out",
+        "taskId": 0,
+        "taskName": "(Standard)",
+        "comment": ""
+      }
+    ],
+    "note": "",
+    "totalMinutes": 581,
+    "totalFormatted": "9h 41m",
+    "tasks": [
+      "(Standard)"
+    ]
+  },
+  {
+    "date": "2026-02-10",
+    "stamps": [
+      {
+        "seqNr": 674,
+        "date": "2026-02-10",
+        "time": "09:00",
+        "action": "in",
+        "taskId": 0,
+        "taskName": "(Standard)",
+        "comment": ""
+      },
+      {
+        "seqNr": 676,
+        "date": "2026-02-10",
+        "time": "09:30",
+        "action": "out",
+        "taskId": 0,
+        "taskName": "(Standard)",
+        "comment": ""
+      },
+      {
+        "seqNr": 662,
+        "date": "2026-02-10",
+        "time": "10:30",
+        "action": "in",
+        "taskId": 0,
+        "taskName": "(Standard)",
+        "comment": ""
+      },
+      {
+        "seqNr": 664,
+        "date": "2026-02-10",
+        "time": "12:44",
+        "action": "out",
+        "taskId": 0,
+        "taskName": "(Standard)",
+        "comment": ""
+      },
+      {
+        "seqNr": 665,
+        "date": "2026-02-10",
+        "time": "13:39",
+        "action": "in",
+        "taskId": 0,
+        "taskName": "(Standard)",
+        "comment": ""
+      },
+      {
+        "seqNr": 667,
+        "date": "2026-02-10",
+        "time": "18:58",
+        "action": "out",
+        "taskId": 0,
+        "taskName": "(Standard)",
+        "comment": ""
+      }
+    ],
+    "note": "",
+    "totalMinutes": 483,
+    "totalFormatted": "8h 03m",
+    "tasks": [
+      "(Standard)"
+    ]
+  },
+  {
+    "date": "2026-02-11",
+    "stamps": [
+      {
+        "seqNr": 668,
+        "date": "2026-02-11",
+        "time": "09:23",
+        "action": "in",
+        "taskId": 0,
+        "taskName": "(Standard)",
+        "comment": ""
+      },
+      {
+        "seqNr": 670,
+        "date": "2026-02-11",
+        "time": "12:30",
+        "action": "out",
+        "taskId": 0,
+        "taskName": "(Standard)",
+        "comment": ""
+      },
+      {
+        "seqNr": 671,
+        "date": "2026-02-11",
+        "time": "13:31",
+        "action": "in",
+        "taskId": 0,
+        "taskName": "(Standard)",
+        "comment": ""
+      },
+      {
+        "seqNr": 673,
+        "date": "2026-02-11",
+        "time": "16:40",
+        "action": "out",
+        "taskId": 0,
+        "taskName": "(Standard)",
+        "comment": ""
+      }
+    ],
+    "note": "",
+    "totalMinutes": 376,
+    "totalFormatted": "6h 16m",
+    "tasks": [
+      "(Standard)"
+    ]
+  },
+  {
+    "date": "2026-02-12",
+    "stamps": [
+      {
+        "seqNr": 677,
+        "date": "2026-02-12",
+        "time": "08:36",
+        "action": "in",
+        "taskId": 0,
+        "taskName": "(Standard)",
+        "comment": ""
+      },
+      {
+        "seqNr": 680,
+        "date": "2026-02-12",
+        "time": "12:00",
+        "action": "out",
+        "taskId": 0,
+        "taskName": "(Standard)",
+        "comment": ""
+      },
+      {
+        "seqNr": 681,
+        "date": "2026-02-12",
+        "time": "12:30",
+        "action": "in",
+        "taskId": 0,
+        "taskName": "(Standard)",
+        "comment": ""
+      },
+      {
+        "seqNr": 679,
+        "date": "2026-02-12",
+        "time": "17:28",
+        "action": "out",
+        "taskId": 0,
+        "taskName": "(Standard)",
+        "comment": ""
+      }
+    ],
+    "note": "",
+    "totalMinutes": 502,
+    "totalFormatted": "8h 22m",
+    "tasks": [
+      "(Standard)"
+    ]
+  },
+  {
+    "date": "2026-02-13",
+    "stamps": [
+      {
+        "seqNr": 682,
+        "date": "2026-02-13",
+        "time": "08:12",
+        "action": "in",
+        "taskId": 0,
+        "taskName": "(Standard)",
+        "comment": ""
+      },
+      {
+        "seqNr": 685,
+        "date": "2026-02-13",
+        "time": "12:00",
+        "action": "out",
+        "taskId": 0,
+        "taskName": "(Standard)",
+        "comment": ""
+      },
+      {
+        "seqNr": 686,
+        "date": "2026-02-13",
+        "time": "12:30",
+        "action": "in",
+        "taskId": 0,
+        "taskName": "(Standard)",
+        "comment": ""
+      },
+      {
+        "seqNr": 684,
+        "date": "2026-02-13",
+        "time": "17:10",
+        "action": "out",
+        "taskId": 0,
+        "taskName": "(Standard)",
+        "comment": ""
+      }
+    ],
+    "note": "",
+    "totalMinutes": 508,
+    "totalFormatted": "8h 28m",
+    "tasks": [
+      "(Standard)"
+    ]
+  },
+  {
+    "date": "2026-02-16",
+    "stamps": [
+      {
+        "seqNr": 716,
+        "date": "2026-02-16",
+        "time": "08:53",
+        "action": "in",
+        "taskId": 0,
+        "taskName": "(Standard)",
+        "comment": ""
+      },
+      {
+        "seqNr": 722,
+        "date": "2026-02-16",
+        "time": "12:00",
+        "action": "out",
+        "taskId": 0,
+        "taskName": "(Standard)",
+        "comment": ""
+      },
+      {
+        "seqNr": 723,
+        "date": "2026-02-16",
+        "time": "12:45",
+        "action": "in",
+        "taskId": 0,
+        "taskName": "(Standard)",
+        "comment": ""
+      },
+      {
+        "seqNr": 717,
+        "date": "2026-02-16",
+        "time": "18:59",
+        "action": "out",
+        "taskId": 0,
+        "taskName": "(Standard)",
+        "comment": ""
+      }
+    ],
+    "note": "",
+    "totalMinutes": 561,
+    "totalFormatted": "9h 21m",
+    "tasks": [
+      "(Standard)"
+    ]
+  },
+  {
+    "date": "2026-02-17",
+    "stamps": [
+      {
+        "seqNr": 694,
+        "date": "2026-02-17",
+        "time": "08:50",
+        "action": "in",
+        "taskId": 0,
+        "taskName": "(Standard)",
+        "comment": ""
+      },
+      {
+        "seqNr": 697,
+        "date": "2026-02-17",
+        "time": "12:00",
+        "action": "out",
+        "taskId": 0,
+        "taskName": "(Standard)",
+        "comment": ""
+      },
+      {
+        "seqNr": 721,
+        "date": "2026-02-17",
+        "time": "12:45",
+        "action": "in",
+        "taskId": 0,
+        "taskName": "(Standard)",
+        "comment": ""
+      },
+      {
+        "seqNr": 696,
+        "date": "2026-02-17",
+        "time": "18:20",
+        "action": "out",
+        "taskId": 0,
+        "taskName": "(Standard)",
+        "comment": ""
+      }
+    ],
+    "note": "",
+    "totalMinutes": 525,
+    "totalFormatted": "8h 45m",
+    "tasks": [
+      "(Standard)"
+    ]
+  },
+  {
+    "date": "2026-02-18",
+    "stamps": [
+      {
+        "seqNr": 690,
+        "date": "2026-02-18",
+        "time": "08:53",
+        "action": "in",
+        "taskId": 0,
+        "taskName": "(Standard)",
+        "comment": ""
+      },
+      {
+        "seqNr": 691,
+        "date": "2026-02-18",
+        "time": "11:37",
+        "action": "out",
+        "taskId": 0,
+        "taskName": "(Standard)",
+        "comment": ""
+      },
+      {
+        "seqNr": 692,
+        "date": "2026-02-18",
+        "time": "12:19",
+        "action": "in",
+        "taskId": 0,
+        "taskName": "(Standard)",
+        "comment": ""
+      },
+      {
+        "seqNr": 693,
+        "date": "2026-02-18",
+        "time": "18:43",
+        "action": "out",
+        "taskId": 0,
+        "taskName": "(Standard)",
+        "comment": ""
+      }
+    ],
+    "note": "",
+    "totalMinutes": 548,
+    "totalFormatted": "9h 08m",
+    "tasks": [
+      "(Standard)"
+    ]
+  },
+  {
+    "date": "2026-02-19",
+    "stamps": [
+      {
+        "seqNr": 702,
+        "date": "2026-02-19",
+        "time": "08:08",
+        "action": "in",
+        "taskId": 0,
+        "taskName": "(Standard)",
+        "comment": ""
+      },
+      {
+        "seqNr": 704,
+        "date": "2026-02-19",
+        "time": "10:00",
+        "action": "out",
+        "taskId": 0,
+        "taskName": "(Standard)",
+        "comment": ""
+      },
+      {
+        "seqNr": 699,
+        "date": "2026-02-19",
+        "time": "10:14",
+        "action": "in",
+        "taskId": 0,
+        "taskName": "(Standard)",
+        "comment": ""
+      },
+      {
+        "seqNr": 701,
+        "date": "2026-02-19",
+        "time": "11:48",
+        "action": "out",
+        "taskId": 0,
+        "taskName": "(Standard)",
+        "comment": ""
+      },
+      {
+        "seqNr": 705,
+        "date": "2026-02-19",
+        "time": "12:33",
+        "action": "in",
+        "taskId": 0,
+        "taskName": "(Standard)",
+        "comment": ""
+      },
+      {
+        "seqNr": 707,
+        "date": "2026-02-19",
+        "time": "17:45",
+        "action": "out",
+        "taskId": 0,
+        "taskName": "(Standard)",
+        "comment": ""
+      }
+    ],
+    "note": "",
+    "totalMinutes": 518,
+    "totalFormatted": "8h 38m",
+    "tasks": [
+      "(Standard)"
+    ]
+  },
+  {
+    "date": "2026-02-20",
+    "stamps": [
+      {
+        "seqNr": 708,
+        "date": "2026-02-20",
+        "time": "08:10",
+        "action": "in",
+        "taskId": 0,
+        "taskName": "(Standard)",
+        "comment": ""
+      },
+      {
+        "seqNr": 709,
+        "date": "2026-02-20",
+        "time": "12:00",
+        "action": "out",
+        "taskId": 0,
+        "taskName": "(Standard)",
+        "comment": ""
+      },
+      {
+        "seqNr": 710,
+        "date": "2026-02-20",
+        "time": "12:30",
+        "action": "in",
+        "taskId": 0,
+        "taskName": "(Standard)",
+        "comment": ""
+      },
+      {
+        "seqNr": 712,
+        "date": "2026-02-20",
+        "time": "17:02",
+        "action": "out",
+        "taskId": 0,
+        "taskName": "(Standard)",
+        "comment": ""
+      }
+    ],
+    "note": "",
+    "totalMinutes": 502,
+    "totalFormatted": "8h 22m",
+    "tasks": [
+      "(Standard)"
+    ]
+  },
+  {
+    "date": "2026-03-02",
+    "stamps": [
+      {
+        "seqNr": 724,
+        "date": "2026-03-02",
+        "time": "08:53",
+        "action": "in",
+        "taskId": 0,
+        "taskName": "(Standard)",
+        "comment": ""
+      }
+    ],
+    "note": "",
+    "totalMinutes": 0,
+    "totalFormatted": "0h 00m",
+    "tasks": [
+      "(Standard)"
+    ]
+  },
+  {
+    "date": "2026-03-03",
+    "stamps": [
+      {
+        "seqNr": 725,
+        "date": "2026-03-03",
+        "time": "08:22",
+        "action": "in",
+        "taskId": 0,
+        "taskName": "(Standard)",
+        "comment": ""
+      },
+      {
+        "seqNr": 728,
+        "date": "2026-03-03",
+        "time": "12:00",
+        "action": "out",
+        "taskId": 0,
+        "taskName": "(Standard)",
+        "comment": ""
+      },
+      {
+        "seqNr": 729,
+        "date": "2026-03-03",
+        "time": "12:30",
+        "action": "in",
+        "taskId": 0,
+        "taskName": "(Standard)",
+        "comment": ""
+      },
+      {
+        "seqNr": 727,
+        "date": "2026-03-03",
+        "time": "18:35",
+        "action": "out",
+        "taskId": 0,
+        "taskName": "(Standard)",
+        "comment": ""
+      }
+    ],
+    "note": "",
+    "totalMinutes": 583,
+    "totalFormatted": "9h 43m",
+    "tasks": [
+      "(Standard)"
+    ]
+  },
+  {
+    "date": "2026-03-04",
+    "stamps": [
+      {
+        "seqNr": 730,
+        "date": "2026-03-04",
+        "time": "08:36",
+        "action": "in",
+        "taskId": 0,
+        "taskName": "(Standard)",
+        "comment": ""
+      },
+      {
+        "seqNr": 732,
+        "date": "2026-03-04",
+        "time": "09:40",
+        "action": "out",
+        "taskId": 0,
+        "taskName": "(Standard)",
+        "comment": ""
+      },
+      {
+        "seqNr": 733,
+        "date": "2026-03-04",
+        "time": "10:04",
+        "action": "in",
+        "taskId": 0,
+        "taskName": "(Standard)",
+        "comment": ""
+      },
+      {
+        "seqNr": 734,
+        "date": "2026-03-04",
+        "time": "12:00",
+        "action": "out",
+        "taskId": 0,
+        "taskName": "(Standard)",
+        "comment": ""
+      },
+      {
+        "seqNr": 735,
+        "date": "2026-03-04",
+        "time": "12:30",
+        "action": "in",
+        "taskId": 0,
+        "taskName": "(Standard)",
+        "comment": ""
+      }
+    ],
+    "note": "",
+    "totalMinutes": 180,
+    "totalFormatted": "3h 00m",
+    "tasks": [
+      "(Standard)"
+    ]
+  },
+  {
+    "date": "2026-03-09",
+    "stamps": [
+      {
+        "seqNr": 740,
+        "date": "2026-03-09",
+        "time": "08:00",
+        "action": "in",
+        "taskId": 0,
+        "taskName": "(Standard)",
+        "comment": ""
+      },
+      {
+        "seqNr": 737,
+        "date": "2026-03-09",
+        "time": "09:36",
+        "action": "in",
+        "taskId": 0,
+        "taskName": "(Standard)",
+        "comment": ""
+      },
+      {
+        "seqNr": 738,
+        "date": "2026-03-09",
+        "time": "12:00",
+        "action": "out",
+        "taskId": 0,
+        "taskName": "(Standard)",
+        "comment": ""
+      },
+      {
+        "seqNr": 739,
+        "date": "2026-03-09",
+        "time": "12:30",
+        "action": "in",
+        "taskId": 0,
+        "taskName": "(Standard)",
+        "comment": ""
+      },
+      {
+        "seqNr": 741,
+        "date": "2026-03-09",
+        "time": "13:00",
+        "action": "in",
+        "taskId": 0,
+        "taskName": "(Standard)",
+        "comment": ""
+      },
+      {
+        "seqNr": 742,
+        "date": "2026-03-09",
+        "time": "17:30",
+        "action": "out",
+        "taskId": 0,
+        "taskName": "(Standard)",
+        "comment": ""
+      },
+      {
+        "seqNr": 736,
+        "date": "2026-03-09",
+        "time": "18:03",
+        "action": "out",
+        "taskId": 0,
+        "taskName": "(Standard)",
+        "comment": ""
+      }
+    ],
+    "note": "",
+    "totalMinutes": 414,
+    "totalFormatted": "6h 54m",
+    "tasks": [
+      "(Standard)"
+    ]
+  },
+  {
+    "date": "2026-03-10",
+    "stamps": [
+      {
+        "seqNr": 757,
+        "date": "2026-03-10",
+        "time": "08:26",
+        "action": "in",
+        "taskId": 0,
+        "taskName": "(Standard)",
+        "comment": ""
+      },
+      {
+        "seqNr": 760,
+        "date": "2026-03-10",
+        "time": "12:00",
+        "action": "out",
+        "taskId": 0,
+        "taskName": "(Standard)",
+        "comment": ""
+      },
+      {
+        "seqNr": 761,
+        "date": "2026-03-10",
+        "time": "12:30",
+        "action": "in",
+        "taskId": 0,
+        "taskName": "(Standard)",
+        "comment": ""
+      },
+      {
+        "seqNr": 759,
+        "date": "2026-03-10",
+        "time": "17:45",
+        "action": "out",
+        "taskId": 0,
+        "taskName": "(Standard)",
+        "comment": ""
+      }
+    ],
+    "note": "",
+    "totalMinutes": 529,
+    "totalFormatted": "8h 49m",
+    "tasks": [
+      "(Standard)"
+    ]
+  },
+  {
+    "date": "2026-03-11",
+    "stamps": [
+      {
+        "seqNr": 743,
+        "date": "2026-03-11",
+        "time": "08:22",
+        "action": "in",
+        "taskId": 0,
+        "taskName": "(Standard)",
+        "comment": ""
+      },
+      {
+        "seqNr": 744,
+        "date": "2026-03-11",
+        "time": "11:50",
+        "action": "out",
+        "taskId": 0,
+        "taskName": "(Standard)",
+        "comment": ""
+      },
+      {
+        "seqNr": 745,
+        "date": "2026-03-11",
+        "time": "12:38",
+        "action": "in",
+        "taskId": 0,
+        "taskName": "(Standard)",
+        "comment": ""
+      },
+      {
+        "seqNr": 763,
+        "date": "2026-03-11",
+        "time": "17:42",
+        "action": "out",
+        "taskId": 0,
+        "taskName": "(Standard)",
+        "comment": ""
+      }
+    ],
+    "note": "",
+    "totalMinutes": 512,
+    "totalFormatted": "8h 32m",
+    "tasks": [
+      "(Standard)"
+    ]
+  },
+  {
+    "date": "2026-03-12",
+    "stamps": [
+      {
+        "seqNr": 746,
+        "date": "2026-03-12",
+        "time": "08:08",
+        "action": "in",
+        "taskId": 0,
+        "taskName": "(Standard)",
+        "comment": ""
+      },
+      {
+        "seqNr": 747,
+        "date": "2026-03-12",
+        "time": "11:50",
+        "action": "out",
+        "taskId": 0,
+        "taskName": "(Standard)",
+        "comment": ""
+      },
+      {
+        "seqNr": 748,
+        "date": "2026-03-12",
+        "time": "12:30",
+        "action": "in",
+        "taskId": 0,
+        "taskName": "(Standard)",
+        "comment": ""
+      },
+      {
+        "seqNr": 765,
+        "date": "2026-03-12",
+        "time": "17:30",
+        "action": "out",
+        "taskId": 0,
+        "taskName": "(Standard)",
+        "comment": ""
+      }
+    ],
+    "note": "",
+    "totalMinutes": 522,
+    "totalFormatted": "8h 42m",
+    "tasks": [
+      "(Standard)"
+    ]
+  },
+  {
+    "date": "2026-03-13",
+    "stamps": [
+      {
+        "seqNr": 766,
+        "date": "2026-03-13",
+        "time": "08:24",
+        "action": "in",
+        "taskId": 0,
+        "taskName": "(Standard)",
+        "comment": ""
+      },
+      {
+        "seqNr": 769,
+        "date": "2026-03-13",
+        "time": "12:00",
+        "action": "out",
+        "taskId": 0,
+        "taskName": "(Standard)",
+        "comment": ""
+      },
+      {
+        "seqNr": 770,
+        "date": "2026-03-13",
+        "time": "12:30",
+        "action": "in",
+        "taskId": 0,
+        "taskName": "(Standard)",
+        "comment": ""
+      },
+      {
+        "seqNr": 768,
+        "date": "2026-03-13",
+        "time": "16:48",
+        "action": "out",
+        "taskId": 0,
+        "taskName": "(Standard)",
+        "comment": ""
+      }
+    ],
+    "note": "",
+    "totalMinutes": 474,
+    "totalFormatted": "7h 54m",
+    "tasks": [
+      "(Standard)"
+    ]
+  },
+  {
+    "date": "2026-03-16",
+    "stamps": [
+      {
+        "seqNr": 749,
+        "date": "2026-03-16",
+        "time": "08:49",
+        "action": "in",
+        "taskId": 0,
+        "taskName": "(Standard)",
+        "comment": ""
+      },
+      {
+        "seqNr": 751,
+        "date": "2026-03-16",
+        "time": "13:15",
+        "action": "out",
+        "taskId": 0,
+        "taskName": "(Standard)",
+        "comment": ""
+      },
+      {
+        "seqNr": 750,
+        "date": "2026-03-16",
+        "time": "14:10",
+        "action": "in",
+        "taskId": 0,
+        "taskName": "(Standard)",
+        "comment": ""
+      },
+      {
+        "seqNr": 756,
+        "date": "2026-03-16",
+        "time": "19:31",
+        "action": "out",
+        "taskId": 0,
+        "taskName": "(Standard)",
+        "comment": ""
+      }
+    ],
+    "note": "",
+    "totalMinutes": 587,
+    "totalFormatted": "9h 47m",
+    "tasks": [
+      "(Standard)"
+    ]
+  },
+  {
+    "date": "2026-03-17",
+    "stamps": [
+      {
+        "seqNr": 773,
+        "date": "2026-03-17",
+        "time": "08:41",
+        "action": "in",
+        "taskId": 0,
+        "taskName": "(Standard)",
+        "comment": ""
+      },
+      {
+        "seqNr": 772,
+        "date": "2026-03-17",
+        "time": "13:43",
+        "action": "out",
+        "taskId": 0,
+        "taskName": "(Standard)",
+        "comment": ""
+      },
+      {
+        "seqNr": 774,
+        "date": "2026-03-17",
+        "time": "14:30",
+        "action": "in",
+        "taskId": 0,
+        "taskName": "(Standard)",
+        "comment": ""
+      },
+      {
+        "seqNr": 776,
+        "date": "2026-03-17",
+        "time": "17:46",
+        "action": "out",
+        "taskId": 0,
+        "taskName": "(Standard)",
+        "comment": ""
+      }
+    ],
+    "note": "",
+    "totalMinutes": 498,
+    "totalFormatted": "8h 18m",
+    "tasks": [
+      "(Standard)"
+    ]
+  },
+  {
+    "date": "2026-03-18",
+    "stamps": [
+      {
+        "seqNr": 777,
+        "date": "2026-03-18",
+        "time": "09:00",
+        "action": "in",
+        "taskId": 0,
+        "taskName": "(Standard)",
+        "comment": ""
+      },
+      {
+        "seqNr": 780,
+        "date": "2026-03-18",
+        "time": "12:00",
+        "action": "out",
+        "taskId": 0,
+        "taskName": "(Standard)",
+        "comment": ""
+      },
+      {
+        "seqNr": 781,
+        "date": "2026-03-18",
+        "time": "12:30",
+        "action": "in",
+        "taskId": 0,
+        "taskName": "(Standard)",
+        "comment": ""
+      },
+      {
+        "seqNr": 779,
+        "date": "2026-03-18",
+        "time": "18:50",
+        "action": "out",
+        "taskId": 0,
+        "taskName": "(Standard)",
+        "comment": ""
+      }
+    ],
+    "note": "",
+    "totalMinutes": 560,
+    "totalFormatted": "9h 20m",
+    "tasks": [
+      "(Standard)"
+    ]
+  },
+  {
+    "date": "2026-03-19",
+    "stamps": [
+      {
+        "seqNr": 782,
+        "date": "2026-03-19",
+        "time": "08:28",
+        "action": "in",
+        "taskId": 0,
+        "taskName": "(Standard)",
+        "comment": ""
+      },
+      {
+        "seqNr": 785,
+        "date": "2026-03-19",
+        "time": "11:48",
+        "action": "out",
+        "taskId": 0,
+        "taskName": "(Standard)",
+        "comment": ""
+      },
+      {
+        "seqNr": 789,
+        "date": "2026-03-19",
+        "time": "12:30",
+        "action": "in",
+        "taskId": 0,
+        "taskName": "(Standard)",
+        "comment": ""
+      },
+      {
+        "seqNr": 791,
+        "date": "2026-03-19",
+        "time": "17:32",
+        "action": "out",
+        "taskId": 0,
+        "taskName": "(Standard)",
+        "comment": ""
+      }
+    ],
+    "note": "",
+    "totalMinutes": 502,
+    "totalFormatted": "8h 22m",
+    "tasks": [
+      "(Standard)"
+    ]
+  },
+  {
+    "date": "2026-03-20",
+    "stamps": [
+      {
+        "seqNr": 786,
+        "date": "2026-03-20",
+        "time": "08:34",
+        "action": "in",
+        "taskId": 0,
+        "taskName": "(Standard)",
+        "comment": ""
+      },
+      {
+        "seqNr": 788,
+        "date": "2026-03-20",
+        "time": "11:44",
+        "action": "out",
+        "taskId": 0,
+        "taskName": "(Standard)",
+        "comment": ""
+      },
+      {
+        "seqNr": 792,
+        "date": "2026-03-20",
+        "time": "12:27",
+        "action": "in",
+        "taskId": 0,
+        "taskName": "(Standard)",
+        "comment": ""
+      },
+      {
+        "seqNr": 794,
+        "date": "2026-03-20",
+        "time": "17:26",
+        "action": "out",
+        "taskId": 0,
+        "taskName": "(Standard)",
+        "comment": ""
+      }
+    ],
+    "note": "",
+    "totalMinutes": 489,
+    "totalFormatted": "8h 09m",
+    "tasks": [
+      "(Standard)"
+    ]
+  },
+  {
+    "date": "2026-03-23",
+    "stamps": [
+      {
+        "seqNr": 795,
+        "date": "2026-03-23",
+        "time": "09:01",
+        "action": "in",
+        "taskId": 0,
+        "taskName": "(Standard)",
+        "comment": ""
+      },
+      {
+        "seqNr": 797,
+        "date": "2026-03-23",
+        "time": "13:06",
+        "action": "out",
+        "taskId": 0,
+        "taskName": "(Standard)",
+        "comment": ""
+      },
+      {
+        "seqNr": 798,
+        "date": "2026-03-23",
+        "time": "13:53",
+        "action": "out",
+        "taskId": 0,
+        "taskName": "(Standard)",
+        "comment": ""
+      },
+      {
+        "seqNr": 799,
+        "date": "2026-03-23",
+        "time": "13:58",
+        "action": "out",
+        "taskId": 0,
+        "taskName": "(Standard)",
+        "comment": ""
+      },
+      {
+        "seqNr": 800,
+        "date": "2026-03-23",
+        "time": "14:20",
+        "action": "in",
+        "taskId": 0,
+        "taskName": "(Standard)",
+        "comment": ""
+      },
+      {
+        "seqNr": 802,
+        "date": "2026-03-23",
+        "time": "18:09",
+        "action": "out",
+        "taskId": 0,
+        "taskName": "(Standard)",
+        "comment": ""
+      }
+    ],
+    "note": "",
+    "totalMinutes": 474,
+    "totalFormatted": "7h 54m",
+    "tasks": [
+      "(Standard)"
+    ]
+  }
+]
