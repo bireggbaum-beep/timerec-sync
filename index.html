@@ -1,0 +1,634 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Zeiterfassung</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    background: #ECEFF1;
+    color: #212121;
+    min-height: 100vh;
+  }
+
+  /* ── Header ─────────────────────────────────────────────── */
+  header {
+    background: #1565C0;
+    color: #fff;
+    padding: 0;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    box-shadow: 0 2px 8px rgba(0,0,0,.3);
+  }
+  .header-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 12px 16px 8px;
+  }
+  .header-top h1 {
+    font-size: 20px;
+    font-weight: 500;
+    letter-spacing: .5px;
+  }
+  .header-top .meta-info {
+    font-size: 11px;
+    opacity: .75;
+    text-align: right;
+  }
+  .month-nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 4px 10px;
+  }
+  .month-nav button {
+    background: none;
+    border: none;
+    color: #fff;
+    font-size: 22px;
+    width: 44px;
+    height: 44px;
+    border-radius: 22px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background .15s;
+  }
+  .month-nav button:hover { background: rgba(255,255,255,.15); }
+  .month-nav button:disabled { opacity: .3; cursor: default; }
+  .month-label {
+    text-align: center;
+    flex: 1;
+  }
+  .month-label .month-name {
+    font-size: 18px;
+    font-weight: 500;
+  }
+  .month-label .month-total {
+    font-size: 13px;
+    opacity: .85;
+    margin-top: 1px;
+  }
+
+  /* ── Month summary bar ───────────────────────────────────── */
+  .month-summary {
+    background: #1976D2;
+    padding: 8px 16px;
+    display: flex;
+    gap: 16px;
+    flex-wrap: wrap;
+  }
+  .month-summary .stat {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .month-summary .stat-val {
+    font-size: 15px;
+    font-weight: 600;
+    color: #fff;
+  }
+  .month-summary .stat-lbl {
+    font-size: 10px;
+    color: rgba(255,255,255,.7);
+    text-transform: uppercase;
+    letter-spacing: .4px;
+  }
+  .task-bar {
+    display: flex;
+    gap: 6px;
+    flex-wrap: wrap;
+    padding: 6px 16px 10px;
+    background: #1976D2;
+  }
+  .task-chip {
+    font-size: 11px;
+    padding: 2px 8px;
+    border-radius: 10px;
+    color: #fff;
+    font-weight: 500;
+  }
+
+  /* ── Day list ────────────────────────────────────────────── */
+  .day-list {
+    padding: 8px 0 24px;
+    max-width: 640px;
+    margin: 0 auto;
+  }
+
+  .day-card {
+    background: #fff;
+    margin: 4px 8px;
+    border-radius: 6px;
+    box-shadow: 0 1px 3px rgba(0,0,0,.12);
+    overflow: hidden;
+  }
+  .day-card.weekend .day-header {
+    background: #FFF8E1;
+  }
+  .day-card.today .day-header {
+    background: #E3F2FD;
+  }
+
+  .day-header {
+    display: flex;
+    align-items: center;
+    padding: 10px 12px;
+    cursor: pointer;
+    user-select: none;
+    gap: 10px;
+  }
+  .day-header:hover { background: #F5F5F5; }
+  .day-card.weekend .day-header:hover { background: #FFF3CD; }
+
+  .day-weekday {
+    width: 28px;
+    font-size: 11px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #757575;
+    flex-shrink: 0;
+  }
+  .day-card.weekend .day-weekday { color: #E53935; }
+
+  .day-date {
+    font-size: 15px;
+    font-weight: 500;
+    width: 70px;
+    flex-shrink: 0;
+  }
+
+  .day-tasks {
+    display: flex;
+    gap: 4px;
+    flex-wrap: wrap;
+    flex: 1;
+  }
+  .day-task-dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 4px;
+    flex-shrink: 0;
+    margin-top: 4px;
+  }
+
+  .day-total {
+    font-size: 14px;
+    font-weight: 600;
+    color: #1565C0;
+    white-space: nowrap;
+    min-width: 60px;
+    text-align: right;
+  }
+  .day-total.zero { color: #BDBDBD; }
+
+  .day-toggle {
+    font-size: 16px;
+    color: #9E9E9E;
+    transition: transform .2s;
+    flex-shrink: 0;
+  }
+  .day-card.open .day-toggle { transform: rotate(180deg); }
+
+  /* ── Stamps detail ───────────────────────────────────────── */
+  .day-detail {
+    display: none;
+    border-top: 1px solid #F0F0F0;
+    padding: 4px 0;
+  }
+  .day-card.open .day-detail { display: block; }
+
+  .stamp-pair {
+    display: flex;
+    align-items: flex-start;
+    padding: 6px 12px;
+    gap: 10px;
+    border-bottom: 1px solid #FAFAFA;
+  }
+  .stamp-pair:last-child { border-bottom: none; }
+
+  .stamp-task-bar {
+    width: 3px;
+    border-radius: 2px;
+    align-self: stretch;
+    min-height: 20px;
+    flex-shrink: 0;
+    margin-top: 2px;
+  }
+
+  .stamp-times {
+    flex: 1;
+  }
+  .stamp-time-row {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+  }
+  .stamp-time {
+    font-size: 14px;
+    font-weight: 500;
+    color: #212121;
+    font-variant-numeric: tabular-nums;
+  }
+  .stamp-arrow {
+    color: #9E9E9E;
+    font-size: 12px;
+  }
+  .stamp-duration {
+    font-size: 12px;
+    color: #757575;
+    margin-left: auto;
+    font-variant-numeric: tabular-nums;
+  }
+  .stamp-task-name {
+    font-size: 11px;
+    color: #757575;
+    margin-top: 1px;
+  }
+  .stamp-comment {
+    font-size: 11px;
+    color: #1565C0;
+    margin-top: 2px;
+    font-style: italic;
+  }
+  .stamp-single {
+    padding: 6px 12px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: #E53935;
+    font-size: 13px;
+  }
+  .stamp-single .stamp-task-bar { background: #EF9A9A !important; }
+
+  .day-note {
+    padding: 6px 12px 8px;
+    font-size: 12px;
+    color: #5D4037;
+    background: #FFF8E1;
+    border-top: 1px solid #F0F0F0;
+    display: flex;
+    gap: 6px;
+  }
+  .day-note::before { content: "📝"; font-size: 12px; }
+
+  /* ── Empty state ─────────────────────────────────────────── */
+  .empty-month {
+    text-align: center;
+    padding: 48px 16px;
+    color: #9E9E9E;
+    font-size: 14px;
+  }
+  .empty-month .empty-icon { font-size: 48px; margin-bottom: 12px; }
+
+  /* ── Loading ─────────────────────────────────────────────── */
+  #loading {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 60vh;
+    gap: 16px;
+    color: #757575;
+  }
+  .spinner {
+    width: 40px; height: 40px;
+    border: 3px solid #E0E0E0;
+    border-top-color: #1565C0;
+    border-radius: 50%;
+    animation: spin .8s linear infinite;
+  }
+  @keyframes spin { to { transform: rotate(360deg); } }
+
+  /* ── Error ───────────────────────────────────────────────── */
+  #error {
+    display: none;
+    padding: 32px 16px;
+    text-align: center;
+    color: #C62828;
+  }
+
+  /* ── Responsive ──────────────────────────────────────────── */
+  @media (max-width: 400px) {
+    .day-date { width: 56px; font-size: 14px; }
+    .day-total { font-size: 13px; min-width: 50px; }
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="header-top">
+    <h1>Zeiterfassung</h1>
+    <div class="meta-info" id="metaInfo">Lade…</div>
+  </div>
+  <div class="month-nav">
+    <button id="btnPrev" title="Vorheriger Monat">‹</button>
+    <div class="month-label">
+      <div class="month-name" id="monthName">–</div>
+      <div class="month-total" id="monthTotal"></div>
+    </div>
+    <button id="btnNext" title="Nächster Monat">›</button>
+  </div>
+  <div class="month-summary" id="monthSummary"></div>
+  <div class="task-bar" id="taskBar"></div>
+</header>
+
+<div id="loading">
+  <div class="spinner"></div>
+  <div>Daten werden geladen…</div>
+</div>
+
+<div id="error">
+  <div style="font-size:32px">⚠️</div>
+  <div id="errorMsg" style="margin-top:8px"></div>
+</div>
+
+<div class="day-list" id="dayList" style="display:none"></div>
+
+<script>
+const TASK_COLORS = {
+  0: '#607D8B',   // Standard
+  1: '#1565C0',   // Projektarbeit
+  2: '#2E7D32',   // Support
+  3: '#E65100',   // Ausbildung
+};
+const DEFAULT_COLOR = '#7B1FA2';
+
+const DE_WEEKDAYS = ['So', 'Mo', 'Di', 'Mi', 'Do', 'Fr', 'Sa'];
+const DE_MONTHS   = ['Januar','Februar','März','April','Mai','Juni',
+                     'Juli','August','September','Oktober','November','Dezember'];
+
+let allDays   = [];
+let taskMap   = {};
+let months    = [];   // sorted list of "YYYY-MM" strings
+let curIdx    = 0;    // index into months[] (newest = 0)
+
+function taskColor(id) {
+  return TASK_COLORS[id] ?? DEFAULT_COLOR;
+}
+
+function formatMin(min) {
+  if (min <= 0) return '0h 00m';
+  const h = Math.floor(min / 60);
+  const m = min % 60;
+  return `${h}h ${String(m).padStart(2,'0')}m`;
+}
+
+function pairStamps(stamps) {
+  // Build in/out pairs sequentially
+  const pairs = [];
+  let i = 0;
+  while (i < stamps.length) {
+    const s = stamps[i];
+    if (s.action === 'in') {
+      // find next out
+      let j = i + 1;
+      while (j < stamps.length && stamps[j].action !== 'out') j++;
+      if (j < stamps.length) {
+        pairs.push({ type: 'pair', in: s, out: stamps[j] });
+        i = j + 1;
+      } else {
+        pairs.push({ type: 'open', in: s });
+        i++;
+      }
+    } else {
+      // orphan out (shouldn't happen normally)
+      i++;
+    }
+  }
+  return pairs;
+}
+
+function timeToMin(t) {
+  const [h, m] = t.split(':').map(Number);
+  return h * 60 + m;
+}
+
+function diffMin(t1, t2) {
+  return timeToMin(t2) - timeToMin(t1);
+}
+
+function renderDay(day) {
+  const d    = new Date(day.date + 'T00:00:00');
+  const wd   = DE_WEEKDAYS[d.getDay()];
+  const dd   = String(d.getDate()).padStart(2, '0');
+  const mm   = String(d.getMonth() + 1).padStart(2, '0');
+  const isWE = d.getDay() === 0 || d.getDay() === 6;
+
+  const today = new Date();
+  const isToday = day.date === today.toISOString().slice(0, 10);
+
+  const pairs = pairStamps(day.stamps);
+
+  // Unique task ids for dots
+  const taskIds = [...new Set(day.stamps.map(s => s.taskId))];
+
+  const card = document.createElement('div');
+  card.className = 'day-card' + (isWE ? ' weekend' : '') + (isToday ? ' today' : '');
+
+  // Header row
+  const hdr = document.createElement('div');
+  hdr.className = 'day-header';
+  hdr.innerHTML = `
+    <span class="day-weekday">${wd}</span>
+    <span class="day-date">${dd}.${mm}.</span>
+    <span class="day-tasks">${taskIds.map(id =>
+      `<span class="day-task-dot" style="background:${taskColor(id)}" title="${taskMap[id] ?? '(Standard)'}"></span>`
+    ).join('')}</span>
+    <span class="day-total ${day.totalMinutes <= 0 ? 'zero' : ''}">${day.totalFormatted}</span>
+    <span class="day-toggle">▾</span>
+  `;
+
+  // Detail
+  const det = document.createElement('div');
+  det.className = 'day-detail';
+
+  pairs.forEach(p => {
+    if (p.type === 'pair') {
+      const dur = diffMin(p.in.time, p.out.time);
+      const color = taskColor(p.in.taskId);
+      const taskName = p.in.taskId === 0 ? '' : (taskMap[p.in.taskId] ?? p.in.taskName);
+      const commentIn  = p.in.comment  ? `<div class="stamp-comment">${escHtml(p.in.comment)}</div>`  : '';
+      const commentOut = p.out.comment ? `<div class="stamp-comment">${escHtml(p.out.comment)}</div>` : '';
+      const row = document.createElement('div');
+      row.className = 'stamp-pair';
+      row.innerHTML = `
+        <div class="stamp-task-bar" style="background:${color}"></div>
+        <div class="stamp-times">
+          <div class="stamp-time-row">
+            <span class="stamp-time">${p.in.time}</span>
+            <span class="stamp-arrow">→</span>
+            <span class="stamp-time">${p.out.time}</span>
+            <span class="stamp-duration">${formatMin(dur)}</span>
+          </div>
+          ${taskName ? `<div class="stamp-task-name">${escHtml(taskName)}</div>` : ''}
+          ${commentIn}${commentOut}
+        </div>
+      `;
+      det.appendChild(row);
+    } else {
+      // open stamp (no out)
+      const color = taskColor(p.in.taskId);
+      const row = document.createElement('div');
+      row.className = 'stamp-single';
+      row.innerHTML = `
+        <div class="stamp-task-bar" style="background:${color}"></div>
+        <span class="stamp-time">${p.in.time}</span>
+        <span style="color:#E53935;font-size:12px">→ noch offen</span>
+      `;
+      det.appendChild(row);
+    }
+  });
+
+  if (day.note) {
+    const noteEl = document.createElement('div');
+    noteEl.className = 'day-note';
+    noteEl.textContent = day.note;
+    det.appendChild(noteEl);
+  }
+
+  hdr.addEventListener('click', () => {
+    card.classList.toggle('open');
+  });
+
+  card.appendChild(hdr);
+  card.appendChild(det);
+  return card;
+}
+
+function renderMonth() {
+  const list   = document.getElementById('dayList');
+  const key    = months[curIdx];
+  const [y, m] = key.split('-').map(Number);
+
+  // Nav buttons
+  document.getElementById('btnPrev').disabled = curIdx >= months.length - 1;
+  document.getElementById('btnNext').disabled = curIdx <= 0;
+
+  // Month title
+  document.getElementById('monthName').textContent = `${DE_MONTHS[m - 1]} ${y}`;
+
+  // Filter days
+  const days = allDays.filter(d => d.date.startsWith(key));
+
+  // Monthly stats
+  const totalMin    = days.reduce((s, d) => s + d.totalMinutes, 0);
+  const workDays    = days.filter(d => d.totalMinutes > 0).length;
+  const avgMin      = workDays > 0 ? Math.round(totalMin / workDays) : 0;
+
+  document.getElementById('monthTotal').textContent = formatMin(totalMin);
+
+  // Summary bar
+  const sumEl = document.getElementById('monthSummary');
+  sumEl.innerHTML = `
+    <div class="stat"><span class="stat-val">${formatMin(totalMin)}</span><span class="stat-lbl">Gesamt</span></div>
+    <div class="stat"><span class="stat-val">${workDays}</span><span class="stat-lbl">Tage</span></div>
+    <div class="stat"><span class="stat-val">${formatMin(avgMin)}</span><span class="stat-lbl">Ø / Tag</span></div>
+  `;
+
+  // Task breakdown for this month
+  const taskMin = {};
+  days.forEach(day => {
+    day.stamps.forEach(s => {
+      if (s.action !== 'in') return;
+      // find matching out
+    });
+    // Use pre-calculated totalMinutes per day, distribute by task
+    // Simpler: just show which tasks appear
+  });
+
+  // Task chips (which tasks used this month)
+  const usedTaskIds = [...new Set(days.flatMap(d => d.stamps.map(s => s.taskId)))];
+  const taskBarEl = document.getElementById('taskBar');
+  taskBarEl.innerHTML = usedTaskIds.map(id => {
+    const name  = id === 0 ? '(Standard)' : (taskMap[id] ?? `Task ${id}`);
+    const color = taskColor(id);
+    return `<span class="task-chip" style="background:${color}">${escHtml(name)}</span>`;
+  }).join('');
+  if (usedTaskIds.length === 0) taskBarEl.innerHTML = '';
+
+  // Day list (newest first)
+  list.innerHTML = '';
+  const sorted = [...days].sort((a, b) => b.date.localeCompare(a.date));
+
+  if (sorted.length === 0) {
+    list.innerHTML = `<div class="empty-month">
+      <div class="empty-icon">📭</div>
+      <div>Keine Einträge in diesem Monat</div>
+    </div>`;
+  } else {
+    sorted.forEach(day => list.appendChild(renderDay(day)));
+  }
+}
+
+function escHtml(s) {
+  return s.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;');
+}
+
+async function loadData() {
+  try {
+    const [daysRes, tasksRes, metaRes] = await Promise.all([
+      fetch('data/days.json'),
+      fetch('data/tasks.json'),
+      fetch('data/meta.json'),
+    ]);
+
+    if (!daysRes.ok) throw new Error(`days.json: ${daysRes.status}`);
+    if (!tasksRes.ok) throw new Error(`tasks.json: ${tasksRes.status}`);
+
+    const daysData  = await daysRes.json();
+    const tasksData = await tasksRes.json();
+    const metaData  = metaRes.ok ? await metaRes.json() : null;
+
+    // Build task map
+    tasksData.forEach(t => { taskMap[t.id] = t.name; });
+
+    allDays = daysData;
+
+    // Build sorted months list (newest first)
+    const monthSet = new Set(allDays.map(d => d.date.slice(0, 7)));
+    months = [...monthSet].sort((a, b) => b.localeCompare(a));
+    curIdx = 0; // start at newest
+
+    // Meta info
+    if (metaData) {
+      const sync = new Date(metaData.lastSync);
+      const syncStr = sync.toLocaleDateString('de-DE', { day:'2-digit', month:'2-digit', year:'numeric' })
+                    + ' ' + sync.toLocaleTimeString('de-DE', { hour:'2-digit', minute:'2-digit' });
+      document.getElementById('metaInfo').innerHTML =
+        `${metaData.totalStamps} Einträge<br>Stand: ${syncStr}`;
+    } else {
+      document.getElementById('metaInfo').textContent = '';
+    }
+
+    document.getElementById('loading').style.display = 'none';
+    document.getElementById('dayList').style.display = '';
+
+    renderMonth();
+
+  } catch (err) {
+    document.getElementById('loading').style.display = 'none';
+    document.getElementById('error').style.display = '';
+    document.getElementById('errorMsg').textContent = `Fehler beim Laden: ${err.message}`;
+    console.error(err);
+  }
+}
+
+document.getElementById('btnPrev').addEventListener('click', () => {
+  if (curIdx < months.length - 1) { curIdx++; renderMonth(); }
+});
+document.getElementById('btnNext').addEventListener('click', () => {
+  if (curIdx > 0) { curIdx--; renderMonth(); }
+});
+
+loadData();
+</script>
+</body>
+</html>
