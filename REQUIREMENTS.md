@@ -92,6 +92,22 @@ auf Desktop und Mobile gleichwertig läuft (PWA) und Daten zentral speichert.
 
 ---
 
+## Tech Stack
+
+| Schicht | Technologie |
+|---------|-------------|
+| App | React + Vite (Static Build, PWA) |
+| Lokaler Speicher + Sync | PouchDB (IndexedDB) |
+| Sync-Server + DB | CouchDB (Docker) |
+| Web-Server | Nginx (Docker) |
+| Deployment | docker-compose auf Raspberry Pi |
+| Charts | Recharts |
+| Export | jsPDF + SheetJS |
+
+Alles läuft auf dem Raspberry Pi via `docker-compose up`. Kein externer Service, kein Account.
+
+---
+
 ## Datenmigration
 
 - Bestehende Daten aus `timerec.db.gz` via `sync.py` → JSON → Import-Script
