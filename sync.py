@@ -23,6 +23,113 @@ def load_db(path: str) -> bytes:
     return raw
 
 
+def _min_to_time(minutes: int) -> str:
+    return f"{minutes // 60:02d}:{minutes % 60:02d}"
+
+
+def _parse_settings(conn) -> dict:
+    """Read raw key/value pairs from T_SETTINGS_TMP (format: 'TYPE|KEY=VALUE')."""
+    raw = {}
+    for row in conn.execute("SELECT KEY, ITEM FROM T_SETTINGS_TMP"):
+        item = row["ITEM"] or ""
+        # Strip 'I|KEY=' or 'S|KEY=' prefix
+        if "=" in item:
+            raw[row["KEY"]] = item.split("=", 1)[1]
+        else:
+            raw[row["KEY"]] = item
+    return raw
+
+
+def parse_config(conn) -> dict:
+    s = _parse_settings(conn)
+
+    # ── Daily / per-weekday target times ──
+    default_target = s.get("DailyTargetTime", "08:00")
+    weekday_names = ["sunday", "monday", "tuesday", "wednesday", "thursday", "friday", "saturday"]
+    weekday_targets = {}
+    for i, name in enumerate(weekday_names):
+        key = f"WeekdayTargetTime.{i}"
+        weekday_targets[name] = s[key] if key in s else default_target
+
+    # ── Auto punch-out (StopRunningWorkday = minutes from midnight) ──
+    stop_min = int(s.get("StopRunningWorkday", "0"))
+    auto_punch_out = {"enabled": stop_min > 0, "time": _min_to_time(stop_min) if stop_min else None}
+
+    # ── Auto-breaks ──
+    # Rules stored as "afterWorkTime|breakDuration|defaultBreakStart|flag[|flag2]"
+    num_active = int(s.get("AutoBreak..num", "0"))
+    break_rules = []
+    for i in range(3):
+        val = s.get(f"AutoBreak.{i}")
+        if val:
+            parts = val.split("|")
+            break_rules.append({
+                "afterWorkTime": parts[0],
+                "breakDuration": parts[1],
+                "defaultBreakStart": parts[2],
+                "enabled": i < num_active,
+            })
+
+    auto_breaks = {
+        "enabled": num_active > 0,
+        "validateActual": bool(int(s.get("AutoBreakActualValidation", "0"))),
+        "evalOrder": "highestThreshold" if int(s.get("AutoBreakEvalOrder", "0")) == 1 else "firstMatch",
+        "rules": break_rules,
+    }
+
+    # ── Standard break presets ──
+    standard_breaks = []
+    for i in range(10):
+        val = s.get(f"StandardStampEntry.{i}")
+        if val:
+            parts = val.split("|")
+            if len(parts) >= 2:
+                standard_breaks.append({"start": parts[0], "end": parts[1]})
+
+    # ── Display / theme ──
+    # ThemeV2 = "mode|...|...|...|...|workDayStart|workDayEnd"
+    theme_parts = s.get("ThemeV2", "").split("|")
+    work_day_start = theme_parts[5] if len(theme_parts) > 5 else "07:00"
+    work_day_end   = theme_parts[6] if len(theme_parts) > 6 else "20:00"
+
+    # ── Overtime display ──
+    delta_parts = s.get("DeltaHighlightMain", "|0").split("|")
+    highlight_h = int(delta_parts[1]) if len(delta_parts) > 1 and delta_parts[1].isdigit() else 0
+
+    # ── Day templates (Urlaub, Feiertag, etc.) ──
+    day_templates = []
+    for row in conn.execute(
+        "SELECT KEY, VALUE, VALUE3 FROM T_DOMAIN_VALUE_1 WHERE DOMAIN = 'TemplateTexts' ORDER BY KEY"
+    ):
+        day_templates.append({"id": int(row["VALUE3"]) if row["VALUE3"] else None, "name": row["VALUE"]})
+
+    return {
+        "workSchedule": {
+            "dailyTargetTime": default_target,
+            "weekdayTargets": weekday_targets,
+            "firstDayOfWeek": "monday" if int(s.get("FirstDayOfWeek", "0")) == 0 else "sunday",
+        },
+        "autoPunchOut": auto_punch_out,
+        "autoBreaks": auto_breaks,
+        "standardBreaks": standard_breaks,
+        "overtime": {
+            "trackingEnabled": True,
+            "showDailyDelta": bool(int(s.get("MainDeltaDMTD", "0"))),
+            "showWeeklyDelta": bool(int(s.get("MainDeltaDWTD", "0"))),
+            "highlightThresholdHours": highlight_h,
+        },
+        "display": {
+            "workDayStart": work_day_start,
+            "workDayEnd": work_day_end,
+            "showIsoWeek": bool(int(s.get("ShowIsoWeek", "0"))),
+            "currency": "€",
+            "currencyFormat": s.get("AmountCurrencyString", ""),
+            "breakDetails": bool(int(s.get("BreakDetails", "0"))),
+        },
+        "dayTemplates": day_templates,
+    }
+
+
 def parse_database(db_bytes: bytes) -> dict:
     with tempfile.NamedTemporaryFile(suffix=".db", delete=False) as f:
         f.write(db_bytes)
@@ -129,10 +236,13 @@ def parse_database(db_bytes: bytes) -> dict:
         day["tasks"] = sorted(used_tasks) if used_tasks else ["(Standard)"]
         days_list.append(day)
 
+    config = parse_config(conn)
+
     conn.close()
     os.unlink(db_path)
 
     return {
+        "config": config,
         "tasks": tasks_list,
         "stamps": stamps,
         "days": days_list,
@@ -162,6 +272,7 @@ def write_json(data: dict):
 
     files = {
         "meta.json": meta,
+        "config.json": data["config"],
         "tasks.json": data["tasks"],
         "stamps.json": data["stamps"],
         "days.json": data["days"],
@@ -189,7 +300,7 @@ def main():
 
     data = parse_database(db_bytes)
     print(f"  {len(data['stamps'])} stamps, {len(data['tasks'])} tasks, "
-          f"{len(data['days'])} days, {len(data['notes'])} notes")
+          f"{len(data['days'])} days, {len(data['notes'])} notes, 1 config")
 
     print("Writing JSON:")
     write_json(data)

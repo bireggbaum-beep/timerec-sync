@@ -1,0 +1,82 @@
+{
+  "workSchedule": {
+    "dailyTargetTime": "08:15",
+    "weekdayTargets": {
+      "sunday": "00:00",
+      "monday": "08:15",
+      "tuesday": "08:15",
+      "wednesday": "08:15",
+      "thursday": "08:15",
+      "friday": "08:15",
+      "saturday": "00:00"
+    },
+    "firstDayOfWeek": "monday"
+  },
+  "autoPunchOut": {
+    "enabled": true,
+    "time": "20:00"
+  },
+  "autoBreaks": {
+    "enabled": true,
+    "validateActual": true,
+    "evalOrder": "highestThreshold",
+    "rules": [
+      {
+        "afterWorkTime": "05:00",
+        "breakDuration": "00:30",
+        "defaultBreakStart": "12:00",
+        "enabled": true
+      },
+      {
+        "afterWorkTime": "08:00",
+        "breakDuration": "00:45",
+        "defaultBreakStart": "12:00",
+        "enabled": false
+      },
+      {
+        "afterWorkTime": "10:00",
+        "breakDuration": "01:00",
+        "defaultBreakStart": "12:00",
+        "enabled": false
+      }
+    ]
+  },
+  "standardBreaks": [
+    {
+      "start": "12:00",
+      "end": "12:30"
+    },
+    {
+      "start": "12:00",
+      "end": "12:45"
+    }
+  ],
+  "overtime": {
+    "trackingEnabled": true,
+    "showDailyDelta": true,
+    "showWeeklyDelta": true,
+    "highlightThresholdHours": 2
+  },
+  "display": {
+    "workDayStart": "07:00",
+    "workDayEnd": "20:00",
+    "showIsoWeek": true,
+    "currency": "€",
+    "currencyFormat": "#,## €",
+    "breakDetails": true
+  },
+  "dayTemplates": [
+    {
+      "id": 1001,
+      "name": "Urlaub"
+    },
+    {
+      "id": 1002,
+      "name": "Kompensation"
+    },
+    {
+      "id": 1003,
+      "name": "Feiertag"
+    }
+  ]
+}
