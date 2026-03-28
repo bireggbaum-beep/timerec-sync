@@ -10,6 +10,9 @@ fi
 echo "→ App bauen..."
 cd app && npm ci && npm run build && cd ..
 
+echo "→ Daten kopieren..."
+cp -r data app/dist/data
+
 echo "→ Docker starten..."
 docker compose up -d
 
