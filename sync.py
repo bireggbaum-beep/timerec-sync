@@ -80,30 +80,50 @@ def parse_database(db_bytes: bytes) -> dict:
         stamps.append(stamp)
 
         if date not in days:
-            days[date] = {"date": date, "stamps": [], "note": ""}
-        days[date]["stamps"].append(stamp)
+            days[date] = {"date": date, "_raw_stamps": [], "note": ""}
+        days[date]["_raw_stamps"].append(stamp)
 
-    # ── Compute daily totals ──
+    # ── Compute daily events (kommt/geht pairs) and totals ──
     days_list = []
     for date in sorted(days.keys()):
         day = days[date]
         day["note"] = notes.get(date, "")
 
-        sorted_stamps = sorted(day["stamps"], key=lambda s: s["time"])
-        total_min = 0
-        used_tasks = set()
+        sorted_stamps = sorted(day.pop("_raw_stamps"), key=lambda s: s["time"])
+        events = []
         i = 0
-        while i < len(sorted_stamps) - 1:
-            if sorted_stamps[i]["action"] == "in" and sorted_stamps[i + 1]["action"] == "out":
-                t1 = _time_to_min(sorted_stamps[i]["time"])
-                t2 = _time_to_min(sorted_stamps[i + 1]["time"])
-                total_min += t2 - t1
-                if sorted_stamps[i]["taskId"] != 0:
-                    used_tasks.add(sorted_stamps[i]["taskName"])
-                i += 2
+        while i < len(sorted_stamps):
+            s = sorted_stamps[i]
+            if s["action"] == "in":
+                if i + 1 < len(sorted_stamps) and sorted_stamps[i + 1]["action"] == "out":
+                    out = sorted_stamps[i + 1]
+                    duration = _time_to_min(out["time"]) - _time_to_min(s["time"])
+                    events.append({
+                        "kommt": s["time"],
+                        "geht": out["time"],
+                        "taskId": s["taskId"],
+                        "taskName": s["taskName"],
+                        "comment": s["comment"],
+                        "durationMinutes": duration,
+                    })
+                    i += 2
+                else:
+                    events.append({
+                        "kommt": s["time"],
+                        "geht": None,
+                        "taskId": s["taskId"],
+                        "taskName": s["taskName"],
+                        "comment": s["comment"],
+                        "durationMinutes": None,
+                    })
+                    i += 1
             else:
-                i += 1
+                i += 1  # orphan out-stamp, skip
 
+        total_min = sum(e["durationMinutes"] for e in events if e["durationMinutes"] is not None)
+        used_tasks = {e["taskName"] for e in events if e["taskId"] != 0}
+
+        day["events"] = events
         day["totalMinutes"] = total_min
         day["totalFormatted"] = f"{total_min // 60}h {total_min % 60:02d}m"
         day["tasks"] = sorted(used_tasks) if used_tasks else ["(Standard)"]
