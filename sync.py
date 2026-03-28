@@ -108,6 +108,7 @@ def parse_config(conn) -> dict:
             "dailyTargetTime": default_target,
             "weekdayTargets": weekday_targets,
             "firstDayOfWeek": "monday" if int(s.get("FirstDayOfWeek", "0")) == 0 else "sunday",
+            "flextimeYear": int(s["yc.flextime"]) if "yc.flextime" in s else None,
         },
         "autoPunchOut": auto_punch_out,
         "autoBreaks": auto_breaks,
@@ -142,16 +143,24 @@ def parse_database(db_bytes: bytes) -> dict:
     tasks = {}
     tasks_list = []
     for row in conn.execute(
-        "SELECT ID, NAME, CUSTOMER, SORTNR, INACTIVE_FG, HOURLY_RATE "
+        "SELECT ID, NAME, SORTNR, INACTIVE_FG, "
+        "TARGET_OFF, TIME_SUM_OFF, "
+        "COLOR_CODES, EXTRA1, EXTRA2, EXTRA3, EXTRA4, TIME_ACCUMULATION "
         "FROM T_CATEGORY_1 ORDER BY SORTNR"
     ):
         t = {
             "id": row["ID"],
             "name": row["NAME"],
-            "customer": row["CUSTOMER"] or "",
             "sortNr": row["SORTNR"],
             "inactive": bool(row["INACTIVE_FG"]),
-            "hourlyRate": row["HOURLY_RATE"] or 0,
+            "targetOff": bool(row["TARGET_OFF"]),
+            "timeSumOff": bool(row["TIME_SUM_OFF"]),
+            "colorCode": row["COLOR_CODES"] or "",
+            "extra1": row["EXTRA1"] or "",
+            "extra2": row["EXTRA2"] or "",
+            "extra3": row["EXTRA3"] or "",
+            "extra4": row["EXTRA4"] or "",
+            "timeAccumulation": row["TIME_ACCUMULATION"] or "",
         }
         tasks[row["ID"]] = t
         tasks_list.append(t)
@@ -160,6 +169,13 @@ def parse_database(db_bytes: bytes) -> dict:
     notes = {}
     for row in conn.execute("SELECT NOTE_DATE_STR, NOTE_TEXT FROM T_NOTE_1"):
         notes[row["NOTE_DATE_STR"][:10]] = row["NOTE_TEXT"] or ""
+
+    # ── Missing checkouts ──
+    missing_checkouts = set()
+    for row in conn.execute(
+        "SELECT KEY FROM T_DOMAIN_VALUE_1 WHERE DOMAIN = 'MISSING_CHECKOUT'"
+    ):
+        missing_checkouts.add(row["KEY"])
 
     # ── Stamps → grouped by day ──
     stamps = []
@@ -230,6 +246,7 @@ def parse_database(db_bytes: bytes) -> dict:
         total_min = sum(e["durationMinutes"] for e in events if e["durationMinutes"] is not None)
         used_tasks = {e["taskName"] for e in events if e["taskId"] != 0}
 
+        day["missingCheckout"] = date in missing_checkouts
         day["events"] = events
         day["totalMinutes"] = total_min
         day["totalFormatted"] = f"{total_min // 60}h {total_min % 60:02d}m"

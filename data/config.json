@@ -10,7 +10,8 @@
       "friday": "08:15",
       "saturday": "00:00"
     },
-    "firstDayOfWeek": "monday"
+    "firstDayOfWeek": "monday",
+    "flextimeYear": 2026
   },
   "autoPunchOut": {
     "enabled": true,
