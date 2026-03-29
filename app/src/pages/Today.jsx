@@ -1,7 +1,8 @@
 import { useEffect, useState, useCallback } from 'react'
 import { punch, isCurrentlyIn, getStampsForDay, getTasks, updateStamp, applyBreak, getConfig } from '../db/documents'
 import { formatMinutes } from '../utils/time'
-import { resolveConfig } from '../utils/config'
+import { resolveConfig, targetMinutesForDate, getAutoBreaks } from '../utils/config'
+import { calculateDay } from '../utils/workday'
 
 function nowHHMM() {
   const n = new Date()
@@ -143,6 +144,16 @@ export default function Today() {
   const isIn = !!activeStamp
   const standardBreaks = config?.standardBreaks ?? []
 
+  // Live Tagesberechnung — aktualisiert sich mit elapsed (alle 30s)
+  const dayResult = config
+    ? calculateDay(stamps, targetMinutesForDate(today, config), getAutoBreaks(config))
+    : null
+  const liveTotalMinutes = dayResult
+    ? dayResult.totalMinutes + (dayResult.openSession ? elapsed : 0)
+    : 0
+  const targetMinutes = dayResult?.targetMinutes ?? 0
+  const liveDeltaMinutes = targetMinutes > 0 ? liveTotalMinutes - targetMinutes : null
+
   return (
     <div className="max-w-md mx-auto space-y-6">
       {/* Datum */}
@@ -176,6 +187,30 @@ export default function Today() {
           Vorlage
         </button>
       </div>
+
+      {/* Tages-Fortschritt */}
+      {targetMinutes > 0 && (
+        <div className="bg-white rounded-xl shadow-sm px-4 py-3 flex justify-between text-sm">
+          <div className="text-center">
+            <div className="font-mono font-medium text-gray-800">{formatMinutes(liveTotalMinutes)}</div>
+            <div className="text-xs text-gray-400">Ist</div>
+          </div>
+          <div className="text-center">
+            <div className="font-mono text-gray-400">{formatMinutes(targetMinutes)}</div>
+            <div className="text-xs text-gray-400">Soll</div>
+          </div>
+          <div className="text-center">
+            {liveDeltaMinutes === null ? (
+              <div className="font-mono text-gray-300">—</div>
+            ) : (
+              <div className={`font-mono font-medium ${liveDeltaMinutes >= 0 ? 'text-green-600' : 'text-red-500'}`}>
+                {liveDeltaMinutes >= 0 ? '+' : ''}{formatMinutes(liveDeltaMinutes)}
+              </div>
+            )}
+            <div className="text-xs text-gray-400">Delta</div>
+          </div>
+        </div>
+      )}
 
       {/* Aufgaben-Auswahl */}
       {!isIn && tasks.length > 0 && (
