@@ -6,7 +6,6 @@ services:
       COUCHDB_PASSWORD: ${COUCHDB_PASSWORD:?COUCHDB_PASSWORD required}
     volumes:
       - couchdb_data:/opt/couchdb/data
-      - ./couchdb/local.ini:/opt/couchdb/etc/local.d/local.ini:ro
     restart: unless-stopped
 
   nginx:
@@ -19,6 +18,13 @@ services:
       - "80:80"
     depends_on:
       - couchdb
+    restart: unless-stopped
+
+  cloudflared:
+    image: cloudflare/cloudflared:latest
+    command: tunnel --no-autoupdate --url http://nginx:80
+    depends_on:
+      - nginx
     restart: unless-stopped
 
 volumes:
