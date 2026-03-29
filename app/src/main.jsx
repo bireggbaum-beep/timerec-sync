@@ -4,10 +4,14 @@ import App from './App'
 import './index.css'
 import { startSync } from './db/sync'
 
-startSync()
-
-ReactDOM.createRoot(document.getElementById('root')).render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>
-)
+try {
+  startSync()
+  ReactDOM.createRoot(document.getElementById('root')).render(
+    <React.StrictMode>
+      <App />
+    </React.StrictMode>
+  )
+} catch (e) {
+  document.getElementById('root').innerHTML =
+    `<pre style="color:red;padding:1em;font-family:monospace">${e.message}\n${e.stack}</pre>`
+}
