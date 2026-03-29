@@ -1,5 +1,5 @@
 import { useEffect, useState, useCallback } from 'react'
-import { punch, isCurrentlyIn, getStampsForDay, getTasks } from '../db/documents'
+import { punch, isCurrentlyIn, getStampsForDay, getTasks, updateStamp } from '../db/documents'
 import { formatMinutes } from '../utils/time'
 
 export default function Today() {
@@ -104,9 +104,19 @@ export default function Today() {
           <div className="bg-white rounded-xl shadow-sm divide-y divide-gray-100">
             {stamps.map(s => (
               <div key={s._id} className="flex items-center px-4 py-2.5 gap-3">
-                <span className={`w-2 h-2 rounded-full ${s.action === 'in' ? 'bg-green-400' : 'bg-red-400'}`} />
-                <span className="font-mono text-sm w-12">{s.time}</span>
-                <span className={`text-xs px-2 py-0.5 rounded-full ${
+                <span className={`w-2 h-2 rounded-full flex-shrink-0 ${s.action === 'in' ? 'bg-green-400' : 'bg-red-400'}`} />
+                <input
+                  type="time"
+                  defaultValue={s.time}
+                  onBlur={async e => {
+                    if (e.target.value && e.target.value !== s.time) {
+                      await updateStamp({ ...s, time: e.target.value })
+                      await reload()
+                    }
+                  }}
+                  className="font-mono text-sm w-14 bg-transparent border-0 p-0 cursor-pointer focus:outline-none focus:ring-0 text-gray-700"
+                />
+                <span className={`text-xs px-2 py-0.5 rounded-full flex-shrink-0 ${
                   s.action === 'in' ? 'bg-green-100 text-green-700' : 'bg-red-100 text-red-700'
                 }`}>
                   {s.action === 'in' ? 'Kommt' : 'Geht'}

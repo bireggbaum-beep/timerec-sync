@@ -2,7 +2,7 @@ import { useState, useEffect, useCallback } from 'react'
 import { calculateDay } from '../utils/workday.js'
 import { targetMinutesForDate, getAutoBreaks, resolveConfig } from '../utils/config.js'
 import { formatMinutes } from '../utils/time.js'
-import { getConfig, getDay, saveDay, getStampsForDay, getDaysInRange } from '../db/documents.js'
+import { getConfig, getDay, saveDay, getStampsForDay, getDaysInRange, updateStamp } from '../db/documents.js'
 
 const DAYS_DE = ['So', 'Mo', 'Di', 'Mi', 'Do', 'Fr', 'Sa']
 const MONTHS_DE = ['Januar', 'Februar', 'März', 'April', 'Mai', 'Juni',
@@ -88,27 +88,33 @@ function DayDetail({ date, dayDoc, config, onDayDocChange }) {
         <div>
           {stamps === null && <p className="text-xs text-gray-400">Lade…</p>}
           {stamps?.length === 0 && <p className="text-xs text-gray-400">Keine Stempel</p>}
-          {result?.events?.length > 0 && (
+          {stamps?.length > 0 && (
             <div className="space-y-1">
-              {result.events.map((ev, i) => (
-                <div key={i} className="flex items-center gap-2 text-sm">
-                  <span className="font-mono text-gray-700 w-12">{ev.kommt}</span>
-                  <span className="text-gray-400">→</span>
-                  <span className="font-mono text-gray-700 w-12">{ev.geht ?? '…'}</span>
-                  {ev.durationMinutes != null && (
-                    <span className="text-gray-400 text-xs">{formatMinutes(ev.durationMinutes)}</span>
-                  )}
-                  {ev.taskName && (
-                    <span className="text-xs text-gray-500 truncate">{ev.taskName}</span>
-                  )}
+              {stamps.map(s => (
+                <div key={s._id} className="flex items-center gap-2 text-sm">
+                  <span className={`w-2 h-2 rounded-full flex-shrink-0 ${s.action === 'in' ? 'bg-green-400' : 'bg-red-400'}`} />
+                  <input
+                    type="time"
+                    defaultValue={s.time}
+                    onBlur={async e => {
+                      if (e.target.value && e.target.value !== s.time) {
+                        await updateStamp({ ...s, time: e.target.value })
+                        const fresh = await getStampsForDay(date)
+                        setStamps(fresh)
+                      }
+                    }}
+                    className="font-mono text-sm w-14 bg-transparent border-0 p-0 cursor-pointer focus:outline-none focus:ring-0 text-gray-700"
+                  />
+                  <span className={`text-xs px-1.5 py-0.5 rounded-full flex-shrink-0 ${s.action === 'in' ? 'bg-green-100 text-green-700' : 'bg-red-100 text-red-700'}`}>
+                    {s.action === 'in' ? 'Kommt' : 'Geht'}
+                  </span>
+                  {s.taskName && <span className="text-xs text-gray-500 truncate">{s.taskName}</span>}
                 </div>
               ))}
+              {result?.autoBreakDeduction > 0 && (
+                <p className="text-xs text-gray-400 mt-1 pl-4">Auto-Pause: −{formatMinutes(result.autoBreakDeduction)}</p>
+              )}
             </div>
-          )}
-          {result?.autoBreakDeduction > 0 && (
-            <p className="text-xs text-gray-400 mt-1">
-              Auto-Pause: −{formatMinutes(result.autoBreakDeduction)}
-            </p>
           )}
         </div>
       )}
