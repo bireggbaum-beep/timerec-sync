@@ -144,6 +144,9 @@ export default function Today() {
   const isIn = !!activeStamp
   const standardBreaks = config?.standardBreaks ?? []
 
+  // Live-Zeit der aktuellen Session (aus Stempelzeit + elapsed, alle 30s)
+  const liveNow = isIn ? addMins(activeStamp.time, elapsed) : null
+
   // Live Tagesberechnung — aktualisiert sich mit elapsed (alle 30s)
   const dayResult = config
     ? calculateDay(stamps, targetMinutesForDate(today, config), getAutoBreaks(config))
@@ -233,28 +236,35 @@ export default function Today() {
         <div>
           <h2 className="text-sm font-medium text-gray-700 mb-2">Heute</h2>
           <div className="bg-white rounded-xl shadow-sm divide-y divide-gray-100">
-            {stamps.map(s => (
-              <div key={s._id} className="flex items-center px-4 py-2.5 gap-3">
-                <span className={`w-2 h-2 rounded-full flex-shrink-0 ${s.action === 'in' ? 'bg-green-400' : 'bg-red-400'}`} />
-                <input
-                  type="time"
-                  defaultValue={s.time}
-                  onBlur={async e => {
-                    if (e.target.value && e.target.value !== s.time) {
-                      await updateStamp({ ...s, time: e.target.value })
-                      await reload()
-                    }
-                  }}
-                  className="font-mono text-sm w-14 bg-transparent border-0 p-0 cursor-pointer focus:outline-none focus:ring-0 text-gray-700"
-                />
-                <span className={`text-xs px-2 py-0.5 rounded-full flex-shrink-0 ${
-                  s.action === 'in' ? 'bg-green-100 text-green-700' : 'bg-red-100 text-red-700'
-                }`}>
-                  {s.action === 'in' ? 'Kommt' : 'Geht'}
-                </span>
-                <span className="text-sm text-gray-500 truncate">{s.taskName}</span>
-              </div>
-            ))}
+            {stamps.map(s => {
+              const isOpen = s._id === activeStamp?._id
+              return (
+                <div key={s._id} className="flex items-center px-4 py-2.5 gap-3">
+                  <span className={`w-2 h-2 rounded-full flex-shrink-0 ${s.action === 'in' ? 'bg-green-400' : 'bg-red-400'}`} />
+                  <input
+                    type="time"
+                    defaultValue={s.time}
+                    onBlur={async e => {
+                      if (e.target.value && e.target.value !== s.time) {
+                        await updateStamp({ ...s, time: e.target.value })
+                        await reload()
+                      }
+                    }}
+                    className="font-mono text-sm w-14 bg-transparent border-0 p-0 cursor-pointer focus:outline-none focus:ring-0 text-gray-700"
+                  />
+                  {isOpen ? (
+                    <span className="font-mono text-sm text-blue-600 flex-shrink-0">→ {liveNow}</span>
+                  ) : (
+                    <span className={`text-xs px-2 py-0.5 rounded-full flex-shrink-0 ${
+                      s.action === 'in' ? 'bg-green-100 text-green-700' : 'bg-red-100 text-red-700'
+                    }`}>
+                      {s.action === 'in' ? 'Kommt' : 'Geht'}
+                    </span>
+                  )}
+                  <span className="text-sm text-gray-500 truncate">{s.taskName}</span>
+                </div>
+              )
+            })}
           </div>
         </div>
       )}
