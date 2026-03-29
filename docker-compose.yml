@@ -21,5 +21,20 @@ services:
       - couchdb
     restart: unless-stopped
 
+  # Cloudflare Tunnel für HTTPS-Zugriff ohne eigenes Zertifikat
+  # Quick Tunnel (ohne Account): zufällige URL, Interstitial-Seite
+  # Für Named Tunnel (stabile URL, kein Interstitial):
+  #   1. Kostenlosen Cloudflare-Account erstellen
+  #   2. cloudflared tunnel login
+  #   3. cloudflared tunnel create timerec
+  #   4. command ändern zu: tunnel run timerec
+  #   5. ./cloudflared/config.yml mounten mit Tunnel-Config
+  cloudflared:
+    image: cloudflare/cloudflared:latest
+    command: tunnel --no-autoupdate --url http://nginx:80
+    depends_on:
+      - nginx
+    restart: unless-stopped
+
 volumes:
   couchdb_data:
