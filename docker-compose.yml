@@ -31,9 +31,8 @@ services:
   #   5. ./cloudflared/config.yml mounten mit Tunnel-Config
   cloudflared:
     image: cloudflare/cloudflared:latest
-    command: tunnel --no-autoupdate --url http://nginx:80
-    depends_on:
-      - nginx
+    command: tunnel --no-autoupdate --url http://localhost:80
+    network_mode: host
     restart: unless-stopped
 
 volumes:
