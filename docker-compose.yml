@@ -1,0 +1,25 @@
+services:
+  couchdb:
+    image: couchdb:3
+    environment:
+      COUCHDB_USER: ${COUCHDB_USER:-admin}
+      COUCHDB_PASSWORD: ${COUCHDB_PASSWORD:?COUCHDB_PASSWORD required}
+    volumes:
+      - couchdb_data:/opt/couchdb/data
+      - ./couchdb/local.ini:/opt/couchdb/etc/local.d/local.ini:ro
+    restart: unless-stopped
+
+  nginx:
+    image: nginx:alpine
+    volumes:
+      - ./app/dist:/usr/share/nginx/html:ro
+      - ./nginx/nginx.conf:/etc/nginx/nginx.conf:ro
+      - ./data:/usr/share/nginx/html/data:ro
+    ports:
+      - "80:80"
+    depends_on:
+      - couchdb
+    restart: unless-stopped
+
+volumes:
+  couchdb_data:

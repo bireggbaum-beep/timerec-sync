@@ -1,0 +1,33 @@
+{
+  "name": "timerec-app",
+  "version": "0.1.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "test": "vitest run",
+    "test:watch": "vitest"
+  },
+  "dependencies": {
+    "pouchdb": "^9.0.0",
+    "pouchdb-find": "^9.0.0",
+    "react": "^18.3.0",
+    "react-dom": "^18.3.0",
+    "react-router-dom": "^6.23.0",
+    "recharts": "^2.12.0",
+    "jspdf": "^2.5.1",
+    "jspdf-autotable": "^3.8.2",
+    "xlsx": "^0.18.5",
+    "date-fns": "^3.6.0"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "^4.3.0",
+    "autoprefixer": "^10.4.19",
+    "postcss": "^8.4.38",
+    "tailwindcss": "^3.4.4",
+    "vite": "^5.3.0",
+    "vite-plugin-pwa": "^0.20.0",
+    "vitest": "^1.6.0"
+  }
+}
