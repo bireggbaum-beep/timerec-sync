@@ -104,6 +104,17 @@ export async function punch({ taskId, taskName, comment = '' }) {
   return { action, time }
 }
 
+export async function applyBreak(date, outTime, inTime) {
+  const existing = await getStampsForDay(date)
+  const base = existing.length + 1
+  await db.bulkDocs([
+    { _id: `stamp::${date}::${String(base).padStart(3, '0')}`,
+      type: 'stamp', date, time: outTime, action: 'out', taskId: null, taskName: null, comment: '' },
+    { _id: `stamp::${date}::${String(base + 1).padStart(3, '0')}`,
+      type: 'stamp', date, time: inTime, action: 'in', taskId: null, taskName: null, comment: '' },
+  ])
+}
+
 export async function isCurrentlyIn() {
   const today = new Date().toISOString().slice(0, 10)
   const stamps = await getStampsForDay(today)

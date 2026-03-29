@@ -222,6 +222,71 @@ function AutoBreaksSection({ config, onSaved }) {
   )
 }
 
+// ── Pausenvorlagen ────────────────────────────────────────────────────────────
+
+function PauseTemplatesSection({ config, onSaved }) {
+  const [breaks, setBreaks] = useState(config.standardBreaks ?? [])
+  const [newStart, setNewStart] = useState('12:00')
+  const [newEnd, setNewEnd] = useState('12:30')
+  const [saving, setSaving] = useState(false)
+  const [saved, setSaved] = useState(false)
+
+  async function handleSave(updated) {
+    setSaving(true)
+    setSaved(false)
+    await saveConfig({ standardBreaks: updated })
+    setSaving(false)
+    setSaved(true)
+    onSaved()
+    setTimeout(() => setSaved(false), 2000)
+  }
+
+  function remove(i) {
+    const updated = breaks.filter((_, idx) => idx !== i)
+    setBreaks(updated)
+    handleSave(updated)
+  }
+
+  function add() {
+    if (!newStart || !newEnd || newStart >= newEnd) return
+    const updated = [...breaks, { start: newStart, end: newEnd }]
+    setBreaks(updated)
+    handleSave(updated)
+  }
+
+  return (
+    <SectionCard title="Pausenvorlagen">
+      <div className="space-y-2">
+        {breaks.length === 0 && <p className="text-sm text-gray-400">Keine Vorlagen</p>}
+        {breaks.map((brk, i) => (
+          <div key={i} className="flex items-center gap-3 text-sm">
+            <span className="font-mono text-gray-700">{brk.start} – {brk.end}</span>
+            <button
+              onClick={() => remove(i)}
+              className="ml-auto text-gray-400 hover:text-red-500 text-xs px-1"
+            >
+              ✕
+            </button>
+          </div>
+        ))}
+      </div>
+      <div className="flex items-center gap-2 pt-2 border-t border-gray-100">
+        <span className="text-xs text-gray-500">Von</span>
+        <input type="time" value={newStart} onChange={e => setNewStart(e.target.value)}
+          className="border border-gray-300 rounded px-2 py-1 text-sm font-mono w-24" />
+        <span className="text-xs text-gray-500">Bis</span>
+        <input type="time" value={newEnd} onChange={e => setNewEnd(e.target.value)}
+          className="border border-gray-300 rounded px-2 py-1 text-sm font-mono w-24" />
+        <button onClick={add} disabled={!newStart || !newEnd || newStart >= newEnd}
+          className="py-1 px-3 bg-gray-600 text-white text-sm rounded hover:bg-gray-700 disabled:opacity-50">
+          +
+        </button>
+      </div>
+      {saved && <p className="text-green-600 text-sm">✓ Gespeichert</p>}
+    </SectionCard>
+  )
+}
+
 // ── Aufgaben ──────────────────────────────────────────────────────────────────
 
 function TasksSection() {
@@ -396,7 +461,8 @@ export default function Settings() {
       <h1 className="text-xl font-semibold text-gray-800">Einstellungen</h1>
       <WorkScheduleSection config={config} onSaved={loadConfig} />
       <AutoPunchOutSection config={config} onSaved={loadConfig} />
-      <AutoBreaksSection   config={config} onSaved={loadConfig} />
+      <AutoBreaksSection      config={config} onSaved={loadConfig} />
+      <PauseTemplatesSection  config={config} onSaved={loadConfig} />
       <TasksSection />
       <ImportSection />
     </div>

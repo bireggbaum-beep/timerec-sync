@@ -46,6 +46,7 @@ export const DEFAULT_CONFIG = {
     showIsoWeek: true,
     breakDetails: true,
   },
+  standardBreaks: [],
 }
 
 /**
