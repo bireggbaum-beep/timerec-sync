@@ -3802,7 +3802,7 @@
   {
     "date": "2026-03-16",
     "note": "",
-    "missingCheckout": true,
+    "missingCheckout": false,
     "events": [
       {
         "kommt": "08:49",
@@ -3830,7 +3830,7 @@
   {
     "date": "2026-03-17",
     "note": "",
-    "missingCheckout": true,
+    "missingCheckout": false,
     "events": [
       {
         "kommt": "08:41",
@@ -3858,7 +3858,7 @@
   {
     "date": "2026-03-18",
     "note": "",
-    "missingCheckout": true,
+    "missingCheckout": false,
     "events": [
       {
         "kommt": "09:00",
@@ -3886,7 +3886,7 @@
   {
     "date": "2026-03-19",
     "note": "",
-    "missingCheckout": true,
+    "missingCheckout": false,
     "events": [
       {
         "kommt": "08:28",
@@ -3914,7 +3914,7 @@
   {
     "date": "2026-03-20",
     "note": "",
-    "missingCheckout": true,
+    "missingCheckout": false,
     "events": [
       {
         "kommt": "08:34",
@@ -3963,6 +3963,26 @@
     ],
     "totalMinutes": 474,
     "totalFormatted": "7h 54m",
+    "tasks": [
+      "(Standard)"
+    ]
+  },
+  {
+    "date": "2026-03-29",
+    "note": "Ferien. Müssen noch nachgetragen werden",
+    "missingCheckout": true,
+    "events": [
+      {
+        "kommt": "08:00",
+        "geht": null,
+        "taskId": 0,
+        "taskName": "(Standard)",
+        "comment": "",
+        "durationMinutes": null
+      }
+    ],
+    "totalMinutes": 0,
+    "totalFormatted": "0h 00m",
     "tasks": [
       "(Standard)"
     ]
