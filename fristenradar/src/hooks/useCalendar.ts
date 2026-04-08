@@ -35,22 +35,22 @@ export function useCalendar() {
     try {
       const primary = await fetchEvents(accessToken);
 
-      // Also try to fetch from "Fristen & Deadlines" calendar
+      // Try to fetch dedicated "Fristen & Deadlines" calendar
       const fristenId = await fetchCalendarIdByName(accessToken, 'Fristen & Deadlines');
       const fristenEvents = fristenId
         ? await fetchEventsFromCalendar(accessToken, fristenId)
         : [];
 
-      // Deduplicate by id
+      // Mark fristen-calendar events BEFORE deduplication so fristMapper recognizes them
+      fristenEvents.forEach(e => { e.calendarId = 'Fristen & Deadlines'; });
+
+      // Deduplicate by id (primary wins if same event appears in both)
       const seen = new Set<string>();
-      const allEvents = [...primary, ...fristenEvents].filter(e => {
+      const allEvents = [...fristenEvents, ...primary].filter(e => {
         if (seen.has(e.id)) return false;
         seen.add(e.id);
         return true;
       });
-
-      // Tag events from fristen calendar so fristMapper recognizes them
-      fristenEvents.forEach(e => { e.calendarId = 'Fristen & Deadlines'; });
 
       const items = mapEventsToFristItems(allEvents);
       items.sort((a, b) => urgencyScore(b) - urgencyScore(a));

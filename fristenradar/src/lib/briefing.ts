@@ -80,11 +80,58 @@ export async function enhanceBriefingWithAI(rawBriefing: string): Promise<string
   return data.choices?.[0]?.message?.content ?? rawBriefing;
 }
 
-export function speakBriefing(text: string): void {
+/**
+ * Spricht den Text vor.
+ * Wenn VITE_ELEVENLABS_KEY gesetzt → ElevenLabs API (bessere Qualität).
+ * Sonst → Web Speech API (kein Key nötig).
+ * Gibt ein Promise zurück, das resolved wenn die Wiedergabe endet.
+ */
+export async function speakBriefing(text: string): Promise<void> {
+  const elevenKey = import.meta.env.VITE_ELEVENLABS_KEY;
+  const voiceId = import.meta.env.VITE_ELEVENLABS_VOICE_ID ?? '21m00Tcm4TlvDq8ikWAM';
+
+  if (elevenKey) {
+    try {
+      const res = await fetch(
+        `https://api.elevenlabs.io/v1/text-to-speech/${voiceId}`,
+        {
+          method: 'POST',
+          headers: {
+            'xi-api-key': elevenKey,
+            'Content-Type': 'application/json',
+          },
+          body: JSON.stringify({
+            text,
+            model_id: 'eleven_multilingual_v2',
+            voice_settings: { stability: 0.5, similarity_boost: 0.75 },
+          }),
+        }
+      );
+
+      if (res.ok) {
+        const blob = await res.blob();
+        const url = URL.createObjectURL(blob);
+        return new Promise(resolve => {
+          const audio = new Audio(url);
+          audio.onended = () => { URL.revokeObjectURL(url); resolve(); };
+          audio.onerror = () => { URL.revokeObjectURL(url); resolve(); };
+          audio.play().catch(() => { URL.revokeObjectURL(url); resolve(); });
+        });
+      }
+    } catch {
+      // ElevenLabs fehlgeschlagen → Fallback Web Speech
+    }
+  }
+
+  // Web Speech API Fallback
   window.speechSynthesis.cancel();
-  const utterance = new SpeechSynthesisUtterance(text);
-  utterance.lang = 'de-DE';
-  utterance.rate = 0.95;
-  utterance.pitch = 1.0;
-  window.speechSynthesis.speak(utterance);
+  return new Promise(resolve => {
+    const utterance = new SpeechSynthesisUtterance(text);
+    utterance.lang = 'de-DE';
+    utterance.rate = 0.95;
+    utterance.pitch = 1.0;
+    utterance.onend = () => resolve();
+    utterance.onerror = () => resolve();
+    window.speechSynthesis.speak(utterance);
+  });
 }

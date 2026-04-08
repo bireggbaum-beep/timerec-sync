@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import type { FristItem } from '../types';
 import { generateBriefing, enhanceBriefingWithAI, speakBriefing } from '../lib/briefing';
 
@@ -10,19 +10,25 @@ interface Props {
 
 export function BriefingPanel({ items, onRefresh, today = new Date() }: Props) {
   const [text, setText] = useState(() => generateBriefing(items, today));
+  const [aiEnhanced, setAiEnhanced] = useState(false);
   const [speaking, setSpeaking] = useState(false);
   const [enhancing, setEnhancing] = useState(false);
 
-  function handleSpeak() {
+  // Regenerate when items load (e.g. after Google Calendar fetch), unless AI-enhanced
+  useEffect(() => {
+    if (!aiEnhanced) {
+      setText(generateBriefing(items, today));
+    }
+  // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [items]);
+
+  async function handleSpeak() {
     setSpeaking(true);
-    speakBriefing(text);
-    // Reset speaking flag when synthesis ends
-    const interval = setInterval(() => {
-      if (!window.speechSynthesis.speaking) {
-        setSpeaking(false);
-        clearInterval(interval);
-      }
-    }, 500);
+    try {
+      await speakBriefing(text);
+    } finally {
+      setSpeaking(false);
+    }
   }
 
   async function handleEnhance() {
@@ -30,6 +36,7 @@ export function BriefingPanel({ items, onRefresh, today = new Date() }: Props) {
     try {
       const enhanced = await enhanceBriefingWithAI(text);
       setText(enhanced);
+      setAiEnhanced(true);
     } finally {
       setEnhancing(false);
     }
@@ -37,21 +44,27 @@ export function BriefingPanel({ items, onRefresh, today = new Date() }: Props) {
 
   function handleRefresh() {
     setText(generateBriefing(items, today));
+    setAiEnhanced(false);
     onRefresh();
   }
 
   const hasOpenRouterKey = !!import.meta.env.VITE_OPENROUTER_KEY;
+  const hasElevenLabsKey = !!import.meta.env.VITE_ELEVENLABS_KEY;
 
   return (
     <div className="briefing-panel">
       <div className="briefing-header">
-        <span className="briefing-title">Morgenbriefing</span>
+        <span className="briefing-title">
+          Morgenbriefing
+          {hasElevenLabsKey && <span className="briefing-badge">ElevenLabs</span>}
+          {aiEnhanced && <span className="briefing-badge briefing-badge--ai">KI</span>}
+        </span>
         <div className="briefing-actions">
           {hasOpenRouterKey && (
             <button
               className="btn-secondary"
               onClick={handleEnhance}
-              disabled={enhancing}
+              disabled={enhancing || speaking}
               title="KI-Briefing generieren"
             >
               {enhancing ? '⏳' : '✨'} KI
@@ -68,6 +81,7 @@ export function BriefingPanel({ items, onRefresh, today = new Date() }: Props) {
           <button
             className="btn-secondary"
             onClick={handleRefresh}
+            disabled={speaking}
             title="Aktualisieren"
           >
             🔄 Aktualisieren
