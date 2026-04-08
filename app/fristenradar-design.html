@@ -1,0 +1,666 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Fristenradar — Design Preview</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  :root {
+    --bg-deep: #060a1a;
+    --bg-mid: #0d1333;
+    --bg-surface: rgba(255,255,255,0.05);
+    --bg-surface-hover: rgba(255,255,255,0.08);
+    --border-subtle: rgba(255,255,255,0.07);
+    --text-primary: rgba(255,255,255,0.92);
+    --text-secondary: rgba(255,255,255,0.50);
+    --text-muted: rgba(255,255,255,0.30);
+    --accent-blue: #60a5fa;
+    --accent-cyan: #22d3ee;
+    --accent-green: #34d399;
+    --accent-red: #f87171;
+    --accent-amber: #fbbf24;
+    --glow-blue: rgba(96,165,250,0.35);
+    --glow-green: rgba(52,211,153,0.30);
+    --glow-red: rgba(248,113,113,0.25);
+  }
+
+  body {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+    background: var(--bg-deep);
+    color: var(--text-primary);
+    min-height: 100vh;
+    overflow-x: hidden;
+  }
+
+  /* ─── Ambient background ─── */
+  .ambient-bg {
+    position: fixed;
+    inset: 0;
+    background:
+      radial-gradient(ellipse 80% 60% at 50% 20%, rgba(59,130,246,0.08) 0%, transparent 60%),
+      radial-gradient(ellipse 60% 50% at 80% 80%, rgba(139,92,246,0.06) 0%, transparent 50%),
+      radial-gradient(ellipse 50% 40% at 20% 70%, rgba(34,211,238,0.05) 0%, transparent 50%),
+      linear-gradient(180deg, var(--bg-deep) 0%, var(--bg-mid) 100%);
+    z-index: 0;
+  }
+
+  .page {
+    position: relative;
+    z-index: 1;
+    max-width: 420px;
+    margin: 0 auto;
+    padding: 32px 24px 100px;
+    min-height: 100vh;
+  }
+
+  /* ─── Greeting ─── */
+  .greeting {
+    margin-bottom: 36px;
+  }
+  .greeting-text {
+    font-size: 28px;
+    font-weight: 300;
+    letter-spacing: -0.5px;
+    color: var(--text-primary);
+    line-height: 1.2;
+  }
+  .greeting-date {
+    font-size: 15px;
+    color: var(--text-secondary);
+    margin-top: 6px;
+    font-weight: 400;
+  }
+  .greeting-time {
+    float: right;
+    font-size: 42px;
+    font-weight: 200;
+    letter-spacing: -1px;
+    color: var(--text-primary);
+    opacity: 0.8;
+    line-height: 1;
+    font-variant-numeric: tabular-nums;
+  }
+
+  /* ─── Central Ring ─── */
+  .ring-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto 32px;
+    position: relative;
+    width: 240px;
+    height: 240px;
+  }
+
+  .ring-svg {
+    width: 240px;
+    height: 240px;
+    transform: rotate(-90deg);
+    filter: drop-shadow(0 0 18px var(--glow-blue));
+  }
+
+  .ring-track {
+    fill: none;
+    stroke: rgba(255,255,255,0.06);
+    stroke-width: 8;
+  }
+
+  .ring-progress {
+    fill: none;
+    stroke: url(#ringGradient);
+    stroke-width: 8;
+    stroke-linecap: round;
+    transition: stroke-dashoffset 1.5s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .ring-center {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .ring-ist {
+    font-size: 36px;
+    font-weight: 600;
+    letter-spacing: -1px;
+    color: var(--text-primary);
+    line-height: 1;
+    font-variant-numeric: tabular-nums;
+  }
+
+  .ring-soll {
+    font-size: 14px;
+    color: var(--text-secondary);
+    margin-top: 4px;
+    font-weight: 400;
+  }
+
+  .ring-label {
+    font-size: 11px;
+    color: var(--text-muted);
+    margin-top: 8px;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    font-weight: 500;
+  }
+
+  .ring-percent {
+    position: absolute;
+    bottom: 18px;
+    font-size: 13px;
+    font-weight: 600;
+    color: var(--accent-blue);
+    opacity: 0.9;
+  }
+
+  /* Pulse animation on the ring */
+  @keyframes ringPulse {
+    0%, 100% { filter: drop-shadow(0 0 18px var(--glow-blue)); }
+    50%      { filter: drop-shadow(0 0 28px var(--glow-blue)); }
+  }
+  .ring-svg.active {
+    animation: ringPulse 3s ease-in-out infinite;
+  }
+
+  /* ─── Balance Card ─── */
+  .balance-card {
+    background: var(--bg-surface);
+    border: 1px solid var(--border-subtle);
+    border-radius: 20px;
+    padding: 20px 24px;
+    text-align: center;
+    margin-bottom: 28px;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .balance-card.positive {
+    border-color: rgba(52,211,153,0.15);
+    box-shadow: 0 0 30px -10px var(--glow-green);
+  }
+  .balance-card.negative {
+    border-color: rgba(248,113,113,0.15);
+    box-shadow: 0 0 30px -10px var(--glow-red);
+  }
+
+  .balance-card::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    border-radius: 20px;
+    opacity: 0.04;
+  }
+  .balance-card.positive::before {
+    background: radial-gradient(ellipse at center, var(--accent-green), transparent 70%);
+  }
+  .balance-card.negative::before {
+    background: radial-gradient(ellipse at center, var(--accent-red), transparent 70%);
+  }
+
+  .balance-value {
+    font-size: 28px;
+    font-weight: 600;
+    letter-spacing: -0.5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+  }
+  .balance-value.positive { color: var(--accent-green); }
+  .balance-value.negative { color: var(--accent-red); }
+
+  .balance-arrow {
+    font-size: 20px;
+    opacity: 0.7;
+  }
+
+  .balance-label {
+    font-size: 13px;
+    color: var(--text-secondary);
+    margin-top: 6px;
+    font-weight: 400;
+  }
+
+  .balance-message {
+    font-size: 14px;
+    color: var(--text-secondary);
+    margin-top: 10px;
+    font-style: italic;
+    opacity: 0.8;
+  }
+
+  /* ─── Progress Bars (Week/Month) ─── */
+  .progress-section {
+    margin-bottom: 20px;
+  }
+
+  .progress-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    margin-bottom: 8px;
+  }
+
+  .progress-title {
+    font-size: 13px;
+    font-weight: 500;
+    color: var(--text-secondary);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+
+  .progress-values {
+    font-size: 14px;
+    font-weight: 500;
+    color: var(--text-primary);
+    font-variant-numeric: tabular-nums;
+  }
+
+  .progress-values span {
+    color: var(--text-secondary);
+    font-weight: 400;
+  }
+
+  .progress-bar-bg {
+    width: 100%;
+    height: 6px;
+    background: rgba(255,255,255,0.06);
+    border-radius: 3px;
+    overflow: hidden;
+  }
+
+  .progress-bar-fill {
+    height: 100%;
+    border-radius: 3px;
+    transition: width 1.2s cubic-bezier(0.4, 0, 0.2, 1);
+    background: linear-gradient(90deg, var(--accent-blue), var(--accent-cyan));
+    box-shadow: 0 0 10px var(--glow-blue);
+  }
+
+  .progress-bar-fill.warn {
+    background: linear-gradient(90deg, var(--accent-amber), #f59e0b);
+    box-shadow: 0 0 10px rgba(251,191,36,0.3);
+  }
+
+  .progress-delta {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 4px;
+    font-size: 12px;
+    font-weight: 500;
+  }
+  .progress-delta.positive { color: var(--accent-green); }
+  .progress-delta.negative { color: var(--accent-red); }
+
+  /* ─── Fristen List ─── */
+  .fristen-section {
+    margin-top: 32px;
+  }
+
+  .fristen-title {
+    font-size: 13px;
+    font-weight: 500;
+    color: var(--text-secondary);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 14px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+
+  .fristen-title::before {
+    content: '';
+    display: inline-block;
+    width: 4px;
+    height: 14px;
+    background: var(--accent-blue);
+    border-radius: 2px;
+    opacity: 0.7;
+  }
+
+  .frist-item {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    padding: 14px 16px;
+    background: var(--bg-surface);
+    border: 1px solid var(--border-subtle);
+    border-radius: 14px;
+    margin-bottom: 8px;
+    transition: background 0.2s;
+  }
+  .frist-item:hover {
+    background: var(--bg-surface-hover);
+  }
+
+  .frist-dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    flex-shrink: 0;
+  }
+  .frist-dot.green { background: var(--accent-green); box-shadow: 0 0 8px var(--glow-green); }
+  .frist-dot.amber { background: var(--accent-amber); box-shadow: 0 0 8px rgba(251,191,36,0.3); }
+  .frist-dot.blue  { background: var(--accent-blue);  box-shadow: 0 0 8px var(--glow-blue); }
+  .frist-dot.red   { background: var(--accent-red);   box-shadow: 0 0 8px var(--glow-red); }
+
+  .frist-content {
+    flex: 1;
+    min-width: 0;
+  }
+  .frist-label {
+    font-size: 14px;
+    font-weight: 500;
+    color: var(--text-primary);
+  }
+  .frist-detail {
+    font-size: 12px;
+    color: var(--text-secondary);
+    margin-top: 2px;
+  }
+
+  .frist-countdown {
+    font-size: 14px;
+    font-weight: 600;
+    font-variant-numeric: tabular-nums;
+    white-space: nowrap;
+    flex-shrink: 0;
+  }
+  .frist-countdown.green { color: var(--accent-green); }
+  .frist-countdown.amber { color: var(--accent-amber); }
+  .frist-countdown.blue  { color: var(--accent-blue); }
+  .frist-countdown.red   { color: var(--accent-red); }
+
+  /* ─── Status Pill ─── */
+  .status-row {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 28px;
+  }
+
+  .status-pill {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    padding: 6px 14px;
+    background: var(--bg-surface);
+    border: 1px solid var(--border-subtle);
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: 500;
+    color: var(--text-secondary);
+  }
+
+  .status-pill .dot {
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+  }
+  .status-pill .dot.green {
+    background: var(--accent-green);
+    box-shadow: 0 0 6px var(--glow-green);
+  }
+  .status-pill .dot.red {
+    background: var(--accent-red);
+    animation: blink 2s ease-in-out infinite;
+  }
+
+  @keyframes blink {
+    0%, 100% { opacity: 1; }
+    50%      { opacity: 0.3; }
+  }
+
+  /* ─── Breathing dot for active session ─── */
+  @keyframes breathe {
+    0%, 100% { transform: scale(1);   opacity: 1; }
+    50%      { transform: scale(1.4); opacity: 0.6; }
+  }
+  .breathing {
+    animation: breathe 2.5s ease-in-out infinite;
+  }
+
+  /* ─── Feierabend Prediction ─── */
+  .prediction {
+    text-align: center;
+    margin-bottom: 32px;
+    padding: 16px;
+    background: var(--bg-surface);
+    border: 1px solid var(--border-subtle);
+    border-radius: 16px;
+  }
+  .prediction-label {
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    color: var(--text-muted);
+    font-weight: 500;
+    margin-bottom: 6px;
+  }
+  .prediction-time {
+    font-size: 32px;
+    font-weight: 300;
+    color: var(--accent-cyan);
+    font-variant-numeric: tabular-nums;
+    letter-spacing: -1px;
+  }
+  .prediction-note {
+    font-size: 12px;
+    color: var(--text-secondary);
+    margin-top: 4px;
+  }
+
+  /* ─── Design annotation (only in preview) ─── */
+  .design-note {
+    position: fixed;
+    top: 12px;
+    right: 12px;
+    background: rgba(251,191,36,0.15);
+    border: 1px solid rgba(251,191,36,0.25);
+    color: var(--accent-amber);
+    font-size: 11px;
+    padding: 6px 12px;
+    border-radius: 8px;
+    z-index: 100;
+    font-weight: 500;
+    letter-spacing: 0.3px;
+  }
+
+  /* ─── Responsive ─── */
+  @media (min-width: 768px) {
+    .page { max-width: 480px; padding-top: 48px; }
+    .greeting-text { font-size: 32px; }
+    .greeting-time { font-size: 48px; }
+    .ring-container { width: 280px; height: 280px; }
+    .ring-svg { width: 280px; height: 280px; }
+    .ring-ist { font-size: 42px; }
+  }
+
+  /* ─── Section Divider ─── */
+  .divider {
+    height: 1px;
+    background: linear-gradient(90deg, transparent, var(--border-subtle), transparent);
+    margin: 28px 0;
+  }
+</style>
+</head>
+<body>
+
+<div class="ambient-bg"></div>
+<div class="design-note">Design Preview — Fristenradar</div>
+
+<div class="page">
+
+  <!-- ━━ Greeting ━━ -->
+  <div class="greeting">
+    <span class="greeting-time" id="clock">14:35</span>
+    <div class="greeting-text" id="greeting">Guten Tag.</div>
+    <div class="greeting-date" id="dateStr">Mittwoch, 8. April 2026</div>
+  </div>
+
+  <!-- ━━ Status Pills ━━ -->
+  <div class="status-row">
+    <div class="status-pill">
+      <span class="dot green breathing"></span>
+      Eingestempelt
+    </div>
+    <div class="status-pill">
+      <span class="dot" style="background: var(--accent-blue);"></span>
+      Projektarbeit
+    </div>
+  </div>
+
+  <!-- ━━ Central Ring ━━ -->
+  <div class="ring-container">
+    <svg class="ring-svg active" viewBox="0 0 240 240">
+      <defs>
+        <linearGradient id="ringGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+          <stop offset="0%" stop-color="#3b82f6" />
+          <stop offset="100%" stop-color="#22d3ee" />
+        </linearGradient>
+      </defs>
+      <circle class="ring-track" cx="120" cy="120" r="100" />
+      <circle class="ring-progress" cx="120" cy="120" r="100"
+              stroke-dasharray="628.32"
+              stroke-dashoffset="176" />
+    </svg>
+    <div class="ring-center">
+      <div class="ring-label">Heute</div>
+      <div class="ring-ist">6h 24m</div>
+      <div class="ring-soll">von 8h 15m</div>
+      <div class="ring-percent">78%</div>
+    </div>
+  </div>
+
+  <!-- ━━ Feierabend Prediction ━━ -->
+  <div class="prediction">
+    <div class="prediction-label">Voraussichtlich Feierabend</div>
+    <div class="prediction-time">16:26</div>
+    <div class="prediction-note">noch 1h 51m — du schaffst das</div>
+  </div>
+
+  <!-- ━━ Balance Card ━━ -->
+  <div class="balance-card positive">
+    <div class="balance-value positive">
+      <span class="balance-arrow">&#8599;</span>
+      +1h 12m
+    </div>
+    <div class="balance-label">Flexzeit-Saldo</div>
+    <div class="balance-message">Du bist gut auf Kurs.</div>
+  </div>
+
+  <div class="divider"></div>
+
+  <!-- ━━ Week Progress ━━ -->
+  <div class="progress-section">
+    <div class="progress-header">
+      <span class="progress-title">Woche · KW 15</span>
+      <span class="progress-values">32h 10m <span>/ 41h 15m</span></span>
+    </div>
+    <div class="progress-bar-bg">
+      <div class="progress-bar-fill" style="width: 78%"></div>
+    </div>
+    <div class="progress-delta positive">+1h 12m Überzeit</div>
+  </div>
+
+  <!-- ━━ Month Progress ━━ -->
+  <div class="progress-section">
+    <div class="progress-header">
+      <span class="progress-title">April 2026</span>
+      <span class="progress-values">49h 30m <span>/ 173h 15m</span></span>
+    </div>
+    <div class="progress-bar-bg">
+      <div class="progress-bar-fill" style="width: 29%"></div>
+    </div>
+    <div class="progress-delta positive">+2h 45m Überzeit</div>
+  </div>
+
+  <div class="divider"></div>
+
+  <!-- ━━ Fristen ━━ -->
+  <div class="fristen-section">
+    <div class="fristen-title">Fristen</div>
+
+    <div class="frist-item">
+      <span class="frist-dot green"></span>
+      <div class="frist-content">
+        <div class="frist-label">Feierabend</div>
+        <div class="frist-detail">Tagessoll erreicht um ~16:26</div>
+      </div>
+      <span class="frist-countdown green">1h 51m</span>
+    </div>
+
+    <div class="frist-item">
+      <span class="frist-dot blue"></span>
+      <div class="frist-content">
+        <div class="frist-label">Wochenziel</div>
+        <div class="frist-detail">41h 15m Soll · noch 9h 05m offen</div>
+      </div>
+      <span class="frist-countdown blue">3 Tage</span>
+    </div>
+
+    <div class="frist-item">
+      <span class="frist-dot amber"></span>
+      <div class="frist-content">
+        <div class="frist-label">Monatsabschluss</div>
+        <div class="frist-detail">Letzter Arbeitstag: 30. April</div>
+      </div>
+      <span class="frist-countdown amber">22 Tage</span>
+    </div>
+
+    <div class="frist-item">
+      <span class="frist-dot green"></span>
+      <div class="frist-content">
+        <div class="frist-label">Flexzeit-Grenze</div>
+        <div class="frist-detail">Max. +20h · Aktuell +1h 12m</div>
+      </div>
+      <span class="frist-countdown green">18h 48m</span>
+    </div>
+
+  </div>
+</div>
+
+<!-- ━━ Live Clock Script ━━ -->
+<script>
+  function updateClock() {
+    const now = new Date();
+    const h = now.getHours();
+    const m = String(now.getMinutes()).padStart(2, '0');
+    document.getElementById('clock').textContent = `${h}:${m}`;
+
+    // Time-aware greeting
+    let greeting;
+    if (h < 6)       greeting = 'Gute Nacht.';
+    else if (h < 11)  greeting = 'Guten Morgen.';
+    else if (h < 14)  greeting = 'Guten Mittag.';
+    else if (h < 18)  greeting = 'Guten Tag.';
+    else if (h < 22)  greeting = 'Guten Abend.';
+    else              greeting = 'Gute Nacht.';
+    document.getElementById('greeting').textContent = greeting;
+
+    // Date
+    const days = ['Sonntag','Montag','Dienstag','Mittwoch','Donnerstag','Freitag','Samstag'];
+    const months = ['Januar','Februar','März','April','Mai','Juni','Juli','August','September','Oktober','November','Dezember'];
+    document.getElementById('dateStr').textContent =
+      `${days[now.getDay()]}, ${now.getDate()}. ${months[now.getMonth()]} ${now.getFullYear()}`;
+  }
+  updateClock();
+  setInterval(updateClock, 10000);
+
+  // Animate ring on load
+  setTimeout(() => {
+    document.querySelector('.ring-progress').style.strokeDashoffset = '176';
+  }, 100);
+</script>
+
+</body>
+</html>

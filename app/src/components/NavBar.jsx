@@ -2,6 +2,7 @@ import { NavLink } from 'react-router-dom'
 
 const links = [
   { to: '/today',   label: 'Heute',     icon: '⏱' },
+  { to: '/radar',   label: 'Radar',     icon: '🎯' },
   { to: '/week',    label: 'Woche',     icon: '📅' },
   { to: '/month',   label: 'Monat',     icon: '📊' },
   { to: '/history', label: 'Verlauf',   icon: '📋' },
