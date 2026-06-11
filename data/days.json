@@ -3942,7 +3942,7 @@
   {
     "date": "2026-03-23",
     "note": "",
-    "missingCheckout": true,
+    "missingCheckout": false,
     "events": [
       {
         "kommt": "09:01",
@@ -3970,10 +3970,50 @@
   {
     "date": "2026-03-29",
     "note": "Ferien. Müssen noch nachgetragen werden",
-    "missingCheckout": true,
+    "missingCheckout": false,
     "events": [
       {
         "kommt": "08:00",
+        "geht": null,
+        "taskId": 0,
+        "taskName": "(Standard)",
+        "comment": "",
+        "durationMinutes": null
+      }
+    ],
+    "totalMinutes": 0,
+    "totalFormatted": "0h 00m",
+    "tasks": [
+      "(Standard)"
+    ]
+  },
+  {
+    "date": "2026-05-30",
+    "note": "",
+    "missingCheckout": false,
+    "events": [
+      {
+        "kommt": "09:10",
+        "geht": null,
+        "taskId": 0,
+        "taskName": "(Standard)",
+        "comment": "",
+        "durationMinutes": null
+      }
+    ],
+    "totalMinutes": 0,
+    "totalFormatted": "0h 00m",
+    "tasks": [
+      "(Standard)"
+    ]
+  },
+  {
+    "date": "2026-06-10",
+    "note": "",
+    "missingCheckout": true,
+    "events": [
+      {
+        "kommt": "09:25",
         "geht": null,
         "taskId": 0,
         "taskName": "(Standard)",
